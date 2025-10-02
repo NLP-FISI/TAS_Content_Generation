@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.api import content
+from app.api import content, evaluation
 
 app = FastAPI(
     title="TAS Content API",
@@ -8,7 +8,6 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# Configurar CORS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -17,8 +16,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Incluir routers
 app.include_router(content.router, tags=["Contenido"])
+app.include_router(evaluation.router, tags=["Evaluación"])
 
 @app.get("/")
 async def root():
