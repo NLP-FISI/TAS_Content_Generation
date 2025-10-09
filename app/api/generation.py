@@ -1,0 +1,29 @@
+# app/api/generation.py
+from fastapi import APIRouter, Depends
+from sqlalchemy.orm import Session
+from app.database import get_db
+from app.services.generation.generator_orchestator_service import GenerationOrchestrator
+from app.schemas.generation import GeneracionRequest
+from app.schemas.responses import SuccessResponse
+
+router = APIRouter(prefix="/generacion")
+
+
+@router.post("/generar", response_model=SuccessResponse)
+def generar_contenido(
+    datos: GeneracionRequest,
+    db: Session = Depends(get_db)
+):
+    orchestrator = GenerationOrchestrator(db)
+    
+    resultado = orchestrator.generar_textos(
+        id_tipo_texto=datos.id_tipo_texto,
+        id_tematicas=datos.id_tematicas,
+        id_dificultades=datos.id_dificultades,
+        textos_por_combinacion=datos.textos_por_combinacion
+    )
+    
+    return SuccessResponse(
+        success=True,
+        data=resultado
+    )

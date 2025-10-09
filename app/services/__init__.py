@@ -1,4 +1,4 @@
-from .texto_service import TextoService
+from .content_service import ContentService
 from .evaluation_service import EvaluationService
 
-__all__ = ["TextoService", "EvaluationService"]
+__all__ = ["ContentService", "EvaluationService"]

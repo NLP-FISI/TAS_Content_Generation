@@ -1,76 +1,74 @@
-from sqlalchemy.orm import Session
-from app.models import Alternativa
+# app/services/evaluation_service.py
 from typing import List, Dict, Any
+from app.services.base_service import BaseService
+from app.exceptions import ResourceNotFoundException, DatabaseException
 
-class EvaluationService:
+
+class EvaluationService(BaseService):
     
-    @staticmethod
-    def evaluar_respuestas(
-        db: Session,
-        id_texto: int,
+    def verificar_respuestas(
+        self,
         respuestas: List[Dict[str, int]]
-    ) -> Dict[str, Any]:
-        correctas = 0
-        incorrectas = 0
-        detalles = []
+    ) -> List[Dict[str, Any]]:
+        resultados = []
         
         for respuesta in respuestas:
-            resultado = EvaluationService._evaluar_respuesta_individual(
-                db, 
+            resultado = self._verificar_respuesta_individual(
                 respuesta.get("id_pregunta"), 
-                respuesta.get("id_respuesta")
+                respuesta.get("id_alternativa")
             )
-            
-            if resultado["es_correcta"]:
-                correctas += 1
-            else:
-                incorrectas += 1
-            
-            detalles.append(resultado)
+            resultados.append(resultado)
         
-        total = correctas + incorrectas
-        porcentaje = (correctas / total * 100) if total > 0 else 0
-        aprobado = porcentaje >= 60
-        
-        return {
-            "correctas": correctas,
-            "incorrectas": incorrectas,
-            "total": total,
-            "porcentaje": round(porcentaje, 2),
-            "aprobado": aprobado,
-            "detalles": detalles
-        }
+        return resultados
     
-    @staticmethod
-    def _evaluar_respuesta_individual(
-        db: Session,
+    def _verificar_respuesta_individual(
+        self,
         id_pregunta: int,
-        id_respuesta: int
+        id_alternativa: int
     ) -> Dict[str, Any]:
-        alternativa = db.query(Alternativa).filter(
-            Alternativa.id_respuesta == id_respuesta,
-            Alternativa.id_pregunta == id_pregunta
-        ).first()
-        
-        if not alternativa:
+        try:
+            Alternativa = self.get_model("Alternativa")
+            
+            if not Alternativa:
+                raise DatabaseException(
+                    message="Modelo Alternativa no encontrado en la base de datos",
+                    details={
+                        "modelo": "Alternativa",
+                        "id_pregunta": id_pregunta,
+                        "id_alternativa": id_alternativa
+                    }
+                )
+            
+            alternativa = self.db.query(Alternativa).filter(
+                Alternativa.ID_Alternativa == id_alternativa,
+                Alternativa.ID_Pregunta == id_pregunta
+            ).first()
+            
+            if not alternativa:
+                raise ResourceNotFoundException(
+                    message="Alternativa no encontrada para esta pregunta",
+                    details={
+                        "id_pregunta": id_pregunta,
+                        "id_alternativa": id_alternativa
+                    }
+                )
+            
+            es_correcta = bool(alternativa.Correcto)
+            
             return {
                 "id_pregunta": id_pregunta,
-                "id_respuesta_usuario": id_respuesta,
-                "es_correcta": False,
-                "id_respuesta_correcta": None,
-                "error": "Respuesta no encontrada"
+                "id_alternativa": id_alternativa,
+                "es_correcta": es_correcta
             }
-        
-        es_correcta = alternativa.bool
-        
-        respuesta_correcta = db.query(Alternativa).filter(
-            Alternativa.id_pregunta == id_pregunta,
-            Alternativa.bool == True
-        ).first()
-        
-        return {
-            "id_pregunta": id_pregunta,
-            "id_respuesta_usuario": id_respuesta,
-            "es_correcta": es_correcta,
-            "id_respuesta_correcta": respuesta_correcta.id_respuesta if respuesta_correcta else None
-        }
+            
+        except (ResourceNotFoundException, DatabaseException):
+            raise
+        except Exception as e:
+            raise DatabaseException(
+                message="Error al verificar la respuesta",
+                details={
+                    "id_pregunta": id_pregunta,
+                    "id_alternativa": id_alternativa,
+                    "error": str(e)
+                }
+            )

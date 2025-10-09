@@ -1,17 +1,10 @@
-from .alternativa import AlternativaBase, AlternativaCreate, Alternativa
-from .texto_usuario import TextoUsuarioBase, TextoUsuarioCreate, TextoUsuario
-from .pregunta import PreguntaBase, PreguntaCreate, Pregunta, PreguntaConAlternativas
-from .texto import TextoBase, TextoCreate, Texto, TextoCompleto
-from .evaluacion import RespuestaUsuario, EvaluacionRequest
-
-# Actualizar forward references después de importar todo
-PreguntaConAlternativas.model_rebuild()
-TextoCompleto.model_rebuild()
-
+from .content import (AlternativaResponse, PreguntaResponse, TextoResponse, ContenidoResponse)
+from .evaluation import (EvaluacionRequest, RespuestaUsuario, ResultadoVerificacion)
+from .responses import (SuccessResponse, ErrorResponse, ErrorDetail)
+from .generation import (GeneracionRequest, GeneracionResponse, TextoGeneradoInfo)
 __all__ = [
-    "TextoBase", "TextoCreate", "Texto", "TextoCompleto",
-    "TextoUsuarioBase", "TextoUsuarioCreate", "TextoUsuario",
-    "PreguntaBase", "PreguntaCreate", "Pregunta", "PreguntaConAlternativas",
-    "AlternativaBase", "AlternativaCreate", "Alternativa",
-    "RespuestaUsuario", "EvaluacionRequest"
+    "AlternativaResponse", "PreguntaResponse", "TextoResponse", "ContenidoResponse",
+    "EvaluacionRequest", "RespuestaUsuario", "ResultadoVerificacion",
+    "SuccessResponse", "ErrorResponse", "ErrorDetail",
+    "GeneracionRequest", "GeneracionResponse", "TextoGeneradoInfo"
 ]
