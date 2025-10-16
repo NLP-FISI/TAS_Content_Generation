@@ -1,0 +1,124 @@
+{
+  "textos": [
+    {
+      "id_texto": 4,
+      "titulo": "La Aventura de Leo y el Bosque Mágico",
+      "contenido": "Leo, un pequeño conejo curioso, vivía en un bosque lleno de animales. Un día, mientras saltaba entre los árboles, escuchó un ruido extraño. —¿Quién anda ahí?— preguntó Leo con voz temblorosa. De entre los arbustos salió Lila, una ardilla juguetona. —¡Soy yo! ¿Quieres explorar el bosque conmigo?— dijo Lila con una sonrisa. Leo asintió emocionado. Juntos, encontraron un río cristalino donde un pato llamado Pablo los invitó a cruzar su balsa. —¡Cuidado con las piedras resbaladizas!— advirtió Pablo. Al llegar al otro lado, descubrieron un claro lleno de flores brillantes. —¡Es mágico!— exclamó Leo. De pronto, una tormenta los sorprendió. Asustados, buscaron refugio en la madriguera de un tejón llamado Tomás. —No teman, aquí están seguros— dijo Tomás con calma. La tormenta pasó, y bajo la luz de la luna, los amigos prometieron cuidarse siempre. —El bosque es hermoso, pero debemos respetarlo— reflexionó Leo.",
+      "ensenanza": "La amistad y el respeto por la naturaleza nos ayudan a superar cualquier dificultad.",
+      "tipo_texto": "Narrativo",
+      "tematica": "Animales",
+      "dificultad": "Fácil",
+      "preguntas": [
+        {
+          "enunciado": "¿Quién es el personaje principal de la historia?",
+          "alternativas": [
+            {
+              "texto": "Leo, un pequeño conejo curioso",
+              "es_correcta": true
+            },
+            {
+              "texto": "Lila, una ardilla juguetona",
+              "es_correcta": false
+            },
+            {
+              "texto": "Pablo, un pato",
+              "es_correcta": false
+            },
+            {
+              "texto": "Tomás, un tejón",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Qué encontraron Leo y Lila al cruzar el río?",
+          "alternativas": [
+            {
+              "texto": "Un claro lleno de flores brillantes",
+              "es_correcta": true
+            },
+            {
+              "texto": "Un lago con peces dorados",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un grupo de lobos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Una cueva oscura",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Qué les advirtió Pablo antes de cruzar el río?",
+          "alternativas": [
+            {
+              "texto": "Cuidado con las piedras resbaladizas",
+              "es_correcta": true
+            },
+            {
+              "texto": "Cuidado con las corrientes fuertes",
+              "es_correcta": false
+            },
+            {
+              "texto": "Cuidado con los animales peligrosos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Cuidado con el frío del agua",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Dónde buscaron refugio Leo y Lila durante la tormenta?",
+          "alternativas": [
+            {
+              "texto": "En la madriguera de un tejón llamado Tomás",
+              "es_correcta": true
+            },
+            {
+              "texto": "En un árbol alto",
+              "es_correcta": false
+            },
+            {
+              "texto": "En una cueva cerca del río",
+              "es_correcta": false
+            },
+            {
+              "texto": "En la casa de Pablo el pato",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Qué prometieron los amigos bajo la luz de la luna?",
+          "alternativas": [
+            {
+              "texto": "Cuidarse siempre",
+              "es_correcta": true
+            },
+            {
+              "texto": "Volver al bosque al día siguiente",
+              "es_correcta": false
+            },
+            {
+              "texto": "Explorar más lugares juntos",
+              "es_correcta": false
+            },
+            {
+              "texto": "No hablar con extraños",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tipo_texto": "Narrativo",
+    "total_generados": 1
+  }
+}

@@ -4,6 +4,9 @@ from app.config.settings import settings
 
 class MappingService:
     
+    _id_pregunta_counter = 0
+    _id_alternativa_counter = 0
+    
     @staticmethod
     def mapear_texto_a_bd(
         contenido_ia: dict,
@@ -12,12 +15,12 @@ class MappingService:
         id_dificultad: int
     ) -> Dict[str, Any]:
         return {
-            "Titulo": contenido_ia.get("titulo", "")[:80],
-            "Contenido": contenido_ia.get("cuento", "").strip(),
-            "ID_Tipo_Texto": id_tipo_texto,
-            "ID_Tematica": id_tematica,
-            "ID_Dificultad": id_dificultad,
-            "ID_Juego": settings.ID_JUEGO_TEXTOS
+            "titulo": contenido_ia.get("titulo", "")[:80],
+            "contenido": contenido_ia.get("cuento", "").strip(),
+            "id_tipo_texto": id_tipo_texto,
+            "id_tematica": id_tematica,
+            "id_dificultad": id_dificultad,
+            "id_juego": settings.ID_JUEGO_TEXTOS
         }
     
     @staticmethod
@@ -29,12 +32,17 @@ class MappingService:
     ) -> List[Dict[str, Any]]:
         preguntas_bd = []
         
+        MappingService._id_pregunta_counter = 0
+        
         for pregunta in preguntas_ia:
+            MappingService._id_pregunta_counter += 1
+            
             preguntas_bd.append({
-                "ID_Texto": id_texto,
-                "Contenido": pregunta.get("enunciado", "").strip(),
-                "ID_Tipo_Pregunta": id_tipo_pregunta,
-                "ID_Dificultad": id_dificultad
+                "id_texto": id_texto,
+                "contenido": pregunta.get("enunciado", "").strip(),
+                "id_tipo_pregunta": id_tipo_pregunta,
+                "id_dificultad": id_dificultad,
+                "id": MappingService._id_pregunta_counter  
             })
         
         return preguntas_bd
@@ -46,11 +54,13 @@ class MappingService:
     ) -> List[Dict[str, Any]]:
         alternativas_bd = []
         
+        
         for alternativa in alternativas_ia:
+            
             alternativas_bd.append({
-                "ID_Pregunta": id_pregunta,
-                "Contenido": alternativa.get("texto", "").strip(),
-                "Correcto": bool(alternativa.get("es_correcta", False))
+                "id_pregunta": id_pregunta,
+                "contenido": alternativa.get("texto", "").strip(),
+                "correcto": bool(alternativa.get("es_correcta", False)),
             })
         
         return alternativas_bd

@@ -35,7 +35,7 @@ async def api_exception_handler(request: Request, exc: APIException) -> JSONResp
     
     return JSONResponse(
         status_code=exc.status_code,
-        content=error_response.model_dump()
+        content=error_response.model_dump(mode="json")
     )
 
 
@@ -67,8 +67,7 @@ async def validation_exception_handler(request: Request, exc: RequestValidationE
     
     return JSONResponse(
         status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
-        content=error_response.model_dump()
-    )
+        content=error_response.model_dump(mode='json')    )
 
 
 async def sqlalchemy_exception_handler(request: Request, exc: SQLAlchemyError) -> JSONResponse:
@@ -91,8 +90,7 @@ async def sqlalchemy_exception_handler(request: Request, exc: SQLAlchemyError) -
     
     return JSONResponse(
         status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-        content=error_response.model_dump()
-    )
+        content=error_response.model_dump(mode='json')    )
 
 
 async def general_exception_handler(request: Request, exc: Exception) -> JSONResponse:
@@ -115,5 +113,4 @@ async def general_exception_handler(request: Request, exc: Exception) -> JSONRes
     
     return JSONResponse(
         status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-        content=error_response.model_dump()
-    )
+        content=error_response.model_dump(mode='json')    )
