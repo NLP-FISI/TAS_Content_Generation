@@ -6,6 +6,7 @@ from app.services.generation.ai_generation_service import AIGenerationService
 from app.services.generation.mapping_service import MappingService
 from app.services.generation.storage_service import StorageService
 from app.helper.file_utils_helper import FileUtils
+from app.helper.prompt_builder_helper import PromptBuilder
 from app.config.settings import settings
 from app.exceptions import BusinessLogicException
 import logging
@@ -22,12 +23,14 @@ class GenerationOrchestrator:
         self.mapping_service = MappingService()
         self.storage_service = StorageService(db)
         self.file_utils = FileUtils()
+        self.prompt_builder = PromptBuilder()
     
     def generar_textos(
         self,
         id_tipo_texto: int,
         id_tematicas: List[int],
         id_dificultades: List[int],
+        id_grados: List[int],
         textos_por_combinacion: int
     ) -> Dict[str, Any]:
         """
@@ -40,7 +43,7 @@ class GenerationOrchestrator:
         4. Guarda JSON temporal (opcional)
         5. Retorna resultado
         """
-        self._validar_request(id_tipo_texto, id_tematicas, id_dificultades, textos_por_combinacion)
+        self._validar_request(id_tipo_texto, id_tematicas, id_dificultades, id_grados, textos_por_combinacion)
         
         tipo_texto_nombre = self.catalog_service.obtener_nombre_tipo_texto(id_tipo_texto)
         
@@ -49,6 +52,7 @@ class GenerationOrchestrator:
             tipo_texto_nombre,
             id_tematicas,
             id_dificultades,
+            id_grados,
             textos_por_combinacion
         )
         
@@ -70,16 +74,18 @@ class GenerationOrchestrator:
         id_tipo_texto: int,
         id_tematicas: List[int],
         id_dificultades: List[int],
+        id_grados: List[int],
         textos_por_combinacion: int
     ):
         """Valida que los IDs existan y no se excedan límites."""
         self.catalog_service.validar_ids_existen(
             id_tipo_texto,
             id_tematicas,
-            id_dificultades
+            id_dificultades,
+            id_grados
         )
         
-        total_combinaciones = len(id_tematicas) * len(id_dificultades) * textos_por_combinacion
+        total_combinaciones = len(id_tematicas) * len(id_dificultades) * len(id_grados) * textos_por_combinacion
         
         if total_combinaciones > settings.MAX_TEXTOS_POR_REQUEST:
             raise BusinessLogicException(
@@ -97,26 +103,32 @@ class GenerationOrchestrator:
         tipo_texto_nombre: str,
         id_tematicas: List[int],
         id_dificultades: List[int],
+        id_grados: List[int],
         textos_por_combinacion: int
     ) -> List[Dict[str, Any]]:
         """Crea todas las combinaciones de generación necesarias."""
         combinaciones = []
         
-        for id_tematica in id_tematicas:
-            tematica_nombre = self.catalog_service.obtener_nombre_tematica(id_tematica)
+        for id_grado in id_grados:
+            grado_nombre = self.catalog_service.obtener_nombre_grado(id_grado)
             
-            for id_dificultad in id_dificultades:
-                dificultad_nombre = self.catalog_service.obtener_nombre_dificultad(id_dificultad)
+            for id_tematica in id_tematicas:
+                tematica_nombre = self.catalog_service.obtener_nombre_tematica(id_tematica)
                 
-                for _ in range(textos_por_combinacion):
-                    combinaciones.append({
-                        "id_tipo_texto": id_tipo_texto,
-                        "tipo_texto_nombre": tipo_texto_nombre,
-                        "id_tematica": id_tematica,
-                        "tematica_nombre": tematica_nombre,
-                        "id_dificultad": id_dificultad,
-                        "dificultad_nombre": dificultad_nombre
-                    })
+                for id_dificultad in id_dificultades:
+                    dificultad_nombre = self.catalog_service.obtener_nombre_dificultad(id_dificultad)
+                    
+                    for _ in range(textos_por_combinacion):
+                        combinaciones.append({
+                            "id_tipo_texto": id_tipo_texto,
+                            "tipo_texto_nombre": tipo_texto_nombre,
+                            "id_tematica": id_tematica,
+                            "tematica_nombre": tematica_nombre,
+                            "id_dificultad": id_dificultad,
+                            "dificultad_nombre": dificultad_nombre,
+                            "id_grado": id_grado,
+                            "grado_nombre": grado_nombre
+                        })
         
         return combinaciones
     
@@ -141,6 +153,7 @@ class GenerationOrchestrator:
             logger.info(
                 f"[{i}/{total}] Generando: "
                 f"tipo={combo['tipo_texto_nombre']}, "
+                f"grado={combo['grado_nombre']}, "
                 f"tematica={combo['tematica_nombre']}, "
                 f"dificultad={combo['dificultad_nombre']}"
             )
@@ -187,9 +200,10 @@ class GenerationOrchestrator:
     def _generar_contenido_texto(self, combo: Dict[str, Any]) -> dict:
         """Llama a la IA para generar el texto."""
         return self.ai_service.generar_texto(
-            tipo_texto_nombre=combo["tipo_texto_nombre"],
+            grado_nombre=combo["grado_nombre"],
             tematica_nombre=combo["tematica_nombre"],
-            dificultad_nombre=combo["dificultad_nombre"]
+            dificultad_nombre=combo["dificultad_nombre"],
+            tipo_pregunta_nombre="literal"
         )
     
     def _generar_contenido_preguntas(
@@ -219,7 +233,8 @@ class GenerationOrchestrator:
             contenido_ia=contenido_texto,
             id_tipo_texto=combo["id_tipo_texto"],
             id_tematica=combo["id_tematica"],
-            id_dificultad=combo["id_dificultad"]
+            id_dificultad=combo["id_dificultad"],
+            id_grado=combo["id_grado"]
         )
         
         preguntas_bd = self.mapping_service.mapear_preguntas_a_bd(
@@ -264,7 +279,8 @@ class GenerationOrchestrator:
                 "id_texto": id_texto,
                 "titulo": contenido_texto.get("titulo", ""),
                 "id_tematica": combo["id_tematica"],
-                "id_dificultad": combo["id_dificultad"]
+                "id_dificultad": combo["id_dificultad"],
+                "id_grado": combo["id_grado"]
             },
             "json_data": {
                 "id_texto": id_texto,
@@ -272,6 +288,7 @@ class GenerationOrchestrator:
                 "contenido": contenido_texto.get("cuento", ""),
                 "ensenanza": contenido_texto.get("ensenanza", ""),
                 "tipo_texto": combo["tipo_texto_nombre"],
+                "grado": combo["grado_nombre"],
                 "tematica": combo["tematica_nombre"],
                 "dificultad": combo["dificultad_nombre"],
                 "preguntas": contenido_preguntas["preguntas"]

@@ -37,43 +37,66 @@ class PromptBuilder:
     
     @staticmethod
     def build_texto_prompt(
-        tipo_texto_nombre: str,
+        grado_nombre: str,
         tematica_nombre: str,
-        dificultad_nombre: str
+        dificultad_nombre: str,
+        tipo_pregunta_nombre: str = "literal"
     ) -> str:
         wmin, wmax = PromptBuilder.word_range_for_dificultad(dificultad_nombre)
-        caracteristicas = PromptBuilder.get_caracteristicas_tipo_texto(tipo_texto_nombre)
-        indicaciones = PromptBuilder.get_indicaciones_dificultad(dificultad_nombre)
         
-        return f"""Actúa como un experto en redacción de textos educativos para niños.
+        return f"""Actúa como un experto en redacción de textos para niños y evaluación educativa basada en la Taxonomía de Bloom y las orientaciones del MINEDU.
 
-Genera un texto de tipo {tipo_texto_nombre.upper()} sobre el tema "{tematica_nombre}".
-Dificultad: {dificultad_nombre.upper()}
+Genera un texto para un estudiante de {grado_nombre}º de primaria.
+La categoría del cuento es "{tematica_nombre}".
+Incluye personajes que vivan la experiencia.
+Usa un lenguaje claro, frases sencillas y vocabulario adecuado al grado.
+Extensión del cuento: {wmin}–{wmax} palabras.
 
-Características del tipo {tipo_texto_nombre}:
-{caracteristicas}
+Termina con una enseñanza sencilla o reflexión.
 
-Indicaciones de dificultad {dificultad_nombre}:
-{indicaciones}
+Después del cuento, genera EXACTAMENTE {settings.PREGUNTAS_POR_TEXTO} preguntas de comprensión lectora.
+Tipo de preguntas: {tipo_pregunta_nombre}
+Cada una con EXACTAMENTE {settings.ALTERNATIVAS_POR_PREGUNTA} alternativas y SOLO 1 alternativa correcta.
 
-Extensión del texto: {wmin}-{wmax} palabras.
-Incluye una enseñanza o reflexión final apropiada.
+Las preguntas deben cubrir distintos niveles cognitivos según la Taxonomía de Bloom:
+1. **Recordar**: identificar información explícita o hechos del texto.
+2. **Comprender**: interpretar o parafrasear ideas del texto.
+3. **Aplicar**: usar información del texto en una situación nueva o práctica.
+4. **Analizar**: comparar, clasificar o reconocer relaciones causa-efecto.
+5. **Evaluar**: emitir un juicio sobre una acción, decisión o mensaje del texto.
+6. **Crear**: proponer un final alternativo o solución diferente a un problema del cuento.
 
-Devuelve JSON estricto con este esquema (sin texto adicional):
+Distribuye las preguntas de forma equilibrada entre estos niveles, ajustadas al grado educativo.
+Por ejemplo, para grados menores (1°–3°) prioriza recordar, comprender y aplicar; para grados mayores (4°–6°), incluye también analizar, evaluar y crear.
+
+Devuelve la salida en formato JSON ESTRICTO, siguiendo este esquema (sin texto adicional):
 {{
-  "titulo": "string (máximo 80 caracteres)",
-  "cuento": "string (el texto completo)",
-  "ensenanza": "string (la enseñanza o reflexión)",
-  "palabras_aprox": number
+  "titulo": "string (<=80 chars)",
+  "cuento": "string",
+  "ensenanza": "string",
+  "palabras_aprox": number,
+  "preguntas": [
+    {{
+      "tipo": "{tipo_pregunta_nombre}",
+      "nivel_bloom": "Recordar | Comprender | Aplicar | Analizar | Evaluar | Crear",
+      "enunciado": "string",
+      "alternativas": [
+        {{"texto":"string","es_correcta":bool}},
+        {{"texto":"string","es_correcta":bool}},
+        {{"texto":"string","es_correcta":bool}},
+        {{"texto":"string","es_correcta":bool}}
+      ]
+    }}
+  ]
 }}"""
     
     @staticmethod
     def get_descripcion_tipo_pregunta(tipo: str) -> str:
         descripciones = {
-            "literal": "La respuesta se encuentra directamente en el texto. Ej: ¿Qué hizo el personaje?",
-            "inferencial": "Requiere deducir información no explícita. Ej: ¿Por qué actuó así el personaje?",
-            "critica": "Requiere opinión fundamentada del lector. Ej: ¿Qué opinas sobre...?",
-            "vocabulario": "Significado de palabras en contexto. Ej: ¿Qué significa 'X' en el texto?"
+            "literal": "La respuesta se encuentra directamente en el texto.",
+            "inferencial": "Requiere deducir información no explícita.",
+            "critica": "Requiere opinión fundamentada del lector.",
+            "vocabulario": "Significado de palabras en contexto."
         }
         return descripciones.get(tipo.lower(), "Preguntas de comprensión lectora.")
     
@@ -87,7 +110,7 @@ Devuelve JSON estricto con este esquema (sin texto adicional):
         num_alternativas = settings.ALTERNATIVAS_POR_PREGUNTA
         descripcion_tipo = PromptBuilder.get_descripcion_tipo_pregunta(tipo_pregunta_nombre)
         
-        return f"""Actúa como un experto en evaluación educativa.
+        return f"""Actúa como un experto en evaluación educativa basada en la Taxonomía de Bloom.
 
 Dado el siguiente texto:
 
@@ -103,10 +126,22 @@ Cada pregunta debe tener EXACTAMENTE {num_alternativas} alternativas.
 SOLO 1 alternativa debe ser correcta (es_correcta: true).
 Las alternativas incorrectas deben ser plausibles (no obviamente falsas).
 
+Las preguntas deben cubrir distintos niveles cognitivos según la Taxonomía de Bloom:
+1. **Recordar**: identificar información explícita o hechos del texto.
+2. **Comprender**: interpretar o parafrasear ideas del texto.
+3. **Aplicar**: usar información del texto en una situación nueva o práctica.
+4. **Analizar**: comparar, clasificar o reconocer relaciones causa-efecto.
+5. **Evaluar**: emitir un juicio sobre una acción, decisión o mensaje del texto.
+6. **Crear**: proponer un final alternativo o solución diferente a un problema del cuento.
+
+Distribuye las preguntas de forma equilibrada entre estos niveles cognitivos.
+
 Devuelve JSON estricto con este esquema (sin texto adicional):
 {{
   "preguntas": [
     {{
+      "tipo": "{tipo_pregunta_nombre}",
+      "nivel_bloom": "Recordar | Comprender | Aplicar | Analizar | Evaluar | Crear",
       "enunciado": "string (la pregunta)",
       "alternativas": [
         {{"texto": "string", "es_correcta": true}},

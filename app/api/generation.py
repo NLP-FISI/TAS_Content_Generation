@@ -20,6 +20,7 @@ def generar_contenido(
         id_tipo_texto=datos.id_tipo_texto,
         id_tematicas=datos.id_tematicas,
         id_dificultades=datos.id_dificultades,
+        id_grados=datos.id_grados,
         textos_por_combinacion=datos.textos_por_combinacion
     )
     

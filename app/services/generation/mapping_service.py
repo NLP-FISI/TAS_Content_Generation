@@ -12,7 +12,8 @@ class MappingService:
         contenido_ia: dict,
         id_tipo_texto: int,
         id_tematica: int,
-        id_dificultad: int
+        id_dificultad: int,
+        id_grado: int
     ) -> Dict[str, Any]:
         return {
             "titulo": contenido_ia.get("titulo", "")[:80],
@@ -20,6 +21,7 @@ class MappingService:
             "id_tipo_texto": id_tipo_texto,
             "id_tematica": id_tematica,
             "id_dificultad": id_dificultad,
+            "id_grado": id_grado,
             "id_juego": settings.ID_JUEGO_TEXTOS
         }
     
@@ -54,9 +56,7 @@ class MappingService:
     ) -> List[Dict[str, Any]]:
         alternativas_bd = []
         
-        
         for alternativa in alternativas_ia:
-            
             alternativas_bd.append({
                 "id_pregunta": id_pregunta,
                 "contenido": alternativa.get("texto", "").strip(),

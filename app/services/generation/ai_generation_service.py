@@ -31,14 +31,16 @@ class AIGenerationService:
     
     def generar_texto(
         self,
-        tipo_texto_nombre: str,
+        grado_nombre: str,
         tematica_nombre: str,
-        dificultad_nombre: str
+        dificultad_nombre: str,
+        tipo_pregunta_nombre: str = "literal"
     ) -> dict:
         prompt = self.prompt_builder.build_texto_prompt(
-            tipo_texto_nombre,
+            grado_nombre,
             tematica_nombre,
-            dificultad_nombre
+            dificultad_nombre,
+            tipo_pregunta_nombre
         )
         
         raw_response = self.ai_client.call(prompt)

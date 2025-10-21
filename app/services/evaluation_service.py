@@ -10,6 +10,14 @@ class EvaluationService(BaseService):
         self,
         respuestas: List[Dict[str, int]]
     ) -> List[Dict[str, Any]]:
+        """
+        Verifica múltiples respuestas y retorna si son correctas.
+        
+        Para cada respuesta:
+        1. Busca la alternativa en BD
+        2. Verifica si está marcada como correcta
+        3. Retorna el resultado
+        """
         resultados = []
         
         for respuesta in respuestas:
@@ -26,22 +34,28 @@ class EvaluationService(BaseService):
         id_pregunta: int,
         id_alternativa: int
     ) -> Dict[str, Any]:
+        """
+        Verifica una respuesta individual.
+        
+        Busca la alternativa en BD y retorna si es correcta.
+        """
         try:
-            Alternativa = self.get_model("Alternativa")
+            alternativa_model = self.get_model("alternativa")
             
-            if not Alternativa:
+            if not alternativa_model:
                 raise DatabaseException(
-                    message="Modelo Alternativa no encontrado en la base de datos",
+                    message="Modelo alternativa no encontrado en la base de datos",
                     details={
-                        "modelo": "Alternativa",
+                        "modelo": "alternativa",
                         "id_pregunta": id_pregunta,
                         "id_alternativa": id_alternativa
                     }
                 )
             
-            alternativa = self.db.query(Alternativa).filter(
-                Alternativa.ID_Alternativa == id_alternativa,
-                Alternativa.ID_Pregunta == id_pregunta
+            # Buscar la alternativa (todo en minúscula)
+            alternativa = self.db.query(alternativa_model).filter(
+                alternativa_model.id_alternativa == id_alternativa,
+                alternativa_model.id_pregunta == id_pregunta
             ).first()
             
             if not alternativa:
@@ -53,7 +67,8 @@ class EvaluationService(BaseService):
                     }
                 )
             
-            es_correcta = bool(alternativa.Correcto)
+            # Obtener si es correcta
+            es_correcta = bool(alternativa.correcto)
             
             return {
                 "id_pregunta": id_pregunta,

@@ -2,7 +2,6 @@
 from typing import Optional, Dict, Any
 
 class APIException(Exception):
-    """Excepción base para todas las excepciones personalizadas de la API"""
     
     def __init__(
         self,
@@ -19,7 +18,6 @@ class APIException(Exception):
 
 
 class ResourceNotFoundException(APIException):
-    """Excepción cuando no se encuentra un recurso"""
     
     def __init__(self, message: str = "Recurso no encontrado", details: Optional[Dict[str, Any]] = None):
         super().__init__(
@@ -31,7 +29,6 @@ class ResourceNotFoundException(APIException):
 
 
 class ValidationException(APIException):
-    """Excepción para errores de validación"""
     
     def __init__(self, message: str = "Error de validación", details: Optional[Dict[str, Any]] = None):
         super().__init__(
@@ -43,7 +40,6 @@ class ValidationException(APIException):
 
 
 class DatabaseException(APIException):
-    """Excepción para errores de base de datos"""
     
     def __init__(self, message: str = "Error de base de datos", details: Optional[Dict[str, Any]] = None):
         super().__init__(
@@ -55,7 +51,6 @@ class DatabaseException(APIException):
 
 
 class BusinessLogicException(APIException):
-    """Excepción para errores de lógica de negocio"""
     
     def __init__(self, message: str, code: str = "BUSINESS_LOGIC_ERROR", details: Optional[Dict[str, Any]] = None):
         super().__init__(

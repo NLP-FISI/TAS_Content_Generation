@@ -5,13 +5,42 @@ from app.exceptions import ResourceNotFoundException, DatabaseException
 
 class CatalogService(BaseService):
     
+    def obtener_nombre_grado(self, id_grado: int) -> str:
+        try:
+            grado_model = self.get_model("grado")
+            if not grado_model:
+                raise DatabaseException(
+                    message="Modelo grado no encontrado",
+                    details={"modelo": "grado"}
+                )
+            
+            grado = self.db.query(grado_model).filter(
+                grado_model.id_grado == id_grado
+            ).first()
+            
+            if not grado:
+                raise ResourceNotFoundException(
+                    message="Grado no encontrado",
+                    details={"id_grado": id_grado}
+                )
+            
+            return grado.nombre_grado
+            
+        except (ResourceNotFoundException, DatabaseException):
+            raise
+        except Exception as e:
+            raise DatabaseException(
+                message="Error al obtener grado",
+                details={"id_grado": id_grado, "error": str(e)}
+            )
+    
     def obtener_nombre_tematica(self, id_tematica: int) -> str:
         try:
             tematica_model = self.get_model("tematica")
             if not tematica_model:
                 raise DatabaseException(
-                    message="Modelo Tematica no encontrado",
-                    details={"modelo": "Tematica"}
+                    message="Modelo tematica no encontrado",
+                    details={"modelo": "tematica"}
                 )
             
             tematica = self.db.query(tematica_model).filter(
@@ -39,7 +68,7 @@ class CatalogService(BaseService):
             dificultad_model = self.get_model("dificultad")
             if not dificultad_model:
                 raise DatabaseException(
-                    message="Modelo dificultad_model no encontrado",
+                    message="Modelo dificultad no encontrado",
                     details={"modelo": "dificultad"}
                 )
             
@@ -49,7 +78,7 @@ class CatalogService(BaseService):
             
             if not dificultad:
                 raise ResourceNotFoundException(
-                    message="dificultad no encontrada",
+                    message="Dificultad no encontrada",
                     details={"id_dificultad": id_dificultad}
                 )
             
@@ -97,12 +126,12 @@ class CatalogService(BaseService):
             tipo_pregunta_model = self.get_model("tipo_pregunta")
             if not tipo_pregunta_model:
                 raise DatabaseException(
-                    message="Modelo Tipo_Pregunta no encontrado",
-                    details={"modelo": "Tipo_Pregunta"}
+                    message="Modelo tipo_pregunta no encontrado",
+                    details={"modelo": "tipo_pregunta"}
                 )
             
             tipo_pregunta = self.db.query(tipo_pregunta_model).filter(
-                tipo_pregunta_model.id_tipo_pregunta == id_tipo_pregunta  # ← tipo_pregunta_model (la clase)
+                tipo_pregunta_model.id_tipo_pregunta == id_tipo_pregunta
             ).first()
             
             if not tipo_pregunta:
@@ -125,7 +154,8 @@ class CatalogService(BaseService):
         self,
         id_tipo_texto: int,
         id_tematicas: list,
-        id_dificultades: list
+        id_dificultades: list,
+        id_grados: list
     ):
         self.obtener_nombre_tipo_texto(id_tipo_texto)
         
@@ -134,3 +164,6 @@ class CatalogService(BaseService):
         
         for id_dificultad in id_dificultades:
             self.obtener_nombre_dificultad(id_dificultad)
+        
+        for id_grado in id_grados:
+            self.obtener_nombre_grado(id_grado)

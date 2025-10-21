@@ -3,7 +3,8 @@ from pydantic import BaseModel, Field
 from typing import List
 
 
-class AlternativaResponse(BaseModel):
+class AlternativaSimpleResponse(BaseModel):
+    """Esquema simple de alternativa"""
     id_alternativa: int
     contenido: str
     
@@ -17,38 +18,34 @@ class AlternativaResponse(BaseModel):
     }
 
 
-class PreguntaResponse(BaseModel):
-    """Esquema para una pregunta con sus alternativas"""
+class PreguntaSimpleResponse(BaseModel):
+    """Esquema simple de pregunta con sus alternativas"""
     id_pregunta: int
     contenido: str
-    id_tipo_pregunta: int
-    id_dificultad: int
-    alternativas: List[AlternativaResponse]
+    alternativas: List[AlternativaSimpleResponse]
     
     model_config = {
         "json_schema_extra": {
             "example": {
                 "id_pregunta": 1,
                 "contenido": "¿Cuál es la idea principal del texto?",
-                "id_tipo_pregunta": 1,
-                "id_dificultad": 2,
                 "alternativas": [
                     {"id_alternativa": 1, "contenido": "Opción A"},
-                    {"id_alternativa": 2, "contenido": "Opción B"}
+                    {"id_alternativa": 2, "contenido": "Opción B"},
+                    {"id_alternativa": 3, "contenido": "Opción C"},
+                    {"id_alternativa": 4, "contenido": "Opción D"}
                 ]
             }
         }
     }
 
 
-class TextoResponse(BaseModel):
-    """Esquema para un texto"""
+class TextoConPreguntasResponse(BaseModel):
+    """Esquema de texto con sus preguntas anidadas"""
     id_texto: int
     titulo: str
     contenido: str
-    id_tipo_texto: int
-    id_tematica: int
-    id_dificultad: int
+    preguntas: List[PreguntaSimpleResponse]
     
     model_config = {
         "json_schema_extra": {
@@ -56,40 +53,55 @@ class TextoResponse(BaseModel):
                 "id_texto": 1,
                 "titulo": "El ciclo del agua",
                 "contenido": "El agua es un recurso vital...",
-                "id_tipo_texto": 1,
-                "id_tematica": 2,
-                "id_dificultad": 1
+                "preguntas": [
+                    {
+                        "id_pregunta": 1,
+                        "contenido": "¿Cuál es la idea principal?",
+                        "alternativas": [
+                            {"id_alternativa": 1, "contenido": "Opción A"},
+                            {"id_alternativa": 2, "contenido": "Opción B"},
+                            {"id_alternativa": 3, "contenido": "Opción C"},
+                            {"id_alternativa": 4, "contenido": "Opción D"}
+                        ]
+                    }
+                ]
             }
         }
     }
 
 
-class ContenidoResponse(BaseModel):
-    """Esquema para la respuesta completa con texto y preguntas"""
-    texto: TextoResponse
-    preguntas: List[PreguntaResponse]
+class TextosDisponiblesResponse(BaseModel):
+    """Respuesta con múltiples textos disponibles para un usuario"""
+    textos_obtenidos: int = Field(..., description="Cantidad de textos obtenidos")
+    textos: List[TextoConPreguntasResponse] = Field(..., description="Lista de textos con sus preguntas anidadas")
     
     model_config = {
         "json_schema_extra": {
             "example": {
-                "texto": {
-                    "id_texto": 1,
-                    "titulo": "El ciclo del agua",
-                    "contenido": "El agua es un recurso vital...",
-                    "id_tipo_texto": 1,
-                    "id_tematica": 2,
-                    "id_dificultad": 1
-                },
-                "preguntas": [
+                "textos_obtenidos": 2,
+                "textos": [
                     {
-                        "id_pregunta": 1,
-                        "contenido": "¿Cuál es la idea principal?",
-                        "id_tipo_pregunta": 1,
-                        "id_dificultad": 2,
-                        "alternativas": [
-                            {"id_alternativa": 1, "contenido": "Opción A"},
-                            {"id_alternativa": 2, "contenido": "Opción B"}
+                        "id_texto": 1,
+                        "titulo": "El ciclo del agua",
+                        "contenido": "El agua es un recurso vital...",
+                        "preguntas": [
+                            {
+                                "id_pregunta": 1,
+                                "contenido": "¿Cuál es la idea principal?",
+                                "alternativas": [
+                                    {"id_alternativa": 1, "contenido": "Opción A"},
+                                    {"id_alternativa": 2, "contenido": "Opción B"},
+                                    {"id_alternativa": 3, "contenido": "Opción C"},
+                                    {"id_alternativa": 4, "contenido": "Opción D"}
+                                ]
+                            }
                         ]
+                    },
+                    {
+                        "id_texto": 2,
+                        "titulo": "Las plantas",
+                        "contenido": "Las plantas son seres vivos...",
+                        "preguntas": []
                     }
                 ]
             }
