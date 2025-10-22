@@ -66,6 +66,9 @@ class ContentService(BaseService):
                     "preguntas": preguntas
                 })
             
+            # Commit final para guardar todas las asignaciones
+            self.db.commit()
+            
             return {
                 "textos_obtenidos": len(textos_con_preguntas),
                 "textos": textos_con_preguntas
@@ -74,6 +77,7 @@ class ContentService(BaseService):
         except (ResourceNotFoundException, DatabaseException):
             raise
         except Exception as e:
+            self.db.rollback()
             raise DatabaseException(
                 message="Error al obtener textos disponibles",
                 details={
@@ -128,6 +132,8 @@ class ContentService(BaseService):
         """
         Busca textos que cumplan los criterios y NO hayan sido asignados al usuario
         """
+        from sqlalchemy import select
+        
         texto_model = self.get_model("texto")
         usuario_texto_model = self.get_model("usuario_texto")
         
@@ -144,9 +150,9 @@ class ContentService(BaseService):
             )
         
         # Subquery para obtener los textos ya asignados al usuario
-        textos_asignados = self.db.query(usuario_texto_model.id_texto).filter(
+        textos_asignados_query = select(usuario_texto_model.id_texto).where(
             usuario_texto_model.id_usuario == id_usuario
-        ).subquery()
+        )
         
         # Buscar textos que cumplan criterios y NO estén asignados
         textos = self.db.query(texto_model).filter(
@@ -154,7 +160,7 @@ class ContentService(BaseService):
             texto_model.id_tematica == id_tematica,
             texto_model.id_dificultad == id_dificultad,
             texto_model.id_grado == id_grado,
-            texto_model.id_texto.notin_(textos_asignados)
+            texto_model.id_texto.notin_(textos_asignados_query)
         ).limit(cantidad).all()
         
         return textos
@@ -170,13 +176,13 @@ class ContentService(BaseService):
             )
         
         try:
-            # Crear nuevo registro
+            # Crear nuevo registro (id_usuario_texto se autoincrementa)
             usuario_texto = usuario_texto_model(
                 id_usuario=id_usuario,
                 id_texto=id_texto
             )
             self.db.add(usuario_texto)
-            self.db.commit()
+            self.db.flush()  # Usar flush en lugar de commit
             
         except Exception as e:
             self.db.rollback()

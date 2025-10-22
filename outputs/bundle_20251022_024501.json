@@ -1,0 +1,516 @@
+{
+  "textos": [
+    {
+      "id_texto": 5,
+      "titulo": "La tortuga y el colibrí: amigos del bosque",
+      "contenido": "En un bosque verde y alegre, vivía una tortuga llamada Lola. Lola era lenta pero muy sabia. Un día, conoció a Pipo, un colibrí rápido y juguetón. Pipo volaba de flor en flor, mientras Lola caminaba despacio. Un día, Pipo se perdió en una tormenta. Lola, aunque lenta, siguió las huellas de su amigo hasta encontrarlo. Juntos regresaron a casa. Pipo aprendió que ser rápido no siempre es mejor, y Lola descubrió que su paciencia era valiosa.",
+      "ensenanza": "Todos tenemos habilidades diferentes, y trabajar juntos nos hace más fuertes.",
+      "tipo_texto": "Narrativo",
+      "grado": "PRIMERO",
+      "tematica": "Animales",
+      "dificultad": "Fácil",
+      "preguntas": [
+        {
+          "tipo": "Literal",
+          "nivel_bloom": "Recordar",
+          "enunciado": "¿Cómo se llamaba la tortuga del cuento?",
+          "alternativas": [
+            {
+              "texto": "Lola",
+              "es_correcta": true
+            },
+            {
+              "texto": "Pipo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Tina",
+              "es_correcta": false
+            },
+            {
+              "texto": "Luna",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "Literal",
+          "nivel_bloom": "Comprender",
+          "enunciado": "¿Qué aprendió Pipo al final del cuento?",
+          "alternativas": [
+            {
+              "texto": "Que ser rápido no siempre es mejor",
+              "es_correcta": true
+            },
+            {
+              "texto": "Que volar es más divertido que caminar",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que las tormentas son peligrosas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que los bosques son lugares tristes",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "Literal",
+          "nivel_bloom": "Aplicar",
+          "enunciado": "Si Pipo se pierde de nuevo, ¿qué podría hacer para no depender solo de Lola?",
+          "alternativas": [
+            {
+              "texto": "Aprender a seguir huellas como Lola",
+              "es_correcta": true
+            },
+            {
+              "texto": "Esperar a que alguien lo encuentre",
+              "es_correcta": false
+            },
+            {
+              "texto": "Volar más alto para evitar tormentas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Dejar de jugar en el bosque",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "Literal",
+          "nivel_bloom": "Analizar",
+          "enunciado": "¿Por qué Lola pudo encontrar a Pipo a pesar de ser lenta?",
+          "alternativas": [
+            {
+              "texto": "Porque siguió las huellas de Pipo",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque Pipo gritó pidiendo ayuda",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque el bosque era pequeño",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque Pipo dejó marcas en los árboles",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "Literal",
+          "nivel_bloom": "Evaluar",
+          "enunciado": "¿Fue buena idea que Lola ayudara a Pipo?",
+          "alternativas": [
+            {
+              "texto": "Sí, porque demostró que la paciencia es valiosa",
+              "es_correcta": true
+            },
+            {
+              "texto": "No, porque Pipo debería aprender a cuidarse solo",
+              "es_correcta": false
+            },
+            {
+              "texto": "No, porque Lola perdió tiempo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Sí, porque Pipo le prometió ser más cuidadoso",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id_texto": 6,
+      "titulo": "La tortuga y el colibrí: amigos del bosque",
+      "contenido": "En un bosque lleno de árboles altos y flores coloridas, vivía una tortuga llamada Lola. Lola era lenta, pero muy sabia. Un día, mientras caminaba cerca de un río, conoció a Pipo, un colibrí rápido y alegre. Pipo volaba de flor en flor, pero a veces se cansaba. Lola le dijo: 'Pipo, ¿por qué no descansamos juntos?'. Pipo aceptó y así comenzaron una gran amistad. Lola enseñó a Pipo a observar la naturaleza con calma, y Pipo llevó a Lola a lugares altos para ver el paisaje. Juntos aprendieron que ser diferentes es bueno, porque cada uno puede ayudar al otro.",
+      "ensenanza": "Todos somos diferentes, pero podemos ser buenos amigos y ayudarnos mutuamente.",
+      "tipo_texto": "Narrativo",
+      "grado": "PRIMERO",
+      "tematica": "Animales",
+      "dificultad": "Media",
+      "preguntas": [
+        {
+          "tipo": "Literal",
+          "nivel_bloom": "Recordar",
+          "enunciado": "¿Qué animal era Lola?",
+          "alternativas": [
+            {
+              "texto": "Una tortuga",
+              "es_correcta": true
+            },
+            {
+              "texto": "Un colibrí",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un conejo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un pájaro",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "Literal",
+          "nivel_bloom": "Comprender",
+          "enunciado": "¿Qué le enseñó Lola a Pipo?",
+          "alternativas": [
+            {
+              "texto": "A observar la naturaleza con calma",
+              "es_correcta": true
+            },
+            {
+              "texto": "A volar más rápido",
+              "es_correcta": false
+            },
+            {
+              "texto": "A recolectar flores",
+              "es_correcta": false
+            },
+            {
+              "texto": "A construir un nido",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "Literal",
+          "nivel_bloom": "Aplicar",
+          "enunciado": "Si Pipo se cansa de volar, ¿qué podría hacer según lo que aprendió con Lola?",
+          "alternativas": [
+            {
+              "texto": "Descansar y observar la naturaleza",
+              "es_correcta": true
+            },
+            {
+              "texto": "Buscar más flores para comer",
+              "es_correcta": false
+            },
+            {
+              "texto": "Volver a su nido inmediatamente",
+              "es_correcta": false
+            },
+            {
+              "texto": "Buscar a otro colibrí para jugar",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "Literal",
+          "nivel_bloom": "Analizar",
+          "enunciado": "¿Por qué la amistad entre Lola y Pipo fue beneficiosa para ambos?",
+          "alternativas": [
+            {
+              "texto": "Porque cada uno podía ayudar al otro con sus habilidades diferentes",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque ambos eran muy rápidos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque compartían el mismo tipo de comida",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque vivían en el mismo árbol",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "Literal",
+          "nivel_bloom": "Evaluar",
+          "enunciado": "¿Qué mensaje transmite el cuento sobre las diferencias entre las personas?",
+          "alternativas": [
+            {
+              "texto": "Que las diferencias pueden ser una ventaja porque cada uno puede aportar algo único",
+              "es_correcta": true
+            },
+            {
+              "texto": "Que es mejor ser rápido y alegre como Pipo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que la lentitud es una desventaja en la vida",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que los animales no pueden ser amigos si son diferentes",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id_texto": 7,
+      "titulo": "Los amigos y las manzanas del árbol",
+      "contenido": "Había una vez tres amigos: Lucía, Mateo y Sofía. Un día, encontraron un árbol con muchas manzanas. \"¡Vamos a contar cuántas hay!\", dijo Lucía. Mateo contó 10 manzanas rojas y 5 verdes. Sofía dijo: \"Si juntamos las rojas y las verdes, ¿cuántas hay en total?\". Lucía sacó su cuaderno y escribió: 10 + 5 = 15. \"¡Tienes razón!\", gritaron todos. Decidieron repartirse las manzanas. Cada uno recibió 5 manzanas. \"¿Y las 3 que sobraron?\", preguntó Sofía. \"Podemos dárselas a los pájaros\", dijo Mateo. Así lo hicieron y todos quedaron felices.",
+      "ensenanza": "Contar y repartir es divertido, y compartir hace más feliz a todos.",
+      "tipo_texto": "Narrativo",
+      "grado": "PRIMERO",
+      "tematica": "Matemáticas",
+      "dificultad": "Fácil",
+      "preguntas": [
+        {
+          "tipo": "Literal",
+          "nivel_bloom": "Recordar",
+          "enunciado": "¿Cuántas manzanas rojas contó Mateo?",
+          "alternativas": [
+            {
+              "texto": "10",
+              "es_correcta": true
+            },
+            {
+              "texto": "5",
+              "es_correcta": false
+            },
+            {
+              "texto": "15",
+              "es_correcta": false
+            },
+            {
+              "texto": "8",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "Literal",
+          "nivel_bloom": "Comprender",
+          "enunciado": "¿Qué hicieron los amigos con las manzanas que sobraron?",
+          "alternativas": [
+            {
+              "texto": "Se las dieron a los pájaros",
+              "es_correcta": true
+            },
+            {
+              "texto": "Se las comieron",
+              "es_correcta": false
+            },
+            {
+              "texto": "Las guardaron para el día siguiente",
+              "es_correcta": false
+            },
+            {
+              "texto": "Las tiraron",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "Literal",
+          "nivel_bloom": "Aplicar",
+          "enunciado": "Si los amigos hubieran encontrado 8 manzanas rojas y 4 verdes, ¿cuántas manzanas tendrían en total?",
+          "alternativas": [
+            {
+              "texto": "12",
+              "es_correcta": true
+            },
+            {
+              "texto": "15",
+              "es_correcta": false
+            },
+            {
+              "texto": "16",
+              "es_correcta": false
+            },
+            {
+              "texto": "10",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "Literal",
+          "nivel_bloom": "Analizar",
+          "enunciado": "¿Por qué los amigos decidieron repartirse las manzanas de la manera que lo hicieron?",
+          "alternativas": [
+            {
+              "texto": "Para que cada uno tuviera una cantidad igual",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque no les gustaban las manzanas verdes",
+              "es_correcta": false
+            },
+            {
+              "texto": "Para venderlas después",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque era la única opción posible",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "Literal",
+          "nivel_bloom": "Evaluar",
+          "enunciado": "¿Qué opinas de la decisión de dar las manzanas sobrantes a los pájaros?",
+          "alternativas": [
+            {
+              "texto": "Fue una decisión generosa y solidaria",
+              "es_correcta": true
+            },
+            {
+              "texto": "Fue un desperdicio de comida",
+              "es_correcta": false
+            },
+            {
+              "texto": "Deberían haberse quedado con todas",
+              "es_correcta": false
+            },
+            {
+              "texto": "No fue una buena idea porque los pájaros no las necesitan",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id_texto": 8,
+      "titulo": "Los amigos y las manzanas del árbol",
+      "contenido": "Había una vez tres amigos: Lucía, Mateo y Sofía. Un día, encontraron un árbol lleno de manzanas rojas y jugosas. \"¡Vamos a contar cuántas manzanas hay!\", dijo Lucía. Mateo contó: \"1, 2, 3... hasta 10\". Sofía dijo: \"Yo tengo 5 manzanas, Mateo tiene 3 y Lucía tiene 2\". \"Si juntamos todas, ¿cuántas manzanas tenemos en total?\", preguntó Sofía. Los tres amigos sumaron: 5 + 3 + 2 = 10. \"¡Tenemos 10 manzanas!\", gritaron felices. Decidieron repartirlas por igual. Cada uno recibió 3 manzanas y sobró 1. \"La guardaremos para el pájaro del árbol\", dijo Lucía. Así, aprendieron que compartir es divertido y las matemáticas ayudan a repartir de forma justa.",
+      "ensenanza": "Las matemáticas nos ayudan a contar, sumar y compartir de manera justa.",
+      "tipo_texto": "Narrativo",
+      "grado": "PRIMERO",
+      "tematica": "Matemáticas",
+      "dificultad": "Media",
+      "preguntas": [
+        {
+          "tipo": "Literal",
+          "nivel_bloom": "Recordar",
+          "enunciado": "¿Cuántas manzanas contó Mateo inicialmente?",
+          "alternativas": [
+            {
+              "texto": "10",
+              "es_correcta": true
+            },
+            {
+              "texto": "5",
+              "es_correcta": false
+            },
+            {
+              "texto": "3",
+              "es_correcta": false
+            },
+            {
+              "texto": "2",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "Literal",
+          "nivel_bloom": "Comprender",
+          "enunciado": "¿Qué hicieron los amigos con la manzana que sobró?",
+          "alternativas": [
+            {
+              "texto": "La guardaron para el pájaro del árbol",
+              "es_correcta": true
+            },
+            {
+              "texto": "Se la comieron ellos",
+              "es_correcta": false
+            },
+            {
+              "texto": "La tiraron al suelo",
+              "es_correcta": false
+            },
+            {
+              "texto": "La usaron para hacer jugo",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "Literal",
+          "nivel_bloom": "Aplicar",
+          "enunciado": "Si los amigos hubieran tenido 12 manzanas en total, ¿cuántas manzanas le tocaría a cada uno?",
+          "alternativas": [
+            {
+              "texto": "4",
+              "es_correcta": true
+            },
+            {
+              "texto": "3",
+              "es_correcta": false
+            },
+            {
+              "texto": "5",
+              "es_correcta": false
+            },
+            {
+              "texto": "2",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "Literal",
+          "nivel_bloom": "Analizar",
+          "enunciado": "¿Por qué los amigos decidieron repartir las manzanas por igual?",
+          "alternativas": [
+            {
+              "texto": "Para que todos tuvieran la misma cantidad y fuera justo",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque Lucía lo pidió",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque Mateo no quería más manzanas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque Sofía tenía menos manzanas",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "Literal",
+          "nivel_bloom": "Evaluar",
+          "enunciado": "¿Qué valor demostraron los amigos al guardar una manzana para el pájaro?",
+          "alternativas": [
+            {
+              "texto": "Generosidad",
+              "es_correcta": true
+            },
+            {
+              "texto": "Egoísmo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Desprecio por la naturaleza",
+              "es_correcta": false
+            },
+            {
+              "texto": "Indiferencia",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tipo_texto": "Narrativo",
+    "total_generados": 4
+  }
+}

@@ -1,7 +1,1 @@
-fastapi==0.104.1
-uvicorn[standard]==0.24.0
-sqlalchemy==2.0.23
-python-dotenv==1.0.0
-psycopg2-binary==2.9.10
-pydantic==2.10.3
-openai>=1.40.0
+"Leo, un pequeño conejo curioso, vivía en un bosque lleno de animales. Un día, mientras saltaba entre los árboles, escuchó un ruido extraño. —¿Quién anda ahí?— preguntó Leo con voz temblorosa. De entre los arbustos salió Lila, una ardilla juguetona. —¡Soy yo! ¿Quieres explorar el bosque conmigo?— dijo Lila con una sonrisa. Leo asintió emocionado. Juntos, encontraron un río cristalino donde un pato llamado Pablo los invitó a cruzar su balsa. —¡Cuidado con las piedras resbaladizas!— advirtió Pablo. Al llegar al otro lado, descubrieron un claro lleno de flores brillantes. —¡Es mágico!— exclamó Leo. De pronto, una tormenta los sorprendió. Asustados, buscaron refugio en la madriguera de un tejón llamado Tomás. —No teman, aquí están seguros— dijo Tomás con calma. La tormenta pasó, y bajo la luz de la luna, los amigos prometieron cuidarse siempre. —El bosque es hermoso, pero debemos respetarlo— reflexionó Leo."
