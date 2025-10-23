@@ -1,7 +1,7 @@
 # app/services/generation/storage_service.py
 from typing import Dict, List, Any
 from sqlalchemy.exc import SQLAlchemyError
-from app.services.base_service import BaseService
+from app.services.common.base_service import BaseService
 from app.exceptions import DatabaseException
 import json
 import logging

@@ -1,0 +1,1532 @@
+{
+  "textos": [
+    {
+      "id_texto": 9,
+      "titulo": "La tortuga y el colibrí: amigos en el bosque",
+      "contenido": "En un bosque verde y alegre, vivía una tortuga llamada Tobi y un colibrí llamado Pipo. Tobi era lenta pero sabia, y Pipo era rápido pero a veces descuidado. Un día, Pipo voló muy alto y se perdió. Tobi, aunque lenta, siguió su rastro y lo encontró. Juntos regresaron al árbol de Pipo. Tobi le enseñó que ser lento a veces ayuda a no perderse. Pipo aprendió que la paciencia es importante.",
+      "ensenanza": "La paciencia y la sabiduría son tan importantes como la rapidez.",
+      "tipo_texto": "Narrativo",
+      "grado": "SEGUNDO",
+      "tematica": "Animales",
+      "dificultad": "Fácil",
+      "preguntas": [
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Recordar",
+          "enunciado": "¿Cómo se llamaba la tortuga en el cuento?",
+          "alternativas": [
+            {
+              "texto": "Tobi",
+              "es_correcta": true
+            },
+            {
+              "texto": "Pipo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Lola",
+              "es_correcta": false
+            },
+            {
+              "texto": "Roco",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Comprender",
+          "enunciado": "¿Qué lección aprendió Pipo al final del cuento?",
+          "alternativas": [
+            {
+              "texto": "Que la paciencia es importante",
+              "es_correcta": true
+            },
+            {
+              "texto": "Que volar alto es peligroso",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que los bosques son peligrosos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que las tortugas son más rápidas",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Aplicar",
+          "enunciado": "Si Pipo se pierde de nuevo, ¿qué debería hacer según lo aprendido?",
+          "alternativas": [
+            {
+              "texto": "Ser más paciente y buscar ayuda",
+              "es_correcta": true
+            },
+            {
+              "texto": "Volar más rápido para no perderse",
+              "es_correcta": false
+            },
+            {
+              "texto": "Ignorar a Tobi y volar solo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Esperar a que alguien lo encuentre",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Analizar",
+          "enunciado": "¿Por qué Pipo se perdió en el cuento?",
+          "alternativas": [
+            {
+              "texto": "Porque voló muy alto y fue descuidado",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque el bosque era muy oscuro",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque Tobi no lo acompañó",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque no conocía el camino",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Evaluar",
+          "enunciado": "¿Fue buena idea que Tobi ayudara a Pipo?",
+          "alternativas": [
+            {
+              "texto": "Sí, porque demostró que la paciencia ayuda",
+              "es_correcta": true
+            },
+            {
+              "texto": "No, porque Pipo debería aprender solo",
+              "es_correcta": false
+            },
+            {
+              "texto": "No, porque Tobi es muy lenta",
+              "es_correcta": false
+            },
+            {
+              "texto": "Sí, porque Pipo no podía volar",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id_texto": 10,
+      "titulo": "La Aventura de Lolo el Conejo y sus Amigos",
+      "contenido": "Lolo el conejo vivía en un bosque lleno de árboles y flores. Un día, mientras saltaba entre los arbustos, encontró a su amigo Tobi, el erizo, que parecía triste. —¿Qué te pasa, Tobi?— preguntó Lolo. —Perdí mi camino de regreso a casa— contestó Tobi. Lolo decidió ayudarlo. Juntos preguntaron a Pipo, el pájaro sabio, quien les indicó el camino. Al llegar, Tobi estaba muy feliz. —Gracias, Lolo— dijo. —Siempre podemos contar unos con otros— respondió Lolo. Desde ese día, los tres amigos se ayudaban en todo.",
+      "ensenanza": "La amistad y la ayuda mutua hacen que todo sea más fácil.",
+      "tipo_texto": "Narrativo",
+      "grado": "SEGUNDO",
+      "tematica": "Animales",
+      "dificultad": "Fácil",
+      "preguntas": [
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Recordar",
+          "enunciado": "¿Dónde vivía Lolo el conejo?",
+          "alternativas": [
+            {
+              "texto": "En un bosque lleno de árboles y flores",
+              "es_correcta": true
+            },
+            {
+              "texto": "En una ciudad con muchos edificios",
+              "es_correcta": false
+            },
+            {
+              "texto": "En una pradera sin árboles",
+              "es_correcta": false
+            },
+            {
+              "texto": "En una montaña nevada",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Comprender",
+          "enunciado": "¿Por qué Tobi estaba triste al principio del cuento?",
+          "alternativas": [
+            {
+              "texto": "Porque había perdido su camino de regreso a casa",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque se había peleado con sus amigos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque no tenía comida",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque estaba enfermo",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Aplicar",
+          "enunciado": "Si un amigo tuyo se pierde, ¿qué podrías hacer para ayudarlo según el ejemplo del cuento?",
+          "alternativas": [
+            {
+              "texto": "Preguntar a alguien que conozca el lugar",
+              "es_correcta": true
+            },
+            {
+              "texto": "Dejarlo solo para que encuentre el camino",
+              "es_correcta": false
+            },
+            {
+              "texto": "Gritar para que alguien lo escuche",
+              "es_correcta": false
+            },
+            {
+              "texto": "Ignorarlo y seguir tu camino",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Analizar",
+          "enunciado": "¿Qué relación hay entre la acción de Lolo y la felicidad de Tobi?",
+          "alternativas": [
+            {
+              "texto": "Lolo ayudó a Tobi a encontrar su camino, lo que lo hizo feliz",
+              "es_correcta": true
+            },
+            {
+              "texto": "Tobi estaba feliz porque encontró comida",
+              "es_correcta": false
+            },
+            {
+              "texto": "Lolo le dio un regalo a Tobi",
+              "es_correcta": false
+            },
+            {
+              "texto": "Tobi estaba feliz porque vio a Lolo",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Evaluar",
+          "enunciado": "¿Qué valor demuestra la acción de Lolo al ayudar a Tobi?",
+          "alternativas": [
+            {
+              "texto": "Solidaridad y amistad",
+              "es_correcta": true
+            },
+            {
+              "texto": "Egoísmo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Indiferencia",
+              "es_correcta": false
+            },
+            {
+              "texto": "Competencia",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id_texto": 11,
+      "titulo": "La tortuga y el colibrí: amigos por siempre",
+      "contenido": "En un bosque lleno de árboles altos y flores coloridas, vivía una tortuga llamada Lula. Lula era lenta pero muy sabia. Un día, mientras caminaba cerca de un río, escuchó un pequeño llanto. Era Pipo, un colibrí que había quedado atrapado en una red de araña. Lula, con sus patas fuertes, rompió la red y liberó a Pipo. —¡Gracias, Lula! —dijo Pipo, feliz. Desde ese día, los dos se hicieron amigos. Pipo ayudaba a Lula a alcanzar las hojas más altas de los árboles, y Lula protegía a Pipo de los peligros del bosque. Juntos aprendieron que, aunque son diferentes, pueden ayudarse y ser grandes amigos.",
+      "ensenanza": "La amistad no tiene límites. Todos podemos ayudar a los demás, sin importar nuestras diferencias.",
+      "tipo_texto": "Narrativo",
+      "grado": "SEGUNDO",
+      "tematica": "Animales",
+      "dificultad": "Media",
+      "preguntas": [
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Recordar",
+          "enunciado": "¿Qué animal era Lula?",
+          "alternativas": [
+            {
+              "texto": "Una tortuga",
+              "es_correcta": true
+            },
+            {
+              "texto": "Un colibrí",
+              "es_correcta": false
+            },
+            {
+              "texto": "Una araña",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un árbol",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Comprender",
+          "enunciado": "¿Por qué Pipo estaba llorando al principio del cuento?",
+          "alternativas": [
+            {
+              "texto": "Porque estaba atrapado en una red de araña",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque había perdido a su familia",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque tenía hambre",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque se había perdido en el bosque",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Aplicar",
+          "enunciado": "Si un animal pequeño queda atrapado en una red, ¿qué podría hacer un animal fuerte como Lula?",
+          "alternativas": [
+            {
+              "texto": "Romper la red para liberarlo",
+              "es_correcta": true
+            },
+            {
+              "texto": "Ignorarlo y seguir su camino",
+              "es_correcta": false
+            },
+            {
+              "texto": "Llamar a otros animales para que lo ayuden",
+              "es_correcta": false
+            },
+            {
+              "texto": "Esperar a que la araña lo suelte",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Analizar",
+          "enunciado": "¿Qué relación hay entre las habilidades de Lula y Pipo?",
+          "alternativas": [
+            {
+              "texto": "Lula es fuerte y Pipo es ágil, por lo que se complementan",
+              "es_correcta": true
+            },
+            {
+              "texto": "Ambos son rápidos y pueden competir",
+              "es_correcta": false
+            },
+            {
+              "texto": "Lula es sabia y Pipo es torpe, por lo que no se ayudan",
+              "es_correcta": false
+            },
+            {
+              "texto": "Pipo es fuerte y Lula es rápida, por lo que intercambian roles",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Evaluar",
+          "enunciado": "¿Por qué la amistad entre Lula y Pipo es importante para el cuento?",
+          "alternativas": [
+            {
+              "texto": "Porque demuestra que la diversidad y la ayuda mutua fortalecen la amistad",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque muestra que los animales fuertes deben dominar a los débiles",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque indica que los animales deben vivir solos en el bosque",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque revela que los animales pequeños siempre necesitan protección",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id_texto": 12,
+      "titulo": "La tortuga y el colibrí: amigos en el bosque",
+      "contenido": "En un bosque lleno de árboles altos y flores coloridas, vivía una tortuga llamada Lula. Lula era lenta, pero muy sabia. Un día, mientras caminaba cerca del río, escuchó un pequeño llanto. Era Pipo, un colibrí que había caído de su nido. '¡Ayuda!', gritó Pipo. Lula, con cuidado, lo llevó a su nido. Pipo, agradecido, le contó a Lula cómo los colibríes ayudan a las flores al llevar polen. Desde ese día, Lula y Pipo se hicieron amigos. Juntos aprendieron que todos tienen algo especial para compartir.",
+      "ensenanza": "Todos tenemos habilidades diferentes que nos hacen únicos y útiles para los demás.",
+      "tipo_texto": "Narrativo",
+      "grado": "SEGUNDO",
+      "tematica": "Animales",
+      "dificultad": "Media",
+      "preguntas": [
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Recordar",
+          "enunciado": "¿Qué animal era Lula?",
+          "alternativas": [
+            {
+              "texto": "Una tortuga",
+              "es_correcta": true
+            },
+            {
+              "texto": "Un colibrí",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un conejo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un zorro",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Comprender",
+          "enunciado": "¿Por qué Pipo estaba llorando?",
+          "alternativas": [
+            {
+              "texto": "Porque había caído de su nido",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque se perdió en el bosque",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque tenía hambre",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque estaba triste por la lluvia",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Aplicar",
+          "enunciado": "Si un animal pequeño se lastimara en el bosque, ¿qué podría hacer Lula?",
+          "alternativas": [
+            {
+              "texto": "Ayudarlo a regresar a su hogar",
+              "es_correcta": true
+            },
+            {
+              "texto": "Ignorarlo y seguir caminando",
+              "es_correcta": false
+            },
+            {
+              "texto": "Llamar a otros animales para que lo ayuden",
+              "es_correcta": false
+            },
+            {
+              "texto": "Esconderse para no ser visto",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Analizar",
+          "enunciado": "¿Qué relación hay entre los colibríes y las flores según el cuento?",
+          "alternativas": [
+            {
+              "texto": "Los colibríes ayudan a las flores llevando polen",
+              "es_correcta": true
+            },
+            {
+              "texto": "Las flores alimentan a los colibríes con néctar",
+              "es_correcta": false
+            },
+            {
+              "texto": "Los colibríes protegen las flores de los depredadores",
+              "es_correcta": false
+            },
+            {
+              "texto": "Las flores crecen más rápido gracias a los colibríes",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Evaluar",
+          "enunciado": "¿Por qué la amistad entre Lula y Pipo es importante para la historia?",
+          "alternativas": [
+            {
+              "texto": "Porque demuestra que todos pueden colaborar y aprender juntos",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque Lula necesitaba un amigo para sentirse menos sola",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque Pipo quería enseñarle a Lula a volar",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque juntos podían proteger el bosque de los peligros",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id_texto": 13,
+      "titulo": "La tortuga y el colibrí: amigos en el bosque",
+      "contenido": "En un bosque lleno de árboles altos y flores coloridas, vivía una tortuga llamada Tula. Tula era lenta, pero muy sabia. Un día, conoció a un colibrí llamado Pipo, que volaba rápido y era muy alegre. Pipo le dijo a Tula: —¡Vamos a jugar a escondernos! Tula aceptó, pero como era lenta, Pipo se escondió muy rápido. Tula buscó y buscó, pero no lo encontraba. De pronto, vio unas plumas brillantes entre las hojas. ¡Era Pipo! —Aquí estoy —dijo el colibrí. Tula sonrió y le dijo: —Eres muy rápido, pero yo sé esperar con paciencia. Pipo aprendió que la paciencia es importante y que todos tienen habilidades diferentes. Desde ese día, jugaron juntos todos los días.",
+      "ensenanza": "Cada uno tiene sus propias habilidades. La paciencia y el trabajo en equipo hacen que todo sea más divertido.",
+      "tipo_texto": "Narrativo",
+      "grado": "SEGUNDO",
+      "tematica": "Animales",
+      "dificultad": "Difícil",
+      "preguntas": [
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Recordar",
+          "enunciado": "¿Qué animal era Tula?",
+          "alternativas": [
+            {
+              "texto": "Una tortuga",
+              "es_correcta": true
+            },
+            {
+              "texto": "Un colibrí",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un conejo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un zorro",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Comprender",
+          "enunciado": "¿Qué aprendió Pipo después de jugar con Tula?",
+          "alternativas": [
+            {
+              "texto": "Que la paciencia es importante y que todos tienen habilidades diferentes",
+              "es_correcta": true
+            },
+            {
+              "texto": "Que esconderse es más divertido solo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que volar rápido es la mejor habilidad",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que los bosques son peligrosos",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Aplicar",
+          "enunciado": "Si Pipo y Tula quisieran jugar a otro juego, ¿cuál sería una buena opción considerando sus habilidades?",
+          "alternativas": [
+            {
+              "texto": "Una carrera de velocidad",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un juego de memoria",
+              "es_correcta": true
+            },
+            {
+              "texto": "Escalar árboles",
+              "es_correcta": false
+            },
+            {
+              "texto": "Cazar insectos",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Analizar",
+          "enunciado": "¿Por qué Tula no encontró a Pipo rápidamente?",
+          "alternativas": [
+            {
+              "texto": "Porque Pipo se escondió muy rápido y Tula era lenta",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque Tula no quería jugar",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque el bosque era demasiado oscuro",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque Pipo no se escondió bien",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Evaluar",
+          "enunciado": "¿Qué valor demostró Tula al decir 'Eres muy rápido, pero yo sé esperar con paciencia'?",
+          "alternativas": [
+            {
+              "texto": "Respeto por las habilidades de los demás",
+              "es_correcta": true
+            },
+            {
+              "texto": "Envidia por la velocidad de Pipo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Frustración por no ganar",
+              "es_correcta": false
+            },
+            {
+              "texto": "Indiferencia hacia el juego",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id_texto": 14,
+      "titulo": "La tortuga y el colibrí: amigos por siempre",
+      "contenido": "En un bosque lleno de árboles altos y flores coloridas, vivía una tortuga llamada Lola. Lola era lenta pero muy sabia. Un día, mientras caminaba cerca del río, conoció a Pipo, un colibrí juguetón que volaba de flor en flor. Pipo era rápido y alegre, pero a veces se metía en problemas. Un día, Pipo se enredó en una red que los niños dejaron en el bosque. Lola, al verlo, usó sus patas fuertes para romper la red y liberar a su amigo. Pipo, agradecido, prometió ser más cuidadoso. Desde ese día, Lola y Pipo se convirtieron en grandes amigos. Lola le enseñó a Pipo a ser prudente, y Pipo le enseñó a Lola a disfrutar de la vida con alegría.",
+      "ensenanza": "La amistad nos ayuda a aprender y crecer juntos. Cada uno tiene algo valioso que compartir.",
+      "tipo_texto": "Narrativo",
+      "grado": "SEGUNDO",
+      "tematica": "Animales",
+      "dificultad": "Difícil",
+      "preguntas": [
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Recordar",
+          "enunciado": "¿Qué animal era Lola?",
+          "alternativas": [
+            {
+              "texto": "Una tortuga",
+              "es_correcta": true
+            },
+            {
+              "texto": "Un colibrí",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un conejo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un zorro",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Comprender",
+          "enunciado": "¿Por qué Pipo se enredó en una red?",
+          "alternativas": [
+            {
+              "texto": "Porque volaba de flor en flor y no vio la red",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque estaba jugando con los niños",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque quería esconderse de Lola",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque la red era invisible",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Aplicar",
+          "enunciado": "Si Pipo se enredara en otra red, ¿qué podría hacer Lola para ayudarlo?",
+          "alternativas": [
+            {
+              "texto": "Usar sus patas fuertes para romper la red",
+              "es_correcta": true
+            },
+            {
+              "texto": "Volar alrededor de la red para distraer a Pipo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Gritar para que los niños lo liberen",
+              "es_correcta": false
+            },
+            {
+              "texto": "Esperar a que Pipo se libere solo",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Analizar",
+          "enunciado": "¿Qué relación hay entre la lentitud de Lola y su capacidad para ayudar a Pipo?",
+          "alternativas": [
+            {
+              "texto": "Aunque era lenta, su fuerza y sabiduría le permitieron liberar a Pipo",
+              "es_correcta": true
+            },
+            {
+              "texto": "Su lentitud la hizo incapaz de llegar a tiempo para ayudar",
+              "es_correcta": false
+            },
+            {
+              "texto": "Su lentitud no influyó en su capacidad para ayudar",
+              "es_correcta": false
+            },
+            {
+              "texto": "Su lentitud hizo que Pipo se enredara más en la red",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Evaluar",
+          "enunciado": "¿Qué enseñanza principal se puede extraer de la historia?",
+          "alternativas": [
+            {
+              "texto": "La importancia de la prudencia y la alegría en la vida",
+              "es_correcta": true
+            },
+            {
+              "texto": "Que los animales deben evitar los bosques",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que las tortugas son más inteligentes que los colibríes",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que los niños deben dejar redes en el bosque",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id_texto": 15,
+      "titulo": "La Aventura de los Dados Mágicos",
+      "contenido": "Lucas y Sofía encontraron unos dados mágicos en el parque. Cada dado tenía números del 1 al 6. Decidieron jugar a sumar los puntos que salían. En la primera tirada, Lucas sacó un 4 y Sofía un 3. Sumaron 7. En la segunda tirada, Lucas sacó un 2 y Sofía un 5. Sumaron 7 otra vez. ¡Qué raro! Lucas dijo: 'Si sumamos los números de los dados, siempre sale 7'. Sofía asintió: 'Sí, porque los dados tienen números que se complementan'. Jugaron toda la tarde y aprendieron que, en un dado, el 1 va con el 6, el 2 con el 5 y el 3 con el 4 para sumar 7.",
+      "ensenanza": "Los números en los dados siempre suman 7 cuando se complementan.",
+      "tipo_texto": "Narrativo",
+      "grado": "SEGUNDO",
+      "tematica": "Matemáticas",
+      "dificultad": "Fácil",
+      "preguntas": [
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Recordar",
+          "enunciado": "¿Qué números sacó Lucas en la primera tirada?",
+          "alternativas": [
+            {
+              "texto": "4",
+              "es_correcta": true
+            },
+            {
+              "texto": "3",
+              "es_correcta": false
+            },
+            {
+              "texto": "2",
+              "es_correcta": false
+            },
+            {
+              "texto": "5",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Comprender",
+          "enunciado": "¿Por qué Lucas y Sofía siempre sumaban 7?",
+          "alternativas": [
+            {
+              "texto": "Porque los números de los dados se complementan para sumar 7",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque los dados estaban trucados",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque siempre sacaban el mismo número",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque los dados eran mágicos",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Aplicar",
+          "enunciado": "Si Lucas saca un 6 en su próxima tirada, ¿qué número debe sacar Sofía para sumar 7?",
+          "alternativas": [
+            {
+              "texto": "1",
+              "es_correcta": true
+            },
+            {
+              "texto": "2",
+              "es_correcta": false
+            },
+            {
+              "texto": "3",
+              "es_correcta": false
+            },
+            {
+              "texto": "4",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Analizar",
+          "enunciado": "¿Qué relación existe entre los números 2 y 5 en los dados?",
+          "alternativas": [
+            {
+              "texto": "Se complementan para sumar 7",
+              "es_correcta": true
+            },
+            {
+              "texto": "Son números pares",
+              "es_correcta": false
+            },
+            {
+              "texto": "Son números consecutivos",
+              "es_correcta": false
+            },
+            {
+              "texto": "No tienen relación",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Evaluar",
+          "enunciado": "¿Fue acertada la observación de Sofía sobre los números de los dados?",
+          "alternativas": [
+            {
+              "texto": "Sí, porque los números se complementan para sumar 7",
+              "es_correcta": true
+            },
+            {
+              "texto": "No, porque los dados no tienen números complementarios",
+              "es_correcta": false
+            },
+            {
+              "texto": "No, porque los dados son mágicos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Sí, porque siempre sacaban el mismo número",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id_texto": 16,
+      "titulo": "La Aventura de las Manzanas y las Naranjas",
+      "contenido": "En un pequeño pueblo, vivían dos amigos: Lucas y Sofía. Un día, decidieron contar las frutas del mercado. Lucas tenía 10 manzanas y Sofía, 8 naranjas. Juntos, contaron todas las frutas: 10 manzanas + 8 naranjas = 18 frutas. Después, repartieron las frutas entre sus amigos. Cada uno recibió 3 frutas. Como había 6 amigos, hicieron 6 grupos de 3 frutas cada uno. Al final, no sobró ninguna fruta. ¡Todos quedaron felices! Lucas y Sofía aprendieron que sumar y repartir frutas puede ser divertido y justo.",
+      "ensenanza": "Sumar y repartir por igual es importante para compartir con todos de manera justa.",
+      "tipo_texto": "Narrativo",
+      "grado": "SEGUNDO",
+      "tematica": "Matemáticas",
+      "dificultad": "Fácil",
+      "preguntas": [
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Recordar",
+          "enunciado": "¿Cuántas manzanas tenía Lucas?",
+          "alternativas": [
+            {
+              "texto": "8",
+              "es_correcta": false
+            },
+            {
+              "texto": "10",
+              "es_correcta": true
+            },
+            {
+              "texto": "18",
+              "es_correcta": false
+            },
+            {
+              "texto": "3",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Comprender",
+          "enunciado": "¿Qué aprendieron Lucas y Sofía al final del cuento?",
+          "alternativas": [
+            {
+              "texto": "Que contar frutas es aburrido",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que sumar y repartir frutas puede ser divertido y justo",
+              "es_correcta": true
+            },
+            {
+              "texto": "Que las naranjas son mejores que las manzanas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que no deben compartir sus frutas",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Aplicar",
+          "enunciado": "Si Lucas tuviera 12 manzanas y Sofía 6 naranjas, ¿cuántas frutas tendrían en total?",
+          "alternativas": [
+            {
+              "texto": "18",
+              "es_correcta": true
+            },
+            {
+              "texto": "16",
+              "es_correcta": false
+            },
+            {
+              "texto": "20",
+              "es_correcta": false
+            },
+            {
+              "texto": "14",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Analizar",
+          "enunciado": "¿Por qué no sobraron frutas al final?",
+          "alternativas": [
+            {
+              "texto": "Porque repartieron todas las frutas en grupos de 3",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque no contaron bien las frutas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque algunos amigos no quisieron frutas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque compraron más frutas después",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Evaluar",
+          "enunciado": "¿Fue justo el reparto de las frutas entre los amigos?",
+          "alternativas": [
+            {
+              "texto": "No, porque algunos recibieron más frutas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Sí, porque cada uno recibió 3 frutas",
+              "es_correcta": true
+            },
+            {
+              "texto": "No, porque no repartieron las manzanas y naranjas por separado",
+              "es_correcta": false
+            },
+            {
+              "texto": "Sí, porque solo repartieron naranjas",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id_texto": 17,
+      "titulo": "El problema de los dulces de Lucía",
+      "contenido": "Lucía y Mateo eran hermanos y les encantaban los dulces. Un día, su mamá les dio 12 caramelos para repartir entre los dos. \"¿Cómo los dividimos?\", preguntó Lucía. \"Podemos contar cuántos nos tocan a cada uno\", dijo Mateo. Así que contaron: 12 caramelos entre 2 son 6 para cada uno. \"¡Genial!\", dijo Lucía. Pero luego llegó su amigo Pablo y les pidió un caramelo. \"Ahora tenemos que dividir 12 caramelos entre 3\", explicó Mateo. Contaron juntos y vieron que cada uno recibía 4 caramelos. \"¡Qué bien!\", dijo Pablo. Al final, todos quedaron felices porque aprendieron a repartir equitativamente.",
+      "ensenanza": "Repartir cosas de manera justa ayuda a que todos se sientan felices.",
+      "tipo_texto": "Narrativo",
+      "grado": "SEGUNDO",
+      "tematica": "Matemáticas",
+      "dificultad": "Media",
+      "preguntas": [
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Recordar",
+          "enunciado": "¿Cuántos caramelos recibió cada uno al principio cuando se dividieron entre Lucía y Mateo?",
+          "alternativas": [
+            {
+              "texto": "6 caramelos",
+              "es_correcta": true
+            },
+            {
+              "texto": "4 caramelos",
+              "es_correcta": false
+            },
+            {
+              "texto": "3 caramelos",
+              "es_correcta": false
+            },
+            {
+              "texto": "12 caramelos",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Comprender",
+          "enunciado": "¿Por qué Mateo sugirió contar los caramelos?",
+          "alternativas": [
+            {
+              "texto": "Para repartirlos equitativamente entre los dos",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque quería quedarse con todos los caramelos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Para ver cuántos caramelos había en total",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque su mamá se lo ordenó",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Aplicar",
+          "enunciado": "Si Lucía y Mateo tuvieran 18 caramelos y llegara un tercer amigo, ¿cuántos caramelos recibiría cada uno?",
+          "alternativas": [
+            {
+              "texto": "6 caramelos",
+              "es_correcta": true
+            },
+            {
+              "texto": "4 caramelos",
+              "es_correcta": false
+            },
+            {
+              "texto": "9 caramelos",
+              "es_correcta": false
+            },
+            {
+              "texto": "3 caramelos",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Analizar",
+          "enunciado": "¿Qué cambió cuando llegó Pablo a la situación de reparto de caramelos?",
+          "alternativas": [
+            {
+              "texto": "El número de personas que compartían los caramelos aumentó",
+              "es_correcta": true
+            },
+            {
+              "texto": "El número total de caramelos disminuyó",
+              "es_correcta": false
+            },
+            {
+              "texto": "Lucía y Mateo dejaron de compartir los caramelos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Pablo trajo más caramelos para compartir",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Evaluar",
+          "enunciado": "¿Por qué se puede decir que la solución de repartir los caramelos fue buena?",
+          "alternativas": [
+            {
+              "texto": "Porque todos quedaron felices y aprendieron a repartir equitativamente",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque Pablo se quedó con más caramelos que los demás",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque Lucía y Mateo no tuvieron que compartir sus caramelos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque la mamá les dio más caramelos después",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id_texto": 18,
+      "titulo": "La aventura de los números perdidos",
+      "contenido": "En el pueblo de Matemática, vivían tres amigos: Lina, Mateo y Tavo. Un día, el profesor de matemáticas les dio una misión: encontrar los números perdidos del bosque. Los números se habían escondido porque querían jugar. Los niños decidieron ayudarlos. Primero, encontraron el número 5 escondido detrás de un árbol. \"¡Aquí estoy!\" gritó el 5. Luego, vieron al 10 saltando entre las flores. \"¡Ven con nosotros!\" le dijeron. El 10 se unió a ellos. Después, el 15 estaba en una roca. \"¡Vamos a contar juntos!\" dijo Lina. Los tres amigos contaron del 1 al 20 y los números aparecieron uno por uno. Al final, todos los números estaban felices y volvieron a la escuela. Los niños aprendieron que contar es divertido y útil.",
+      "ensenanza": "Contar es una habilidad importante que nos ayuda a resolver problemas y entender el mundo.",
+      "tipo_texto": "Narrativo",
+      "grado": "SEGUNDO",
+      "tematica": "Matemáticas",
+      "dificultad": "Media",
+      "preguntas": [
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Recordar",
+          "enunciado": "¿Dónde encontraron los niños al número 5?",
+          "alternativas": [
+            {
+              "texto": "Detrás de un árbol",
+              "es_correcta": true
+            },
+            {
+              "texto": "Entre las flores",
+              "es_correcta": false
+            },
+            {
+              "texto": "En una roca",
+              "es_correcta": false
+            },
+            {
+              "texto": "Dentro de una cueva",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Comprender",
+          "enunciado": "¿Por qué los números se escondieron en el bosque?",
+          "alternativas": [
+            {
+              "texto": "Porque querían jugar",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque tenían miedo de los niños",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque se perdieron",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque el profesor los castigó",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Aplicar",
+          "enunciado": "Si los niños encuentran el número 20, ¿dónde podría estar escondido según el patrón del cuento?",
+          "alternativas": [
+            {
+              "texto": "En un lugar donde puedan contar hasta él",
+              "es_correcta": true
+            },
+            {
+              "texto": "En la escuela",
+              "es_correcta": false
+            },
+            {
+              "texto": "En la casa de uno de los niños",
+              "es_correcta": false
+            },
+            {
+              "texto": "En el cielo",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Analizar",
+          "enunciado": "¿Qué relación hay entre contar los números y que aparezcan?",
+          "alternativas": [
+            {
+              "texto": "Contar los números los hace aparecer",
+              "es_correcta": true
+            },
+            {
+              "texto": "Contar los números los asusta",
+              "es_correcta": false
+            },
+            {
+              "texto": "Contar los números no tiene efecto",
+              "es_correcta": false
+            },
+            {
+              "texto": "Contar los números los hace desaparecer",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Evaluar",
+          "enunciado": "¿Por qué la decisión de contar juntos fue efectiva?",
+          "alternativas": [
+            {
+              "texto": "Porque los números respondieron a la acción de contar",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque los números no querían ser encontrados",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque el profesor les ordenó hacerlo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque era la única opción disponible",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id_texto": 19,
+      "titulo": "Los amigos y las manzanas del árbol",
+      "contenido": "En el parque de la escuela, Lucas y Sofía jugaban todos los días. Un día, vieron un árbol lleno de manzanas rojas y brillantes. \"¡Mira, Sofía!\", dijo Lucas. \"Hay 10 manzanas en el árbol.\" Sofía contó: \"Sí, 10 manzanas.\" Decidieron recogerlas para hacer una merienda. Lucas tomó 3 manzanas y Sofía tomó 2. \"¿Cuántas manzanas quedan en el árbol?\", preguntó Sofía. Lucas pensó un momento y dijo: \"Si quitamos 3 + 2, son 5 manzanas menos. Entonces, 10 - 5 = 5 manzanas quedan.\" Sofía sonrió: \"¡Tienes razón!\" Juntos compartieron las manzanas con sus amigos y todos disfrutaron de una rica merienda.",
+      "ensenanza": "Contar y restar es divertido cuando lo hacemos juntos.",
+      "tipo_texto": "Narrativo",
+      "grado": "SEGUNDO",
+      "tematica": "Matemáticas",
+      "dificultad": "Difícil",
+      "preguntas": [
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Recordar",
+          "enunciado": "¿Cuántas manzanas había inicialmente en el árbol?",
+          "alternativas": [
+            {
+              "texto": "10 manzanas",
+              "es_correcta": true
+            },
+            {
+              "texto": "5 manzanas",
+              "es_correcta": false
+            },
+            {
+              "texto": "8 manzanas",
+              "es_correcta": false
+            },
+            {
+              "texto": "12 manzanas",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Comprender",
+          "enunciado": "¿Qué hicieron Lucas y Sofía con las manzanas que recogieron?",
+          "alternativas": [
+            {
+              "texto": "Las compartieron con sus amigos para hacer una merienda",
+              "es_correcta": true
+            },
+            {
+              "texto": "Las vendieron en el mercado",
+              "es_correcta": false
+            },
+            {
+              "texto": "Las guardaron para el invierno",
+              "es_correcta": false
+            },
+            {
+              "texto": "Las regalaron a sus maestros",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Aplicar",
+          "enunciado": "Si Lucas tomó 3 manzanas y Sofía tomó 2, ¿cuántas manzanas recogieron en total?",
+          "alternativas": [
+            {
+              "texto": "5 manzanas",
+              "es_correcta": true
+            },
+            {
+              "texto": "7 manzanas",
+              "es_correcta": false
+            },
+            {
+              "texto": "8 manzanas",
+              "es_correcta": false
+            },
+            {
+              "texto": "10 manzanas",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Analizar",
+          "enunciado": "¿Qué relación existe entre la cantidad de manzanas recogidas y las que quedaron en el árbol?",
+          "alternativas": [
+            {
+              "texto": "Las manzanas recogidas se restan de las iniciales para obtener las que quedaron",
+              "es_correcta": true
+            },
+            {
+              "texto": "Las manzanas recogidas se suman a las iniciales para obtener las que quedaron",
+              "es_correcta": false
+            },
+            {
+              "texto": "Las manzanas recogidas no afectan la cantidad en el árbol",
+              "es_correcta": false
+            },
+            {
+              "texto": "Las manzanas recogidas se multiplican por las iniciales para obtener las que quedaron",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Evaluar",
+          "enunciado": "¿Qué acción de Lucas y Sofía fue más importante para resolver el problema de las manzanas?",
+          "alternativas": [
+            {
+              "texto": "Contar las manzanas inicialmente y luego restar las recogidas",
+              "es_correcta": true
+            },
+            {
+              "texto": "Decidir recoger todas las manzanas del árbol",
+              "es_correcta": false
+            },
+            {
+              "texto": "Compartir las manzanas con sus amigos sin contar",
+              "es_correcta": false
+            },
+            {
+              "texto": "Dejar las manzanas en el árbol sin recoger ninguna",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id_texto": 20,
+      "titulo": "Los amigos y las manzanas del árbol",
+      "contenido": "Luca y Sofía eran dos amigos que amaban jugar en el parque. Un día, encontraron un árbol lleno de manzanas. \"¡Mira, Sofía!\" dijo Luca, \"hay 10 manzanas en este árbol\". \"Sí, pero si nos comemos 3, ¿cuántas quedan?\" preguntó Sofía. Luca contó: \"10 menos 3 son 7\". Decidieron compartir las manzanas con sus amigos. Al final, cada uno recibió 2 manzanas. \"¡Qué bien!\" dijo Sofía, \"así todos disfrutamos\".",
+      "ensenanza": "Compartir hace que todos sean felices y las matemáticas nos ayudan a dividir de manera justa.",
+      "tipo_texto": "Narrativo",
+      "grado": "SEGUNDO",
+      "tematica": "Matemáticas",
+      "dificultad": "Difícil",
+      "preguntas": [
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Recordar",
+          "enunciado": "¿Cuántas manzanas había inicialmente en el árbol?",
+          "alternativas": [
+            {
+              "texto": "7 manzanas",
+              "es_correcta": false
+            },
+            {
+              "texto": "10 manzanas",
+              "es_correcta": true
+            },
+            {
+              "texto": "3 manzanas",
+              "es_correcta": false
+            },
+            {
+              "texto": "5 manzanas",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Comprender",
+          "enunciado": "¿Qué hicieron Luca y Sofía con las manzanas después de contar cuántas quedaban?",
+          "alternativas": [
+            {
+              "texto": "Las guardaron para el invierno",
+              "es_correcta": false
+            },
+            {
+              "texto": "Las compartieron con sus amigos",
+              "es_correcta": true
+            },
+            {
+              "texto": "Las vendieron en el mercado",
+              "es_correcta": false
+            },
+            {
+              "texto": "Las tiraron porque estaban podridas",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Aplicar",
+          "enunciado": "Si Luca y Sofía hubieran comido 5 manzanas en lugar de 3, ¿cuántas manzanas quedarían?",
+          "alternativas": [
+            {
+              "texto": "5 manzanas",
+              "es_correcta": true
+            },
+            {
+              "texto": "8 manzanas",
+              "es_correcta": false
+            },
+            {
+              "texto": "2 manzanas",
+              "es_correcta": false
+            },
+            {
+              "texto": "10 manzanas",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Analizar",
+          "enunciado": "¿Por qué Luca y Sofía decidieron compartir las manzanas con sus amigos?",
+          "alternativas": [
+            {
+              "texto": "Porque querían que todos disfrutaran",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque no les gustaban las manzanas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque les obligaron sus padres",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque querían venderlas más tarde",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Evaluar",
+          "enunciado": "¿Fue una buena decisión compartir las manzanas con sus amigos?",
+          "alternativas": [
+            {
+              "texto": "Sí, porque así todos pudieron disfrutar",
+              "es_correcta": true
+            },
+            {
+              "texto": "No, porque podrían haber vendido las manzanas",
+              "es_correcta": false
+            },
+            {
+              "texto": "No, porque se quedaron sin manzanas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Sí, pero solo porque no les gustaban las manzanas",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tipo_texto": "Narrativo",
+    "total_generados": 12
+  }
+}

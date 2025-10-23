@@ -1,6 +1,6 @@
 # app/services/generation/catalog_service.py
 from typing import Dict, Optional
-from app.services.base_service import BaseService
+from app.services.common.base_service import BaseService
 from app.exceptions import ResourceNotFoundException, DatabaseException
 
 class CatalogService(BaseService):

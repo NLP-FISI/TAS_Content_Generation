@@ -1,0 +1,135 @@
+{
+  "textos": [
+    {
+      "id_texto": 21,
+      "titulo": "La Aventura de los Fracciones en el Bosque",
+      "contenido": "En un bosque mágico, vivían tres amigos: Leo, la ardilla, Mia, el conejo, y Tico, el mapache. Un día, encontraron un mapa del tesoro dividido en cuatro partes iguales. \"¡Es un cuarto de mapa cada uno!\" dijo Leo. \"Pero necesitamos el mapa completo para encontrar el tesoro\", agregó Mia. Decidieron trabajar juntos. Leo encontró la primera parte bajo una roca, Mia descubrió la segunda en un árbol hueco, y Tico la tercera en un río. \"Falta una parte\", dijo Tico. \"¡Es verdad!\", exclamó Leo. \"Debemos buscarla juntos\". Al final, encontraron la última parte cerca de un arroyo. \"Ahora tenemos el mapa completo\", dijo Mia. \"¡Sí! Cada uno tenía un cuarto, pero juntos lo completamos\", celebró Tico. Siguiendo el mapa, llegaron al tesoro: una caja llena de frutas deliciosas que compartieron con todos los animales del bosque.",
+      "ensenanza": "Trabajar en equipo y compartir hace que las cosas sean más fáciles y divertidas.",
+      "tipo_texto": "Narrativo",
+      "grado": "QUINTO",
+      "tematica": "Matemáticas",
+      "dificultad": "Difícil",
+      "preguntas": [
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Recordar",
+          "enunciado": "¿Qué encontraron los tres amigos en el bosque?",
+          "alternativas": [
+            {
+              "texto": "Un mapa del tesoro dividido en cuatro partes",
+              "es_correcta": true
+            },
+            {
+              "texto": "Una caja llena de frutas deliciosas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un tesoro escondido bajo una roca",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un arroyo con agua cristalina",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Comprender",
+          "enunciado": "¿Por qué los tres amigos decidieron trabajar juntos?",
+          "alternativas": [
+            {
+              "texto": "Porque necesitaban el mapa completo para encontrar el tesoro",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque cada uno quería guardar su parte del mapa",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque el mapa estaba escondido en lugares peligrosos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque el tesoro era muy pequeño para compartirlo",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Aplicar",
+          "enunciado": "Si Leo, Mia y Tico hubieran encontrado solo tres partes del mapa, ¿qué habrían hecho?",
+          "alternativas": [
+            {
+              "texto": "Habrían buscado la cuarta parte juntos",
+              "es_correcta": true
+            },
+            {
+              "texto": "Habrían abandonado la búsqueda del tesoro",
+              "es_correcta": false
+            },
+            {
+              "texto": "Habrían dividido el tesoro en tres partes",
+              "es_correcta": false
+            },
+            {
+              "texto": "Habrían escondido las partes que ya tenían",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Analizar",
+          "enunciado": "¿Qué relación hay entre la colaboración de los amigos y el hallazgo del tesoro?",
+          "alternativas": [
+            {
+              "texto": "La colaboración les permitió completar el mapa y encontrar el tesoro",
+              "es_correcta": true
+            },
+            {
+              "texto": "La colaboración les hizo perder tiempo buscando el tesoro",
+              "es_correcta": false
+            },
+            {
+              "texto": "La colaboración no fue necesaria porque cada uno encontró su parte",
+              "es_correcta": false
+            },
+            {
+              "texto": "La colaboración les permitió esconder el tesoro de otros animales",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "tipo": "literal",
+          "nivel_bloom": "Evaluar",
+          "enunciado": "¿Por qué fue una buena decisión compartir el tesoro con todos los animales del bosque?",
+          "alternativas": [
+            {
+              "texto": "Porque demostró generosidad y solidaridad",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque el tesoro era demasiado grande para ellos solos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque los otros animales les ayudaron a encontrar el mapa",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque el tesoro no era valioso para ellos",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tipo_texto": "Narrativo",
+    "total_generados": 1
+  }
+}
