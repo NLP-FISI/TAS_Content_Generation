@@ -5,8 +5,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Settings:
-    OPENROUTER_API_KEY: str = os.getenv("OPENROUTER_API_KEY", "")
-    OPENROUTER_MODEL: str = os.getenv("OPENROUTER_MODEL", "x-ai/grok-4-fast:free")
+    OPENROUTER_API_KEY: str = "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"
+    OPENROUTER_MODEL: str = "mistralai/mistral-small-3.2-24b-instruct:free"
     REFERER: str = os.getenv("REFERER", "http://localhost")
     TITLE: str = os.getenv("TITLE", "tas-content-api")
     
