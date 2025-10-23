@@ -2,19 +2,19 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from app.database import get_db
-from app.services.generation.generator_orchestator_service import GenerationOrchestrator
+from app.services.generation import GenerationOrchestratorV2
 from app.schemas.generation import GeneracionRequest
 from app.schemas.responses import SuccessResponse
 
 router = APIRouter(prefix="/generacion")
-
 
 @router.post("/generar", response_model=SuccessResponse)
 def generar_contenido(
     datos: GeneracionRequest,
     db: Session = Depends(get_db)
 ):
-    orchestrator = GenerationOrchestrator(db)
+
+    orchestrator = GenerationOrchestratorV2(db)
     
     resultado = orchestrator.generar_textos(
         id_tipo_texto=datos.id_tipo_texto,

@@ -1,6 +1,6 @@
 # app/services/evaluation_service.py
 from typing import List, Dict, Any
-from app.services.base_service import BaseService
+from app.services.common.base_service import BaseService
 from app.exceptions import ResourceNotFoundException, DatabaseException
 
 
