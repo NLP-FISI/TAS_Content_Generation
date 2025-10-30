@@ -3,19 +3,7 @@ from typing import Tuple
 from app.config.settings import settings
 
 class PromptBuilder:
-    
-    @staticmethod
-    def word_range_for_dificultad(dificultad: str) -> Tuple[int, int]:
-        dificultad_lower = dificultad.lower()
-        if dificultad_lower == "facil":
-            return (100, 200)
-        elif dificultad_lower == "media":
-            return (200, 300)
-        elif dificultad_lower == "dificil":
-            return (250, 400)
-        else:
-            return (150, 250)
-    
+        
     @staticmethod
     def get_caracteristicas_tipo_texto(tipo: str) -> str:
         caracteristicas = {
@@ -27,22 +15,11 @@ class PromptBuilder:
         return caracteristicas.get(tipo.lower(), "Texto educativo claro y estructurado.")
     
     @staticmethod
-    def get_indicaciones_dificultad(dificultad: str) -> str:
-        indicaciones = {
-            "facil": "Oraciones cortas (máx 15 palabras). Vocabulario muy común. Conceptos simples.",
-            "media": "Oraciones de longitud moderada. Introduce 1-2 palabras nuevas explicadas en contexto.",
-            "dificil": "Oraciones más complejas. Vocabulario amplio. Conceptos que requieren reflexión."
-        }
-        return indicaciones.get(dificultad.lower(), "Lenguaje claro y apropiado.")
-    
-    @staticmethod
     def build_texto_prompt(
         grado_nombre: str,
         tematica_nombre: str,
-        dificultad_nombre: str,
         tipo_pregunta_nombre: str = "literal"
     ) -> str:
-        wmin, wmax = PromptBuilder.word_range_for_dificultad(dificultad_nombre)
         
         return f"""Actúa como un experto en redacción de textos para niños y evaluación educativa basada en la Taxonomía de Bloom y las orientaciones del MINEDU.
 
@@ -50,7 +27,7 @@ Genera un texto para un estudiante de {grado_nombre}º de primaria.
 La categoría del cuento es "{tematica_nombre}".
 Incluye personajes que vivan la experiencia.
 Usa un lenguaje claro, frases sencillas y vocabulario adecuado al grado.
-Extensión del cuento: {wmin}–{wmax} palabras.
+Adapta la longitud y complejidad del cuento de acuerdo al grado del estudiante.
 
 Termina con una enseñanza sencilla o reflexión.
 
@@ -96,15 +73,14 @@ Devuelve la salida en formato JSON ESTRICTO, siguiendo este esquema (sin texto a
             "literal": "La respuesta se encuentra directamente en el texto.",
             "inferencial": "Requiere deducir información no explícita.",
             "critica": "Requiere opinión fundamentada del lector.",
-            "vocabulario": "Significado de palabras en contexto."
+            "vocabulario": "Significado de palabras en contexto.",
         }
         return descripciones.get(tipo.lower(), "Preguntas de comprensión lectora.")
     
     @staticmethod
     def build_preguntas_prompt(
         texto: str,
-        tipo_pregunta_nombre: str,
-        dificultad_nombre: str
+        tipo_pregunta_nombre: str
     ) -> str:
         num_preguntas = settings.PREGUNTAS_POR_TEXTO
         num_alternativas = settings.ALTERNATIVAS_POR_PREGUNTA
@@ -118,7 +94,7 @@ Dado el siguiente texto:
 
 Genera EXACTAMENTE {num_preguntas} preguntas de comprensión lectora.
 Tipo de preguntas: {tipo_pregunta_nombre.upper()}
-Dificultad: {dificultad_nombre.upper()}
+Dificultad: Proporcional a la complejidad del texto.
 
 {descripcion_tipo}
 
