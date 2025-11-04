@@ -1,0 +1,141 @@
+{
+  "textos": [
+    {
+      "id_texto": 51,
+      "titulo": "El pequeño colibrí y el bosque en peligro",
+      "contenido": "Había una vez un colibrí llamado Lolo. Lolo vivía en un bosque lleno de flores. Un día, vio humo. El bosque estaba en peligro. Lolo voló rápido. Vio a un conejo asustado. '¡Ayuda!', dijo el conejo. 'El fuego se acerca'. Lolo no era grande, pero tenía una idea. Voló al río. Tomó agua en su pico. La dejó en las llamas. Lo hizo muchas veces. Los otros animales lo vieron. '¡Tú solo no puedes!', dijo un oso. Pero Lolo no se rindió. Siguió trabajando. Poco a poco, el fuego se apagó. Todos ayudaron después. El bosque se salvó. Los animales estaban felices. 'Gracias, Lolo', dijeron. Lolo sonrió. Sabía que todos juntos son más fuertes.",
+      "ensenanza": "Aunque seamos pequeños, podemos hacer grandes cosas con esfuerzo y ayuda de los demás.",
+      "tipo_texto": "Narrativo",
+      "grado": "SEGUNDO",
+      "tematica": "Animales y Naturaleza",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Selección Única",
+          "nivel_bloom": "Recordar",
+          "enunciado": "¿Qué animal era Lolo?",
+          "alternativas": [
+            {
+              "texto": "Un conejo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un colibrí",
+              "es_correcta": true
+            },
+            {
+              "texto": "Un oso",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un pájaro grande",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Comprender",
+          "enunciado": "¿Qué hizo Lolo para ayudar al bosque?",
+          "alternativas": [
+            {
+              "texto": "Gritó por ayuda",
+              "es_correcta": false
+            },
+            {
+              "texto": "Tomó agua en su pico",
+              "es_correcta": true
+            },
+            {
+              "texto": "Corrió muy rápido",
+              "es_correcta": false
+            },
+            {
+              "texto": "Se escondió",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Comprender",
+          "enunciado": "¿Por qué los otros animales ayudaron al final?",
+          "alternativas": [
+            {
+              "texto": "Porque Lolo les dio comida",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque vieron que Lolo no se rendía",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque el fuego era muy grande",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque el bosque era de ellos",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Selección Única",
+          "nivel_bloom": "Aplicar",
+          "enunciado": "Si ves un problema en tu escuela, ¿qué podrías hacer?",
+          "alternativas": [
+            {
+              "texto": "Ignorarlo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Intentar solucionarlo como Lolo",
+              "es_correcta": true
+            },
+            {
+              "texto": "Esperar a que alguien más lo haga",
+              "es_correcta": false
+            },
+            {
+              "texto": "Decir que no es tu problema",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "enunciado": "¿Qué dijeron los animales al final?",
+          "alternativas": [
+            {
+              "texto": "¡Vete de aquí!",
+              "es_correcta": false
+            },
+            {
+              "texto": "Gracias, Lolo",
+              "es_correcta": true
+            },
+            {
+              "texto": "No podemos jugar",
+              "es_correcta": false
+            },
+            {
+              "texto": "El bosque está salvado",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tipo_texto": "Narrativo",
+    "total_generados": 1
+  }
+}

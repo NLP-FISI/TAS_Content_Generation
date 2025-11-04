@@ -4,7 +4,7 @@
 from .orchestrator_v2 import GenerationOrchestratorV2
 
 # Componentes individuales
-from .generators import BaseGenerator, TextoGenerator, PreguntaGenerator
+from .generators import BaseGenerator, TextoGenerator
 from .validators import GenerationRequestValidator
 from .combinations import CombinationBuilder
 from .catalog_service import CatalogService
@@ -17,7 +17,6 @@ __all__ = [
     # Componentes
     "BaseGenerator",
     "TextoGenerator",
-    "PreguntaGenerator",
     "GenerationRequestValidator",
     "CombinationBuilder",
     "CatalogService",
