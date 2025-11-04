@@ -1,5 +1,5 @@
 # app/services/generation/catalog_service.py
-from typing import Dict, Optional
+from typing import Dict, Optional, List
 from app.services.common.base_service import BaseService
 from app.exceptions import ResourceNotFoundException, DatabaseException
 
@@ -122,6 +122,15 @@ class CatalogService(BaseService):
             )
     
     def obtener_nombre_tipo_pregunta(self, id_tipo_pregunta: int) -> str:
+        """
+        Obtiene el nombre de un tipo de pregunta por ID.
+        
+        Args:
+            id_tipo_pregunta: ID del tipo de pregunta
+        
+        Returns:
+            str: Nombre del tipo de pregunta
+        """
         try:
             tipo_pregunta_model = self.get_model("tipo_pregunta")
             if not tipo_pregunta_model:
@@ -150,6 +159,52 @@ class CatalogService(BaseService):
                 details={"id_tipo_pregunta": id_tipo_pregunta, "error": str(e)}
             )
     
+    def obtener_tipos_preguntas(self) -> List[Dict[str, any]]:
+        """
+        Obtiene TODOS los tipos de preguntas disponibles en la BD.
+        
+        Returns:
+            List[Dict]: Lista de diccionarios con id_tipo_pregunta y nombre
+            
+        Ejemplo:
+            [
+                {"id_tipo_pregunta": 1, "nombre": "Selección Única"},
+                {"id_tipo_pregunta": 2, "nombre": "Comprensión Literal"},
+                {"id_tipo_pregunta": 3, "nombre": "Comprensión Inferencial"}
+            ]
+        """
+        try:
+            tipo_pregunta_model = self.get_model("tipo_pregunta")
+            if not tipo_pregunta_model:
+                raise DatabaseException(
+                    message="Modelo tipo_pregunta no encontrado",
+                    details={"modelo": "tipo_pregunta"}
+                )
+            
+            tipos = self.db.query(tipo_pregunta_model).all()
+            
+            if not tipos:
+                raise ResourceNotFoundException(
+                    message="No hay tipos de preguntas disponibles",
+                    details={}
+                )
+            
+            return [
+                {
+                    "id_tipo_pregunta": t.id_tipo_pregunta,
+                    "nombre": t.nombre_tipo_pregunta
+                }
+                for t in tipos
+            ]
+            
+        except (ResourceNotFoundException, DatabaseException):
+            raise
+        except Exception as e:
+            raise DatabaseException(
+                message="Error al obtener tipos de preguntas",
+                details={"error": str(e)}
+            )
+    
     def validar_ids_existen(
         self,
         id_tipo_texto: int,
@@ -157,6 +212,10 @@ class CatalogService(BaseService):
         id_dificultades: list,
         id_grados: list
     ):
+        """
+        Valida que todos los IDs proporcionados existan en la BD.
+        Lanza excepciones si alguno no existe.
+        """
         self.obtener_nombre_tipo_texto(id_tipo_texto)
         
         for id_tematica in id_tematicas:
