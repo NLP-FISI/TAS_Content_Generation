@@ -7,7 +7,7 @@ load_dotenv()
 class Settings:
     # API Keys y configuración
     OPENROUTER_API_KEY: str = os.getenv("OPENROUTER_API_KEY", "")
-    OPENROUTER_MODEL: str = os.getenv("OPENROUTER_MODEL", "mistralai/mistral-small-3.2-24b-instruct:free")
+    OPENROUTER_MODEL: str = os.getenv("OPENROUTER_MODEL")
     REFERER: str = os.getenv("REFERER", "http://localhost")
     TITLE: str = os.getenv("TITLE", "tas-content-api")
     DELAY_BETWEEN_API_CALLS: float = float(os.getenv("DELAY_BETWEEN_API_CALLS", "10.0"))
@@ -23,6 +23,8 @@ class Settings:
     # Configuración de almacenamiento
     GUARDAR_JSON_TEMPORAL: bool = os.getenv("GUARDAR_JSON_TEMPORAL", "true").lower() == "true"
     GUARDAR_JSON_EN_ERROR: bool = True
+
+    GUARDAR_JSON_EN_ERROR: bool = False
     
     # IDs de configuración
     ID_JUEGO_TEXTOS: int = int(os.getenv("ID_JUEGO_TEXTOS", "1"))
