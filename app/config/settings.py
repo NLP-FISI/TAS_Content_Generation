@@ -6,19 +6,17 @@ load_dotenv()
 
 class Settings:
     # API Keys y configuración
-    OPENROUTER_API_KEY: str = "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"
-    OPENROUTER_MODEL: str = "mistralai/mistral-small-3.2-24b-instruct:free"
+    OPENROUTER_API_KEY: str = os.getenv("OPENROUTER_API_KEY", "")
+    OPENROUTER_MODEL: str = os.getenv("OPENROUTER_MODEL", "mistralai/mistral-small-3.2-24b-instruct:free")
     REFERER: str = os.getenv("REFERER", "http://localhost")
     TITLE: str = os.getenv("TITLE", "tas-content-api")
-    DELAY_BETWEEN_API_CALLS: float = float(os.getenv("DELAY_BETWEEN_API_CALLS", "2.0"))
-    DELAY_BETWEEN_TEXTS: float = float(os.getenv("DELAY_BETWEEN_TEXTS", "1.0"))
+    DELAY_BETWEEN_API_CALLS: float = float(os.getenv("DELAY_BETWEEN_API_CALLS", "10.0"))
+    DELAY_BETWEEN_TEXTS: float = float(os.getenv("DELAY_BETWEEN_TEXTS", "10.0"))
 
-    # Configuración de contenido
     PREGUNTAS_POR_TEXTO: int = 5
     ALTERNATIVAS_POR_PREGUNTA: int = 4
-    MAX_TEXTOS_POR_REQUEST: int = 100
+    MAX_TEXTOS_POR_REQUEST: int = 300
     
-    # Configuración de dificultad (escala 1-5)
     DIFICULTAD_ESCALA_MIN: int = 1
     DIFICULTAD_ESCALA_MAX: int = 5
     

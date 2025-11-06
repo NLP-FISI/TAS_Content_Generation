@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.exceptions import RequestValidationError
 from sqlalchemy.exc import SQLAlchemyError
-from app.api import content, evaluation, generation
+from app.api import content, evaluation, generation, control
 from app.database import init_db
 from app.exceptions import (
     APIException,
@@ -38,6 +38,7 @@ async def startup_event():
 app.include_router(content.router, tags=["Contenido"])
 app.include_router(evaluation.router, tags=["Evaluación"])
 app.include_router(generation.router, tags=["Generación"])
+app.include_router(control.router, tags=["Control"])
 
 @app.get("/")
 async def root():
