@@ -1,6 +1,6 @@
 # app/schemas/content.py
 from pydantic import BaseModel, Field
-from typing import List
+from typing import List, Optional
 
 
 class AlternativaSimpleResponse(BaseModel):
@@ -22,6 +22,8 @@ class PreguntaSimpleResponse(BaseModel):
     """Esquema simple de pregunta con sus alternativas"""
     id_pregunta: int
     contenido: str
+    id_dificultad: Optional[int] = None  # ✅ NUEVO
+    id_tipo_pregunta: Optional[int] = None  # ✅ NUEVO
     alternativas: List[AlternativaSimpleResponse]
     
     model_config = {
@@ -29,6 +31,8 @@ class PreguntaSimpleResponse(BaseModel):
             "example": {
                 "id_pregunta": 1,
                 "contenido": "¿Cuál es la idea principal del texto?",
+                "id_dificultad": 1,
+                "id_tipo_pregunta": 1,
                 "alternativas": [
                     {"id_alternativa": 1, "contenido": "Opción A"},
                     {"id_alternativa": 2, "contenido": "Opción B"},
@@ -57,6 +61,8 @@ class TextoConPreguntasResponse(BaseModel):
                     {
                         "id_pregunta": 1,
                         "contenido": "¿Cuál es la idea principal?",
+                        "id_dificultad": 1,
+                        "id_tipo_pregunta": 1,
                         "alternativas": [
                             {"id_alternativa": 1, "contenido": "Opción A"},
                             {"id_alternativa": 2, "contenido": "Opción B"},
@@ -88,6 +94,8 @@ class TextosDisponiblesResponse(BaseModel):
                             {
                                 "id_pregunta": 1,
                                 "contenido": "¿Cuál es la idea principal?",
+                                "id_dificultad": 1,
+                                "id_tipo_pregunta": 1,
                                 "alternativas": [
                                     {"id_alternativa": 1, "contenido": "Opción A"},
                                     {"id_alternativa": 2, "contenido": "Opción B"},

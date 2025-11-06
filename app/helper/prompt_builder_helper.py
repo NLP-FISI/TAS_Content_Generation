@@ -1,4 +1,6 @@
 # app/helper/prompt_builder_helper.py
+# ✅ ACTUALIZADO: Incluye dificultad progresiva por pregunta (1-5)
+
 from typing import List
 from app.config.settings import settings
 
@@ -23,6 +25,7 @@ class PromptBuilder:
     ) -> str:
         """
         Construye UN ÚNICO prompt que genera texto + preguntas juntas.
+        ✅ AHORA: Cada pregunta tendrá dificultad progresiva (1, 2, 3, 4, 5)
         
         Args:
             id_grado: ID del grado desde BD
@@ -34,22 +37,18 @@ class PromptBuilder:
                             Ej: ["Selección Única", "Comprensión Literal", ...]
         """
         
-        # Obtener nombres desde BD (sin hardcoding)
         grado_nombre = self.catalog.obtener_nombre_grado(id_grado)
         tematica_nombre = self.catalog.obtener_nombre_tematica(id_tematica)
         tipo_texto_nombre = self.catalog.obtener_nombre_tipo_texto(id_tipo_texto)
         dificultad_nombre = self.catalog.obtener_nombre_dificultad(id_dificultad)
-        
-        # Obtener características del tipo de texto desde BD
+      
         caracteristicas_tipo = self._obtener_caracteristicas_tipo_texto(id_tipo_texto)
         
-        # Construir especificación de tipos de preguntas
         especificacion_tipos = "\n".join(
             f"- Pregunta {i+1}: {tipo}" 
             for i, tipo in enumerate(tipos_preguntas)
         )
         
-        # Especificación de escala de dificultad
         especificacion_dificultad = self._obtener_especificacion_escala(dificultad_escala)
         
         return f"""Actúa como un experto en redacción de textos para niños y evaluación educativa basada en la Taxonomía de Bloom y las orientaciones del MINEDU.
@@ -64,12 +63,20 @@ Tipo de texto: {tipo_texto_nombre}
 Características del tipo: {caracteristicas_tipo}
 
 ═══════════════════════════════════════════════════════════════════════════════
-📊 ESCALA DE DIFICULTAD: {dificultad_escala}/5
+📊 ESCALA DE DIFICULTAD DEL TEXTO: {dificultad_escala}/5
 ═══════════════════════════════════════════════════════════════════════════════
 
 {especificacion_dificultad}
 
 Dificultad seleccionada: {dificultad_nombre} ({dificultad_escala}/5)
+
+⚠️ IMPORTANTE PARA LAS PREGUNTAS:
+Las {settings.PREGUNTAS_POR_TEXTO} preguntas tendrán dificultad PROGRESIVA (1-5):
+  - Pregunta 1: dificultad_pregunta = 1 (Muy Fácil)
+  - Pregunta 2: dificultad_pregunta = 2 (Fácil)
+  - Pregunta 3: dificultad_pregunta = 3 (Media)
+  - Pregunta 4: dificultad_pregunta = 4 (Difícil)
+  - Pregunta 5: dificultad_pregunta = 5 (Muy Difícil)
 
 ═══════════════════════════════════════════════════════════════════════════════
 ✍️ INSTRUCCIONES PARA EL TEXTO
@@ -101,7 +108,7 @@ Cada pregunta debe tener:
 - EXACTAMENTE {settings.ALTERNATIVAS_POR_PREGUNTA} alternativas
 - SOLO 1 alternativa correcta (es_correcta: true)
 - Alternativas incorrectas plausibles (no obviamente falsas)
-- Dificultad acorde al nivel {dificultad_escala}/5
+- IMPORTANTE: Cada pregunta en su índice debe tener su dificultad correspondiente
 
 ═══════════════════════════════════════════════════════════════════════════════
 🧠 TAXONOMÍA DE BLOOM - Distribución Equilibrada
@@ -133,6 +140,7 @@ Devuelve SOLO un bloque JSON válido, sin texto adicional:
     {{
       "tipo": "Selección Única | Comprensión Literal | Comprensión Inferencial",
       "nivel_bloom": "Recordar | Comprender | Aplicar | Analizar | Evaluar | Crear",
+      "dificultad_pregunta": 1,
       "enunciado": "string (la pregunta)",
       "alternativas": [
         {{"texto": "string", "es_correcta": true}},
@@ -140,11 +148,41 @@ Devuelve SOLO un bloque JSON válido, sin texto adicional:
         {{"texto": "string", "es_correcta": false}},
         {{"texto": "string", "es_correcta": false}}
       ]
+    }},
+    {{
+      "tipo": "Selección Única | Comprensión Literal | Comprensión Inferencial",
+      "nivel_bloom": "Recordar | Comprender | Aplicar | Analizar | Evaluar | Crear",
+      "dificultad_pregunta": 2,
+      "enunciado": "string (la pregunta)",
+      "alternativas": [...]
+    }},
+    {{
+      "tipo": "Selección Única | Comprensión Literal | Comprensión Inferencial",
+      "nivel_bloom": "Recordar | Comprender | Aplicar | Analizar | Evaluar | Crear",
+      "dificultad_pregunta": 3,
+      "enunciado": "string (la pregunta)",
+      "alternativas": [...]
+    }},
+    {{
+      "tipo": "Selección Única | Comprensión Literal | Comprensión Inferencial",
+      "nivel_bloom": "Recordar | Comprender | Aplicar | Analizar | Evaluar | Crear",
+      "dificultad_pregunta": 4,
+      "enunciado": "string (la pregunta)",
+      "alternativas": [...]
+    }},
+    {{
+      "tipo": "Selección Única | Comprensión Literal | Comprensión Inferencial",
+      "nivel_bloom": "Recordar | Comprender | Aplicar | Analizar | Evaluar | Crear",
+      "dificultad_pregunta": 5,
+      "enunciado": "string (la pregunta)",
+      "alternativas": [...]
     }}
   ]
 }}
 
-⚠️ IMPORTANTE: El array "preguntas" debe tener exactamente {settings.PREGUNTAS_POR_TEXTO} elementos
+⚠️ IMPORTANTE: 
+- El array "preguntas" debe tener exactamente {settings.PREGUNTAS_POR_TEXTO} elementos
+- CADA pregunta DEBE tener "dificultad_pregunta" con su valor correspondiente: 1, 2, 3, 4, 5
 """
 
     def _obtener_caracteristicas_tipo_texto(self, id_tipo_texto: int) -> str:
@@ -155,8 +193,6 @@ Devuelve SOLO un bloque JSON válido, sin texto adicional:
         Esto mantiene flexibilidad si en futuro se agrega tabla.
         """
         try:
-            # Intenta obtener características de la BD (si existe tabla)
-            # Por ahora, retorna valores por defecto según el tipo
             tipo_nombre = self.catalog.obtener_nombre_tipo_texto(id_tipo_texto)
             
             caracteristicas = {

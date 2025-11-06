@@ -54,10 +54,7 @@ class ContentService(BaseService):
             for texto in textos_disponibles:
                 # Obtener preguntas del texto
                 preguntas = self._obtener_preguntas_con_alternativas(texto.id_texto)
-                
-                # Guardar asignación en usuario_texto
-                self._guardar_usuario_texto(id_usuario, texto.id_texto)
-                
+                                
                 # Construir respuesta con preguntas anidadas
                 textos_con_preguntas.append({
                     "id_texto": texto.id_texto,
@@ -65,10 +62,7 @@ class ContentService(BaseService):
                     "contenido": texto.contenido,
                     "preguntas": preguntas
                 })
-            
-            # Commit final para guardar todas las asignaciones
-            self.db.commit()
-            
+                        
             return {
                 "textos_obtenidos": len(textos_con_preguntas),
                 "textos": textos_con_preguntas
@@ -130,12 +124,15 @@ class ContentService(BaseService):
         cantidad: int
     ) -> List[Any]:
         """
-        Busca textos que cumplan los criterios y NO hayan sido asignados al usuario
+        Busca textos que cumplan los criterios y que NO estén completados 
+        en resultado_texto.
+        
+        ✅ CAMBIO PRINCIPAL: Usa resultado_texto en lugar de usuario_texto
         """
-        from sqlalchemy import select
+        from sqlalchemy import select, func
         
         texto_model = self.get_model("texto")
-        usuario_texto_model = self.get_model("usuario_texto")
+        resultado_texto_model = self.get_model("resultado_texto")  # ✅ NUEVO
         
         if not texto_model:
             raise DatabaseException(
@@ -143,57 +140,28 @@ class ContentService(BaseService):
                 details={"modelo": "texto"}
             )
         
-        if not usuario_texto_model:
+        # ✅ NUEVO: Validar que resultado_texto exista
+        if not resultado_texto_model:
             raise DatabaseException(
-                message="Modelo usuario_texto no encontrado en la base de datos",
-                details={"modelo": "usuario_texto"}
+                message="Modelo resultado_texto no encontrado en la base de datos",
+                details={"modelo": "resultado_texto"}
             )
         
-        # Subquery para obtener los textos ya asignados al usuario
-        textos_asignados_query = select(usuario_texto_model.id_texto).where(
-            usuario_texto_model.id_usuario == id_usuario
+        # ✅ CAMBIO: Subquery para obtener textos YA COMPLETADOS por el usuario
+        textos_completados_query = select(resultado_texto_model.id_texto).where(
+            resultado_texto_model.id_usuario == id_usuario
         )
         
-        # Buscar textos que cumplan criterios y NO estén asignados
+        # Buscar textos que cumplan criterios y NO estén completados
         textos = self.db.query(texto_model).filter(
             texto_model.id_tipo_texto == id_tipo_texto,
             texto_model.id_tematica == id_tematica,
             texto_model.id_dificultad == id_dificultad,
             texto_model.id_grado == id_grado,
-            texto_model.id_texto.notin_(textos_asignados_query)
-        ).limit(cantidad).all()
+            texto_model.id_texto.notin_(textos_completados_query)  # ✅ CAMBIO
+        ).order_by(func.random()).limit(cantidad).all()
         
         return textos
-    
-    def _guardar_usuario_texto(self, id_usuario: int, id_texto: int) -> None:
-        """Guarda la relación usuario-texto en la tabla intermedia"""
-        usuario_texto_model = self.get_model("usuario_texto")
-        
-        if not usuario_texto_model:
-            raise DatabaseException(
-                message="Modelo usuario_texto no encontrado en la base de datos",
-                details={"modelo": "usuario_texto"}
-            )
-        
-        try:
-            # Crear nuevo registro (id_usuario_texto se autoincrementa)
-            usuario_texto = usuario_texto_model(
-                id_usuario=id_usuario,
-                id_texto=id_texto
-            )
-            self.db.add(usuario_texto)
-            self.db.flush()  # Usar flush en lugar de commit
-            
-        except Exception as e:
-            self.db.rollback()
-            raise DatabaseException(
-                message="Error al guardar la asignación usuario-texto",
-                details={
-                    "id_usuario": id_usuario,
-                    "id_texto": id_texto,
-                    "error": str(e)
-                }
-            )
     
     def _obtener_preguntas_con_alternativas(
         self,
@@ -219,9 +187,10 @@ class ContentService(BaseService):
             preguntas_response.append({
                 "id_pregunta": pregunta.id_pregunta,
                 "contenido": pregunta.contenido,
+                "id_dificultad": getattr(pregunta, 'id_dificultad', None),
+                "id_tipo_pregunta": getattr(pregunta, 'id_tipo_pregunta', None),
                 "alternativas": alternativas
             })
-        
         return preguntas_response
     
     def _obtener_alternativas(

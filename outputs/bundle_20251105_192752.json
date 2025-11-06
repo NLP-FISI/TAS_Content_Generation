@@ -1,0 +1,698 @@
+{
+  "textos": [
+    {
+      "id_texto": 53,
+      "titulo": "El Viaje de Lila a la Luna",
+      "contenido": "Lila es una niña curiosa. Un día, encontró un cohete pequeño en su jardín. '¡Vamos a la Luna!', dijo su amigo Robi. Subieron al cohete. ¡Zas! Despegaron. En la Luna, vieron rocas brillantes. '¡Es divertido saltar aquí!', rió Lila. Robi encontró una piedra azul. 'Es un cristal lunar', dijo. De pronto, el cohete hizo un ruido. '¡Rápido, volvamos!', gritó Lila. Aterrizaron en el jardín. 'Fue un viaje increíble', dijo Robi. Lila sonrió. 'La Luna es mágica'.",
+      "ensenanza": "La curiosidad nos lleva a descubrir cosas nuevas y emocionantes.",
+      "tipo_texto": "Narrativo",
+      "grado": "SEGUNDO",
+      "tematica": "Ciencia Ficción y Espacio",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Selección Única",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿Qué encontró Lila en su jardín?",
+          "alternativas": [
+            {
+              "texto": "Un cohete pequeño",
+              "es_correcta": true
+            },
+            {
+              "texto": "Una piedra azul",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un cristal lunar",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un robot",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Qué hicieron Lila y Robi en la Luna?",
+          "alternativas": [
+            {
+              "texto": "Saltaron y encontraron un cristal",
+              "es_correcta": true
+            },
+            {
+              "texto": "Comieron helado",
+              "es_correcta": false
+            },
+            {
+              "texto": "Hablaron con aliens",
+              "es_correcta": false
+            },
+            {
+              "texto": "Dibujaron en la arena",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Aplicar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Por qué Lila y Robi tuvieron que volver rápido?",
+          "alternativas": [
+            {
+              "texto": "El cohete hizo un ruido raro",
+              "es_correcta": true
+            },
+            {
+              "texto": "Se les acabó la comida",
+              "es_correcta": false
+            },
+            {
+              "texto": "Tenían miedo de los aliens",
+              "es_correcta": false
+            },
+            {
+              "texto": "Querían jugar en la Tierra",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Selección Única",
+          "nivel_bloom": "Analizar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Qué aprendieron Lila y Robi en su viaje?",
+          "alternativas": [
+            {
+              "texto": "Que la Luna es mágica y divertida",
+              "es_correcta": true
+            },
+            {
+              "texto": "Que los cohetes son peligrosos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que no deben explorar solos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que la Luna está muy lejos",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿Qué dijo Robi al final del viaje?",
+          "alternativas": [
+            {
+              "texto": "Fue un viaje increíble",
+              "es_correcta": true
+            },
+            {
+              "texto": "Quiero volver mañana",
+              "es_correcta": false
+            },
+            {
+              "texto": "La Luna es aburrida",
+              "es_correcta": false
+            },
+            {
+              "texto": "No me gustó el cohete",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    },
+    {
+      "id_texto": 54,
+      "titulo": "El Viaje de Lila a la Luna",
+      "contenido": "Lila es una niña curiosa. Un día, encontró un cohete pequeño en su jardín. Era azul y brillante. '¡Quiero ir al espacio!', dijo Lila. Subió al cohete y apretó un botón. ¡Zas! El cohete despegó. Lila vio estrellas y planetas. '¡Qué bonito!', pensó. Llegó a la Luna. Había polvo gris y cráteres. Un extraterrestre verde la saludó. 'Hola, soy Lilo', dijo el extraterrestre. '¿Quieres jugar?', preguntó. Jugaron a saltar en la Luna. Lila se rio mucho. Era divertido. El sol comenzó a ponerse. 'Debo volver', dijo Lila. Subió al cohete y regresó a casa. Su mamá la esperaba. '¿Dónde estabas?', preguntó. '¡Fui a la Luna!', dijo Lila. Su mamá sonrió. 'Eres muy valiente'.",
+      "ensenanza": "La curiosidad nos lleva a descubrir cosas nuevas y divertidas.",
+      "tipo_texto": "Narrativo",
+      "grado": "SEGUNDO",
+      "tematica": "Ciencia Ficción y Espacio",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Selección Única",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿Qué encontró Lila en su jardín?",
+          "alternativas": [
+            {
+              "texto": "Un cohete pequeño",
+              "es_correcta": true
+            },
+            {
+              "texto": "Un perro",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un libro",
+              "es_correcta": false
+            },
+            {
+              "texto": "Una pelota",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Qué hizo Lila cuando llegó a la Luna?",
+          "alternativas": [
+            {
+              "texto": "Jugar con un extraterrestre",
+              "es_correcta": true
+            },
+            {
+              "texto": "Dormir",
+              "es_correcta": false
+            },
+            {
+              "texto": "Comer",
+              "es_correcta": false
+            },
+            {
+              "texto": "Llorar",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Aplicar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Por qué Lila tuvo que regresar a casa?",
+          "alternativas": [
+            {
+              "texto": "Porque el sol se ponía",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque tenía sueño",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque se perdió",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque no le gustaba la Luna",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Selección Única",
+          "nivel_bloom": "Analizar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Qué enseñó Lila a los niños con su aventura?",
+          "alternativas": [
+            {
+              "texto": "Que la curiosidad nos lleva a descubrir cosas nuevas",
+              "es_correcta": true
+            },
+            {
+              "texto": "Que los extraterrestres son peligrosos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que los cohetes son peligrosos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que la Luna es aburrida",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿Cómo se llamaba el extraterrestre que conoció Lila?",
+          "alternativas": [
+            {
+              "texto": "Lilo",
+              "es_correcta": true
+            },
+            {
+              "texto": "Luna",
+              "es_correcta": false
+            },
+            {
+              "texto": "Lola",
+              "es_correcta": false
+            },
+            {
+              "texto": "Lina",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    },
+    {
+      "id_texto": 55,
+      "titulo": "El Viaje de Luna y Estrella al Planeta de los Colores",
+      "contenido": "Luna y Estrella son dos niños que viven en una nave espacial. Un día, su nave se desvía y llega a un planeta lleno de colores. Los niños ven árboles morados, ríos azules y flores que brillan. Luna tiene miedo, pero Estrella dice: '¡Vamos a explorar!'. Encuentran un robot que les ayuda. El robot les enseña que en ese planeta, todos los colores son amigos. Al final, Luna ya no tiene miedo y los dos niños vuelven a casa felices.",
+      "ensenanza": "A veces, lo desconocido puede ser hermoso si lo exploramos con valentía.",
+      "tipo_texto": "Narrativo",
+      "grado": "SEGUNDO",
+      "tematica": "Ciencia Ficción y Espacio",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Selección Única",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿A dónde llegaron Luna y Estrella?",
+          "alternativas": [
+            {
+              "texto": "A un planeta lleno de colores",
+              "es_correcta": true
+            },
+            {
+              "texto": "A la Luna",
+              "es_correcta": false
+            },
+            {
+              "texto": "A un bosque oscuro",
+              "es_correcta": false
+            },
+            {
+              "texto": "A una ciudad grande",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Qué encontraron Luna y Estrella en el planeta?",
+          "alternativas": [
+            {
+              "texto": "Árboles morados, ríos azules y flores que brillan",
+              "es_correcta": true
+            },
+            {
+              "texto": "Montañas altas y desiertos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Nieve y hielo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Animales extraños",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Aplicar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Por qué Luna ya no tuvo miedo al final?",
+          "alternativas": [
+            {
+              "texto": "Porque el robot les enseñó que todos los colores son amigos",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque encontraron comida",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque vieron a sus padres",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque el planeta era pequeño",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Selección Única",
+          "nivel_bloom": "Analizar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Qué aprendieron Luna y Estrella en su viaje?",
+          "alternativas": [
+            {
+              "texto": "Que lo desconocido puede ser hermoso si lo exploramos con valentía",
+              "es_correcta": true
+            },
+            {
+              "texto": "Que los robots siempre ayudan",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que los planetas son peligrosos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que los colores no son importantes",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿Quién ayudó a Luna y Estrella en el planeta?",
+          "alternativas": [
+            {
+              "texto": "Un robot",
+              "es_correcta": true
+            },
+            {
+              "texto": "Un alienígena",
+              "es_correcta": false
+            },
+            {
+              "texto": "Sus padres",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un perro espacial",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    },
+    {
+      "id_texto": 56,
+      "titulo": "El Viaje de Lila a la Luna",
+      "contenido": "Lila es una niña curiosa. Un día, encontró un cohete pequeño en su jardín. '¡Voy a la Luna!', dijo. Subió al cohete. ¡Zas! Despegó. En la Luna, vio un conejo saltar. 'Hola', dijo Lila. El conejo le dio una estrella. 'Es para ti', dijo. Lila volvió a casa feliz. Guardó la estrella en su caja de tesoros.",
+      "ensenanza": "La curiosidad nos lleva a descubrir cosas nuevas y bonitas.",
+      "tipo_texto": "Narrativo",
+      "grado": "SEGUNDO",
+      "tematica": "Ciencia Ficción y Espacio",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Selección Única",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿Qué encontró Lila en su jardín?",
+          "alternativas": [
+            {
+              "texto": "Un cohete pequeño",
+              "es_correcta": true
+            },
+            {
+              "texto": "Una estrella",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un conejo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Una caja de tesoros",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Qué le dio el conejo a Lila en la Luna?",
+          "alternativas": [
+            {
+              "texto": "Una estrella",
+              "es_correcta": true
+            },
+            {
+              "texto": "Un cohete",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un conejo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Una caja",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Aplicar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Por qué Lila volvió feliz a casa?",
+          "alternativas": [
+            {
+              "texto": "Porque encontró una estrella",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque vio un conejo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque subió al cohete",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque saltó en la Luna",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Selección Única",
+          "nivel_bloom": "Analizar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Qué hizo Lila con la estrella?",
+          "alternativas": [
+            {
+              "texto": "La guardó en su caja de tesoros",
+              "es_correcta": true
+            },
+            {
+              "texto": "La dejó en la Luna",
+              "es_correcta": false
+            },
+            {
+              "texto": "La dio al conejo",
+              "es_correcta": false
+            },
+            {
+              "texto": "La tiró al espacio",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿Qué dijo Lila antes de subir al cohete?",
+          "alternativas": [
+            {
+              "texto": "'Voy a la Luna!'",
+              "es_correcta": true
+            },
+            {
+              "texto": "'Hola'",
+              "es_correcta": false
+            },
+            {
+              "texto": "'Es para ti'",
+              "es_correcta": false
+            },
+            {
+              "texto": "'¡Zas!'",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    },
+    {
+      "id_texto": 57,
+      "titulo": "El Viaje de Luna y Estrella al Planeta de los Colores",
+      "contenido": "Luna y Estrella son dos niños que viven en un pueblo cerca del espacio. Un día, ven una estrella fugaz y piden un deseo: ¡querer viajar al espacio! De pronto, una nave pequeña aparece frente a ellos. —¡Vamos! —dice una voz. Suben y la nave despega. Viajan por el espacio y llegan a un planeta lleno de colores brillantes. —¡Mira! —dice Estrella—. ¡Todo es de colores! Luna y Estrella juegan con los colores y conocen a unos seres amigables. —Este planeta es mágico —dice uno de ellos—. Los colores nos hacen felices. Cuando es hora de irse, los niños prometen volver. La nave los lleva de vuelta a casa. —Fue un sueño —dice Luna al despertar. —No importa —responde Estrella—. Soñamos juntos.",
+      "ensenanza": "A veces, los sueños nos enseñan cosas importantes. Soñar juntos nos hace más felices.",
+      "tipo_texto": "Narrativo",
+      "grado": "SEGUNDO",
+      "tematica": "Ciencia Ficción y Espacio",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Selección Única",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿Qué desean Luna y Estrella al ver la estrella fugaz?",
+          "alternativas": [
+            {
+              "texto": "Viajar al espacio",
+              "es_correcta": true
+            },
+            {
+              "texto": "Comer helado",
+              "es_correcta": false
+            },
+            {
+              "texto": "Jugar en el parque",
+              "es_correcta": false
+            },
+            {
+              "texto": "Dormir temprano",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Qué ven Luna y Estrella en el planeta al que llegan?",
+          "alternativas": [
+            {
+              "texto": "Un planeta lleno de colores brillantes",
+              "es_correcta": true
+            },
+            {
+              "texto": "Un planeta oscuro y frío",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un planeta con muchos animales",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un planeta con casas grandes",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Aplicar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Por qué los seres del planeta dicen que los colores los hacen felices?",
+          "alternativas": [
+            {
+              "texto": "Porque los colores les dan energía y alegría",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque los colores son su comida",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque los colores les permiten dormir",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque los colores los protegen del frío",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Selección Única",
+          "nivel_bloom": "Analizar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Qué aprendieron Luna y Estrella de su viaje?",
+          "alternativas": [
+            {
+              "texto": "Que soñar juntos los hace felices",
+              "es_correcta": true
+            },
+            {
+              "texto": "Que el espacio es peligroso",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que las estrellas fugaces no existen",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que los planetas son todos iguales",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿Qué dicen Luna y Estrella al despertar?",
+          "alternativas": [
+            {
+              "texto": "Fue un sueño",
+              "es_correcta": true
+            },
+            {
+              "texto": "Quiero volver mañana",
+              "es_correcta": false
+            },
+            {
+              "texto": "No quiero despertar",
+              "es_correcta": false
+            },
+            {
+              "texto": "Fue un sueño aburrido",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tipo_texto": "Narrativo",
+    "total_generados": 5
+  }
+}

@@ -1,4 +1,6 @@
 # app/services/generation/generators/texto_generator.py
+# ✅ ACTUALIZADO: Procesa dificultad individual por pregunta (1-5)
+
 from typing import List
 from .base_generator import BaseGenerator
 from app.helper.prompt_builder_helper import PromptBuilder
@@ -28,6 +30,7 @@ class TextoGenerator(BaseGenerator):
     ) -> dict:
         """
         Genera un texto completo (cuento + preguntas) en una sola llamada IA.
+        ✅ AHORA: Cada pregunta recibe su dificultad individual (1-5)
         
         Args:
             id_grado: ID del grado desde BD
@@ -36,19 +39,11 @@ class TextoGenerator(BaseGenerator):
             id_dificultad: ID de la dificultad desde BD
             dificultad_escala: Escala 1-5 para especificar en prompt
             tipos_preguntas: Lista de nombres de tipos distribuidos
-                            Ej: ["Selección Única", "Comprensión Literal", ...]
         
         Returns:
-            dict con estructura:
-            {
-                "titulo": str,
-                "cuento": str,
-                "ensenanza": str,
-                "preguntas": List[dict]
-            }
+            dict con estructura que incluye dificultad por pregunta
         """
         
-        # Construir prompt unificado que genera texto + preguntas
         prompt = self.prompt_builder.build_texto_y_preguntas_prompt(
             id_grado=id_grado,
             id_tematica=id_tematica,
@@ -58,13 +53,9 @@ class TextoGenerator(BaseGenerator):
             tipos_preguntas=tipos_preguntas
         )
         
-        # Llamar al IA
         raw_response = self.call_ai(prompt)
-        
-        # Parsear JSON
         parsed = self.parse_json(raw_response)
         
-        # Validar estructura básica
         if not all(k in parsed for k in ["titulo", "cuento"]):
             raise ValidationException(
                 message="La respuesta del modelo no contiene los campos requeridos",
@@ -74,14 +65,12 @@ class TextoGenerator(BaseGenerator):
                 }
             )
         
-        # Validar que tenga preguntas
         if "preguntas" not in parsed or not isinstance(parsed["preguntas"], list):
             raise ValidationException(
                 message="La respuesta no contiene una lista válida de preguntas",
                 details={"estructura_recibida": str(type(parsed.get("preguntas")))}
             )
         
-        # Procesar preguntas para garantizar estructura correcta
         preguntas = self._procesar_preguntas(parsed["preguntas"])
         
         return {
@@ -95,17 +84,17 @@ class TextoGenerator(BaseGenerator):
     def _procesar_preguntas(self, preguntas: list) -> list:
         """
         Procesa y valida preguntas de la respuesta IA.
+        ✅ AHORA: Asigna dificultad progresiva (1, 2, 3, 4, 5) a cada pregunta
         
         - Limita a PREGUNTAS_POR_TEXTO
         - Valida que cada pregunta tenga alternativas
-        - Procesa alternativas (máximo ALTERNATIVAS_POR_PREGUNTA)
-        - Garantiza exactamente 1 respuesta correcta por pregunta
+        - Procesa alternativas
+        - ✅ NUEVO: Asigna dificultad_pregunta si no existe
         """
         from app.config.settings import settings
         
         preguntas_procesadas = []
         
-        # Limitar a cantidad configurada
         preguntas = preguntas[:settings.PREGUNTAS_POR_TEXTO]
         
         for i, pregunta in enumerate(preguntas):
@@ -114,6 +103,10 @@ class TextoGenerator(BaseGenerator):
                     message=f"La pregunta {i+1} no tiene alternativas",
                     details={"pregunta_index": i, "pregunta": str(pregunta)[:100]}
                 )
+            
+            # ✅ NUEVO: Asignar dificultad_pregunta progresiva
+            # Pregunta 1 = dificultad 1, Pregunta 2 = dificultad 2, etc.
+            pregunta["dificultad_pregunta"] = i + 1  # 1, 2, 3, 4, 5
             
             pregunta_procesada = self._procesar_alternativas(pregunta)
             preguntas_procesadas.append(pregunta_procesada)
@@ -134,15 +127,12 @@ class TextoGenerator(BaseGenerator):
         alternativas = pregunta.get("alternativas", [])
         alternativas = alternativas[:settings.ALTERNATIVAS_POR_PREGUNTA]
         
-        # Contar cuántas están marcadas como correctas
         correctas = sum(1 for a in alternativas if a.get("es_correcta"))
         
         if correctas != 1:
             if correctas == 0:
-                # Si no hay correcta, marcar la primera
                 alternativas[0]["es_correcta"] = True
             else:
-                # Si hay múltiples, dejar solo la primera como correcta
                 for j, a in enumerate(alternativas):
                     a["es_correcta"] = (j == 0)
         

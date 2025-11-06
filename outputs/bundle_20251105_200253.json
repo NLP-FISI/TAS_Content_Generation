@@ -1,0 +1,560 @@
+{
+  "textos": [
+    {
+      "id_texto": 58,
+      "titulo": "El Viaje de Lila a la Luna",
+      "contenido": "Lila es una niña curiosa. Un día, encontró un cohete pequeño en su jardín. '¡Vamos a la Luna!', dijo su amigo Robi. Subieron al cohete. ¡Zas! Despegaron. En la Luna, vieron rocas grandes y polvo. '¡Es divertido saltar aquí!', gritó Lila. Jugaron y tomaron fotos. De pronto, el cohete hizo un ruido raro. '¡Rápido, volvamos!', dijo Robi. Aterrizaron en el jardín. Lila sonrió. 'Fue una aventura increíble'.",
+      "ensenanza": "La curiosidad y la amistad hacen que las aventuras sean más divertidas.",
+      "tipo_texto": "Narrativo",
+      "grado": "SEGUNDO",
+      "tematica": "Ciencia Ficción y Espacio",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Selección Única",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿Quién encontró el cohete?",
+          "alternativas": [
+            {
+              "texto": "Lila",
+              "es_correcta": true
+            },
+            {
+              "texto": "Robi",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un astronauta",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un robot",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Qué hicieron Lila y Robi en la Luna?",
+          "alternativas": [
+            {
+              "texto": "Jugaron y tomaron fotos",
+              "es_correcta": true
+            },
+            {
+              "texto": "Hicieron un picnic",
+              "es_correcta": false
+            },
+            {
+              "texto": "Dormieron",
+              "es_correcta": false
+            },
+            {
+              "texto": "Plantaron árboles",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Aplicar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Por qué Lila y Robi tuvieron que volver rápido?",
+          "alternativas": [
+            {
+              "texto": "El cohete hizo un ruido raro",
+              "es_correcta": true
+            },
+            {
+              "texto": "Se aburrieron",
+              "es_correcta": false
+            },
+            {
+              "texto": "Hacía mucho frío",
+              "es_correcta": false
+            },
+            {
+              "texto": "Querían comer",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Selección Única",
+          "nivel_bloom": "Analizar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Qué enseña la historia sobre la curiosidad?",
+          "alternativas": [
+            {
+              "texto": "Que la curiosidad lleva a aventuras",
+              "es_correcta": true
+            },
+            {
+              "texto": "Que es peligroso ser curioso",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que solo los robots son curiosos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que la Luna es aburrida",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿Dónde aterrizó el cohete al final?",
+          "alternativas": [
+            {
+              "texto": "En el jardín de Lila",
+              "es_correcta": true
+            },
+            {
+              "texto": "En la escuela",
+              "es_correcta": false
+            },
+            {
+              "texto": "En el espacio",
+              "es_correcta": false
+            },
+            {
+              "texto": "En la playa",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    },
+    {
+      "id_texto": 59,
+      "titulo": "El Viaje de Luna y Estrella al Planeta de los Colores",
+      "contenido": "Luna y Estrella son dos amigos que viven en la Tierra. Un día, encuentran una nave espacial pequeña en el parque. La nave es azul y brillante. -¡Vamos a explorar!- dice Estrella. -Sí, pero con cuidado- responde Luna. Suben a la nave y presionan un botón. ¡Zas! La nave despega. Viajan por el espacio. Ven estrellas brillantes y planetas grandes. Llegan a un planeta de colores. Todo es rojo, azul, amarillo y verde. Hay flores que cambian de color. -¡Qué bonito!- dice Luna. -Sí, pero debemos volver- dice Estrella. Presionan otro botón. La nave regresa a la Tierra. -Fue una aventura divertida- dice Luna. -Sí, pero debemos cuidar nuestro planeta- responde Estrella.",
+      "ensenanza": "Es importante explorar y aprender, pero también cuidar nuestro hogar, la Tierra.",
+      "tipo_texto": "Narrativo",
+      "grado": "SEGUNDO",
+      "tematica": "Ciencia Ficción y Espacio",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Selección Única",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿Qué encuentran Luna y Estrella en el parque?",
+          "alternativas": [
+            {
+              "texto": "Una nave espacial pequeña",
+              "es_correcta": true
+            },
+            {
+              "texto": "Un cohete grande",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un robot",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un libro de ciencia ficción",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Qué color tiene la nave espacial que encuentran?",
+          "alternativas": [
+            {
+              "texto": "Azul y brillante",
+              "es_correcta": true
+            },
+            {
+              "texto": "Rojo y grande",
+              "es_correcta": false
+            },
+            {
+              "texto": "Verde y pequeña",
+              "es_correcta": false
+            },
+            {
+              "texto": "Amarillo y oscura",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Aplicar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Por qué Luna y Estrella deciden regresar a la Tierra?",
+          "alternativas": [
+            {
+              "texto": "Porque extrañaban su hogar",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque se perdieron en el espacio",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque la nave se rompió",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque no les gustó el planeta de colores",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Selección Única",
+          "nivel_bloom": "Analizar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Qué enseñanza aprenden Luna y Estrella al final del cuento?",
+          "alternativas": [
+            {
+              "texto": "Debemos cuidar nuestro planeta",
+              "es_correcta": true
+            },
+            {
+              "texto": "Explorar es siempre la mejor opción",
+              "es_correcta": false
+            },
+            {
+              "texto": "Los planetas de colores son peligrosos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Las naves espaciales son fáciles de manejar",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿Qué hacen las flores en el planeta de colores?",
+          "alternativas": [
+            {
+              "texto": "Cambian de color",
+              "es_correcta": true
+            },
+            {
+              "texto": "Cantan canciones",
+              "es_correcta": false
+            },
+            {
+              "texto": "Hablan con los visitantes",
+              "es_correcta": false
+            },
+            {
+              "texto": "Se esconden bajo el suelo",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    },
+    {
+      "id_texto": 60,
+      "titulo": "El Viaje de Luna y Estrella al Planeta de los Colores",
+      "contenido": "Había una vez dos niños, Luna y Estrella, que vivían en un planeta azul. Un día, encontraron una nave espacial pequeña. \"¡Vamos a explorar!\", dijo Luna. \"¡Sí!\", gritó Estrella. Subieron a la nave y volaron al espacio. Llegaron a un planeta lleno de colores. \"¡Mira!\", dijo Estrella. \"¡Todo es rosa, azul y dorado!\". Jugaron con bolas brillantes y comieron frutas dulces. \"Este planeta es mágico\", dijo Luna. \"Debemos cuidarlo\", respondió Estrella. Volvieron a casa felices. Al llegar, contaron su aventura a sus padres.",
+      "ensenanza": "Es importante cuidar los lugares que visitamos, aunque sean mágicos.",
+      "tipo_texto": "Narrativo",
+      "grado": "SEGUNDO",
+      "tematica": "Ciencia Ficción y Espacio",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Selección Única",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿Cómo se llaman los dos niños del cuento?",
+          "alternativas": [
+            {
+              "texto": "Luna y Estrella",
+              "es_correcta": true
+            },
+            {
+              "texto": "Sol y Tierra",
+              "es_correcta": false
+            },
+            {
+              "texto": "Marte y Júpiter",
+              "es_correcta": false
+            },
+            {
+              "texto": "Venus y Mercurio",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Qué encontraron Luna y Estrella antes de viajar?",
+          "alternativas": [
+            {
+              "texto": "Una nave espacial pequeña",
+              "es_correcta": true
+            },
+            {
+              "texto": "Un cohete gigante",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un mapa del espacio",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un robot",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Aplicar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Por qué Luna y Estrella decidieron volver a casa?",
+          "alternativas": [
+            {
+              "texto": "Para contar su aventura a sus padres",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque se perdieron",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque el planeta se puso oscuro",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque se aburrieron",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Selección Única",
+          "nivel_bloom": "Analizar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Qué aprendieron Luna y Estrella en su viaje?",
+          "alternativas": [
+            {
+              "texto": "Cuidar los lugares que visitamos",
+              "es_correcta": true
+            },
+            {
+              "texto": "No hablar con extraños",
+              "es_correcta": false
+            },
+            {
+              "texto": "Comer solo frutas verdes",
+              "es_correcta": false
+            },
+            {
+              "texto": "Jugar solo con amigos",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿De qué color era el planeta que visitaron?",
+          "alternativas": [
+            {
+              "texto": "Rosa, azul y dorado",
+              "es_correcta": true
+            },
+            {
+              "texto": "Verde y amarillo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Negro y blanco",
+              "es_correcta": false
+            },
+            {
+              "texto": "Rojo y plateado",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    },
+    {
+      "id_texto": 61,
+      "titulo": "El Viaje de Luna y Estrella al Planeta de los Colores",
+      "contenido": "Luna y Estrella son dos amigos que viven en la Tierra. Un día, encontraron una nave espacial pequeña y brillante. '¡Vamos a explorar el espacio!', dijo Luna. Subieron a la nave y despegaron. Volaron por el cielo azul y pasaron por las nubes blancas. De pronto, llegaron a un planeta lleno de colores. Todo era rojo, azul, amarillo y verde. '¡Qué bonito!', gritó Estrella. Jugaron con los colores y se rieron mucho. Cuando el sol empezó a ponerse, volvieron a la Tierra. 'Fue un día increíble', dijo Luna. 'Nunca olvidaré este viaje', respondió Estrella.",
+      "ensenanza": "La amistad y la curiosidad nos llevan a vivir aventuras increíbles.",
+      "tipo_texto": "Narrativo",
+      "grado": "SEGUNDO",
+      "tematica": "Ciencia Ficción y Espacio",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Selección Única",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿Qué encontraron Luna y Estrella?",
+          "alternativas": [
+            {
+              "texto": "Una nave espacial",
+              "es_correcta": true
+            },
+            {
+              "texto": "Un cohete grande",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un globo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un avión",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Qué hicieron Luna y Estrella en el planeta de los colores?",
+          "alternativas": [
+            {
+              "texto": "Jugaron con los colores",
+              "es_correcta": true
+            },
+            {
+              "texto": "Comieron helado",
+              "es_correcta": false
+            },
+            {
+              "texto": "Dormieron",
+              "es_correcta": false
+            },
+            {
+              "texto": "Leyeron un libro",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Aplicar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Por qué Luna y Estrella volvieron a la Tierra?",
+          "alternativas": [
+            {
+              "texto": "Porque el sol empezó a ponerse",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque se perdieron",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque tenían hambre",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque se aburrieron",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Selección Única",
+          "nivel_bloom": "Analizar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Qué aprendieron Luna y Estrella en su aventura?",
+          "alternativas": [
+            {
+              "texto": "Que la amistad y la curiosidad son importantes",
+              "es_correcta": true
+            },
+            {
+              "texto": "Que el espacio es peligroso",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que los planetas son aburridos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que las naves espaciales son lentas",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿Qué dijeron Luna y Estrella al final del viaje?",
+          "alternativas": [
+            {
+              "texto": "'Fue un día increíble' y 'Nunca olvidaré este viaje'",
+              "es_correcta": true
+            },
+            {
+              "texto": "'Quiero volver mañana'",
+              "es_correcta": false
+            },
+            {
+              "texto": "'Estoy cansado'",
+              "es_correcta": false
+            },
+            {
+              "texto": "'No me gustó el planeta'",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tipo_texto": "Narrativo",
+    "total_generados": 4
+  }
+}

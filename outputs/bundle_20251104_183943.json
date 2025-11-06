@@ -1,0 +1,146 @@
+{
+  "textos": [
+    {
+      "id_texto": 52,
+      "titulo": "El Viaje de Lila a la Luna",
+      "contenido": "Lila es una niña curiosa. Un día, encontró un cohete pequeño en su jardín. \"¡Vamos a la Luna!\" dijo su amigo Robi. Subieron al cohete. ¡Zas! Despegaron. En la Luna, vieron un paisaje gris. \"¡Qué bonito!\" dijo Lila. Jugaron con piedras que flotaban. De pronto, el cohete hizo un ruido raro. \"¡Rápido, Robi!\" gritó Lila. Arreglaron el cohete. Volvieron a casa. \"Fue divertido\" dijo Lila. \"Pero mejor en la Tierra\".",
+      "ensenanza": "Aventurarse es emocionante, pero siempre es bueno volver a casa.",
+      "tipo_texto": "Narrativo",
+      "grado": "SEGUNDO",
+      "tematica": "Ciencia Ficción y Espacio",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Selección Única",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿Qué encontró Lila en su jardín?",
+          "alternativas": [
+            {
+              "texto": "Un cohete pequeño",
+              "es_correcta": true
+            },
+            {
+              "texto": "Un robot",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un libro",
+              "es_correcta": false
+            },
+            {
+              "texto": "Una pelota",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Qué hicieron Lila y Robi en la Luna?",
+          "alternativas": [
+            {
+              "texto": "Jugaron con piedras que flotaban",
+              "es_correcta": true
+            },
+            {
+              "texto": "Comieron helado",
+              "es_correcta": false
+            },
+            {
+              "texto": "Dibujaron en la arena",
+              "es_correcta": false
+            },
+            {
+              "texto": "Vieron un show de luces",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Aplicar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Por qué Lila dijo que fue mejor volver a casa?",
+          "alternativas": [
+            {
+              "texto": "Porque extrañaba a su familia",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque se aburrió en la Luna",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque el cohete se rompió",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque no había comida",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Selección Única",
+          "nivel_bloom": "Analizar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Qué problema tuvieron en la Luna?",
+          "alternativas": [
+            {
+              "texto": "El cohete hizo un ruido raro",
+              "es_correcta": true
+            },
+            {
+              "texto": "Se perdieron en el espacio",
+              "es_correcta": false
+            },
+            {
+              "texto": "No tenían agua",
+              "es_correcta": false
+            },
+            {
+              "texto": "Hacía mucho frío",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿Quién ayudó a Lila a arreglar el cohete?",
+          "alternativas": [
+            {
+              "texto": "Robi",
+              "es_correcta": true
+            },
+            {
+              "texto": "Su mamá",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un astronauta",
+              "es_correcta": false
+            },
+            {
+              "texto": "Nadie, lo hizo sola",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tipo_texto": "Narrativo",
+    "total_generados": 1
+  }
+}

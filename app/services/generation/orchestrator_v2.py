@@ -114,12 +114,9 @@ class GenerationOrchestratorV2:
         combinaciones: List[Dict[str, Any]],
         tipo_texto_nombre: str
     ) -> tuple:
-        """
-        Procesa cada combinación: genera contenido, mapea y guarda.
+
+        import time  # ✅ AGREGAR IMPORT
         
-        Returns:
-            tuple: (textos_generados, bundle_json)
-        """
         textos_generados = []
         bundle_json = {
             "textos": [],
@@ -145,6 +142,11 @@ class GenerationOrchestratorV2:
                 bundle_json["textos"].append(resultado["json_data"])
                 logger.info(f"  ✓ {resultado['info']['titulo']}")
                 
+                if i < total:
+                    delay_between_texts = settings.DELAY_BETWEEN_TEXTS
+                    logger.info(f"  ⏱️  Esperando {delay_between_texts}s antes de siguiente generación...")
+                    time.sleep(delay_between_texts)
+                
             except Exception as e:
                 logger.error(f"  ✗ ERROR: {str(e)}")
                 if not settings.GUARDAR_JSON_EN_ERROR:
@@ -152,30 +154,18 @@ class GenerationOrchestratorV2:
         
         bundle_json["metadata"]["total_generados"] = len(textos_generados)
         return textos_generados, bundle_json
-    
+        
     def _generar_uno(self, combo: Dict[str, Any]) -> Dict[str, Any]:
-        """
-        Genera UN texto completo (texto + preguntas en 1 llamada IA).
         
-        Args:
-            combo: Dict con todos los parámetros de la combinación
-        
-        Returns:
-            Dict con estructura: {"info": {...}, "json_data": {...}}
-        """
-        
-        # Obtener distribución de tipos de preguntas
         tipos_preguntas_ids = self._distribuir_tipos_preguntas(
             settings.PREGUNTAS_POR_TEXTO
         )
         
-        # Obtener nombres de tipos distribuidos
         tipos_preguntas_nombres = [
             self.catalog_service.obtener_nombre_tipo_pregunta(id_tipo)
             for id_tipo in tipos_preguntas_ids
         ]
         
-        # GENERAR TEXTO + PREGUNTAS EN UNA SOLA LLAMADA IA ✅
         contenido = self.texto_generator.generar(
             id_grado=combo["id_grado"],
             id_tematica=combo["id_tematica"],
@@ -185,7 +175,6 @@ class GenerationOrchestratorV2:
             tipos_preguntas=tipos_preguntas_nombres
         )
         
-        # Mapear texto a formato BD
         texto_bd = self.mapping_service.mapear_texto_a_bd(
             contenido,
             combo["id_tipo_texto"],
@@ -194,11 +183,10 @@ class GenerationOrchestratorV2:
             combo["id_grado"]
         )
         
-        # Mapear preguntas a formato BD (con tipo específico para cada una)
         preguntas_bd = self.mapping_service.mapear_preguntas_a_bd(
             contenido["preguntas"],
-            0,  # id_texto será asignado tras insertar
-            tipos_preguntas_ids,  # ✅ Pasar tipos distribuidos
+            0, 
+            tipos_preguntas_ids,  
             combo["id_dificultad"]
         )
         
