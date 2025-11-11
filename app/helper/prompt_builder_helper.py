@@ -1,6 +1,6 @@
 # app/helper/prompt_builder_helper.py
-# ✅ VERSIÓN ADAPTADA: Compatible con tu código + contexto MINEDU Perú
-# Cambios mínimos pero efectivos
+# ✅ VERSIÓN MEJORADA: Distractores más creíbles + Comprensión Crítica
+# Cambios: Distractores sofisticados, tipos de preguntas actualizados, estrategias de confusión pedagógica
 
 from typing import List
 from app.config.settings import settings
@@ -9,10 +9,7 @@ from app.config.settings import settings
 class PromptBuilder:
     
     def __init__(self, catalog_service):
-        """
-        Inicializa el PromptBuilder con acceso a CatalogService
-        para obtener nombres y características desde la BD
-        """
+
         self.catalog = catalog_service
     
     def build_texto_y_preguntas_prompt(
@@ -24,40 +21,29 @@ class PromptBuilder:
         dificultad_escala: int,
         tipos_preguntas: List[str]
     ) -> str:
-        """
-        Construye UN ÚNICO prompt que genera texto + preguntas juntas.
-        ✅ Adaptado: Agrega contexto MINEDU Perú sin cambiar estructura
+
         
-        Args:
-            id_grado: ID del grado desde BD (1-6)
-            id_tematica: ID de la temática desde BD
-            id_tipo_texto: ID del tipo de texto desde BD
-            id_dificultad: ID de la dificultad desde BD
-            dificultad_escala: Escala 1-5 para especificar dificultad en texto
-            tipos_preguntas: Lista de nombres de tipos de preguntas distribuidos
-        """
-        
-        # Obtener nombres desde BD
         grado_nombre = self.catalog.obtener_nombre_grado(id_grado)
         tematica_nombre = self.catalog.obtener_nombre_tematica(id_tematica)
         tipo_texto_nombre = self.catalog.obtener_nombre_tipo_texto(id_tipo_texto)
         dificultad_nombre = self.catalog.obtener_nombre_dificultad(id_dificultad)
         
-        # Obtener características del tipo de texto
         caracteristicas_tipo = self._obtener_caracteristicas_tipo_texto(id_tipo_texto)
         
-        # Construir especificación de tipos de preguntas
         especificacion_tipos = "\n".join(
             f"- Pregunta {i+1}: {tipo}" 
             for i, tipo in enumerate(tipos_preguntas)
         )
         
-        # Obtener información del ciclo educativo
         ciclo_info = self._obtener_informacion_ciclo(id_grado)
         
-        # Especificación de escala de dificultad (MEJORADA)
         especificacion_dificultad = self._obtener_especificacion_escala_minedu(
             dificultad_escala, 
+            id_grado
+        )
+        
+        estrategia_distractores = self._obtener_estrategia_distractores(
+            dificultad_escala,
             id_grado
         )
         
@@ -116,16 +102,29 @@ Genera EXACTAMENTE {settings.PREGUNTAS_POR_TEXTO} preguntas de comprensión lect
 Distribución de tipos de preguntas:
 {especificacion_tipos}
 
-Especificaciones:
-1. **Selección Única**: Elegir la mejor opción de respuesta
-2. **Comprensión Literal**: Respuesta directa en el texto
-3. **Comprensión Inferencial**: Requiere deducir información implícita
+TIPOS DE PREGUNTAS (DEFINICIONES ACTUALIZADAS):
+1. **Comprensión Crítica**: Analizar y juzgar información del texto, identificar propósitos, evaluar decisiones, comparar alternativas
+2. **Comprensión Literal**: Respuesta directa y explícita en el texto, hechos concretos, detalles específicos
+3. **Comprensión Inferencial**: Deducir información implícita, leer entre líneas, inferir causas, emociones, intenciones
 
 Cada pregunta debe tener:
 - EXACTAMENTE {settings.ALTERNATIVAS_POR_PREGUNTA} alternativas
 - SOLO 1 alternativa correcta (es_correcta: true)
-- Alternativas plausibles pero claramente incorrectas
+- Alternativas plausibles y creíbles, NO obvias (ver estrategia de distractores abajo)
 - Dificultad acorde al nivel {dificultad_escala}/5
+
+═══════════════════════════════════════════════════════════════════════════════
+🎯 ESTRATEGIA DE DISTRACTORES CREÍBLES - DIFÍCIL PERO JUSTA
+═══════════════════════════════════════════════════════════════════════════════
+
+{estrategia_distractores}
+
+PRINCIPIOS GENERALES PARA TODOS LOS NIVELES:
+• Los distractores deben ser plausibles (podrían ser correctos si no se lee con cuidado)
+• Evita opciones obviamente incorrectas o absurdas
+• Usa información cercana pero incorrecta (casi verdad)
+• Aprovecha confusiones comunes en el nivel cognitivo del estudiante
+• El distractor correcto requiere comprensión real, no solo reconocimiento de palabras
 
 ═══════════════════════════════════════════════════════════════════════════════
 🧠 TAXONOMÍA DE BLOOM - Distribución Equilibrada
@@ -139,9 +138,9 @@ Cada pregunta debe tener:
 6. **Crear**: Proponer soluciones o finales alternativos
 
 Prioriza según ciclo:
-- Ciclo II: Recordar, Comprender, Aplicar
-- Ciclo III: Recordar, Comprender, Aplicar, Analizar
-- Ciclo IV: Todos los niveles, énfasis en Analizar, Evaluar, Crear
+- Ciclo II: Recordar, Comprender (con distractores simples pero plausibles)
+- Ciclo III: Recordar, Comprender, Aplicar, Analizar (distractores que requieren cuidado)
+- Ciclo IV: Todos los niveles, énfasis en Analizar, Evaluar, Crear (distractores sofisticados)
 
 ═══════════════════════════════════════════════════════════════════════════════
 📤 FORMATO DE SALIDA - JSON ESTRICTO
@@ -156,7 +155,7 @@ Devuelve SOLO un bloque JSON válido, sin texto adicional:
   "palabras_aprox": number,
   "preguntas": [
     {{
-      "tipo": "Selección Única | Comprensión Literal | Comprensión Inferencial",
+      "tipo": "Comprensión Crítica | Comprensión Literal | Comprensión Inferencial",
       "nivel_bloom": "Recordar | Comprender | Aplicar | Analizar | Evaluar | Crear",
       "dificultad_pregunta": 1,
       "enunciado": "string (la pregunta)",
@@ -174,17 +173,14 @@ Devuelve SOLO un bloque JSON válido, sin texto adicional:
 ⚠️ IMPORTANTE: 
 - El array "preguntas" debe tener exactamente {settings.PREGUNTAS_POR_TEXTO} elementos
 - CADA pregunta DEBE tener "dificultad_pregunta" con valor: 1, 2, 3, 4, 5
+- Los distractores NO DEBEN SER OBVIOS: evita contradicciones claras con el texto
+- Un estudiante que NO lea con atención podría elegir distractores (pero la lectura cuidadosa revela la respuesta correcta)
 """
 
     def _obtener_caracteristicas_tipo_texto(self, id_tipo_texto: int) -> str:
-        """
-        Obtiene características del tipo de texto.
-        ✅ MEJORA: Agregados 5 tipos nuevos (argumentativo, dialogado, informativo, poético, literario)
-        """
         try:
             tipo_nombre = self.catalog.obtener_nombre_tipo_texto(id_tipo_texto)
             
-            # CARACTERÍSTICAS MEJORADAS - 9 tipos en total
             caracteristicas = {
                 "narrativo": "Incluye personajes con diálogos. Estructura: inicio, desarrollo, desenlace. Genera emociones. Desarrolla comprensión literal e inferencial.",
                 
@@ -213,11 +209,6 @@ Devuelve SOLO un bloque JSON válido, sin texto adicional:
             return "Texto educativo claro y estructurado según estándares MINEDU."
     
     def _obtener_informacion_ciclo(self, id_grado: int) -> dict:
-        """
-        Retorna información del ciclo educativo según MINEDU Perú.
-        ✅ NUEVA FUNCIÓN: Calcula ciclo automáticamente
-        """
-        # Calcular ciclo basado en grado
         if id_grado in [1, 2]:
             ciclo = "Ciclo II"
             rango = "1º-2º grado"
@@ -238,11 +229,7 @@ Devuelve SOLO un bloque JSON válido, sin texto adicional:
         }
     
     def _obtener_especificacion_escala_minedu(self, dificultad_escala: int, id_grado: int) -> str:
-        """
-        Retorna especificación detallada para cada nivel 1-5.
-        ✅ MEJORA: Adapta especificaciones al grado específico
-        """
-        # Definir especificaciones base para cada nivel
+
         especificaciones_base = {
             1: {
                 "nombre": "MUY FÁCIL",
@@ -306,10 +293,8 @@ Devuelve SOLO un bloque JSON válido, sin texto adicional:
             }
         }
         
-        # Obtener especificación base
         spec = especificaciones_base.get(dificultad_escala, especificaciones_base[3])
         
-        # Construir respuesta formateada
         caracteristicas_str = "\n   ".join([f"• {c}" for c in spec["caracteristicas"]])
         
         return f"""NIVEL {dificultad_escala} - {spec['nombre']}
@@ -321,7 +306,6 @@ Devuelve SOLO un bloque JSON válido, sin texto adicional:
    • Ideal para: Grados {self._get_grados_ideales(dificultad_escala)}"""
     
     def _get_grados_ideales(self, dificultad_escala: int) -> str:
-        """Helper para indicar grados ideales según dificultad"""
         mapeo = {
             1: "1º-2º (Ciclo II)",
             2: "2º-3º (Ciclo II-III)",
@@ -330,3 +314,74 @@ Devuelve SOLO un bloque JSON válido, sin texto adicional:
             5: "5º-6º (Ciclo IV)"
         }
         return mapeo.get(dificultad_escala, "Todos los grados")
+    
+    def _obtener_estrategia_distractores(self, dificultad_escala: int, id_grado: int) -> str:
+        """
+        Estrategias específicas para crear distractores creíbles y desafiantes
+        según el nivel de dificultad y ciclo educativo.
+        """
+        
+        estrategias = {
+            1: """CICLO II - NIVEL 1 (MUY FÁCIL): Distractores simples pero cercanos
+   
+   • Distractor 1: Información correcta pero de otra parte del texto (confunde por ubicación)
+   • Distractor 2: Información relacionada pero ligeramente diferente (una palabra cambia el sentido)
+   • Distractor 3: Respuesta que "suena bien" pero no está en el texto
+   
+   EJEMPLO: Si pregunta "¿De qué color era el gato?"
+   ✓ Correcta: "Blanco con manchas negras"
+   ✗ Distractor 1: "Blanco" (correcto pero incompleto)
+   ✗ Distractor 2: "Negro con manchas blancas" (invertido)
+   ✗ Distractor 3: "Gris" (color de otro animal mencionado)""",
+            
+            2: """CICLO II-III - NIVEL 2 (FÁCIL): Distractores que requieren lectura atenta
+   
+   • Distractor 1: Información de la historia pero aplicada al personaje equivocado
+   • Distractor 2: Detalles verdaderos pero que responden otra pregunta (lógica pero incorrecta)
+   • Distractor 3: Antonimia o contraste: lo opuesto a la respuesta correcta
+   
+   EJEMPLO: Si pregunta "¿Cómo se sentía María al inicio?"
+   ✓ Correcta: "Triste y asustada"
+   ✗ Distractor 1: "Feliz y confiada" (lo opuesto)
+   ✗ Distractor 2: "Cansada y hambrienta" (emociones válidas pero no las del personaje)
+   ✗ Distractor 3: "Sorprendida" (emoción del texto pero no inicial)""",
+            
+            3: """CICLO III - NIVEL 3 (MEDIO): Distractores que confunden por semejanza conceptual
+   
+   • Distractor 1: Inferencia parcial o incompleta (falta contexto importante)
+   • Distractor 2: Causa o efecto relacionados pero no el correcto (lógica pero falsa)
+   • Distractor 3: Información válida pero de nivel de Bloom diferente (confunde categorías)
+   
+   EJEMPLO: Si pregunta "¿Por qué Juan decidió ayudar?"
+   ✓ Correcta: "Porque vio que su amigo estaba en peligro y sintió compasión"
+   ✗ Distractor 1: "Porque quería ayudar" (correcto pero demasiado simple)
+   ✗ Distractor 2: "Porque sus padres le lo pidieron" (causa válida pero no la del texto)
+   ✗ Distractor 3: "Porque era un buen amigo" (consecuencia, no causa)""",
+            
+            4: """CICLO III-IV - NIVEL 4 (DIFÍCIL): Distractores sofisticados y casi verdaderos
+   
+   • Distractor 1: Verdad pero interpretación incompleta de la intención del autor
+   • Distractor 2: Relación de causa-efecto válida pero de menor importancia que la correcta
+   • Distractor 3: Análisis correcto pero aplicado a contexto diferente o nivel de abstracción erróneo
+   
+   EJEMPLO: Si pregunta "¿Cuál fue la intención principal del personaje al mentir?"
+   ✓ Correcta: "Proteger a su familia del miedo, aunque sabía que era incorrecto"
+   ✗ Distractor 1: "Proteger a su familia" (correcto pero omite el conflicto moral)
+   ✗ Distractor 2: "Evitar problemas inmediatos" (válido pero razón secundaria)
+   ✗ Distractor 3: "Por miedo a las consecuencias" (emoción presente pero no la intención principal)""",
+            
+            5: """CICLO IV - NIVEL 5 (MUY DIFÍCIL): Distractores altamente plausibles y académicos
+   
+   • Distractor 1: Análisis válido de otra perspectiva o personaje (verdadero pero no para esta pregunta)
+   • Distractor 2: Interpretación sofisticada pero que requiere análisis incompleto de evidencia
+   • Distractor 3: Conclusión de nivel Bloom diferente (evaluar vs analizar; crear vs recordar)
+   
+   EJEMPLO: Si pregunta "¿Cómo ejemplifica el texto la tensión entre conveniencia personal y responsabilidad social?"
+   ✓ Correcta: "El personaje rechaza un beneficio que afectaría a la comunidad, demostrando que valora la responsabilidad colectiva"
+   ✗ Distractor 1: "El personaje hace un sacrificio personal para ayudar a su familia" (válido pero contexto diferente)
+   ✗ Distractor 2: "El conflicto surge entre lo que quiere el protagonista y lo que la sociedad demanda" (análisis correcto pero superficial)
+   ✗ Distractor 3: "El texto sugiere que los beneficios personales son menos importantes que la conveniencia" (conclusión válida pero inversa)"""
+        }
+        
+        nivel_mapeado = min(dificultad_escala, 5)
+        return estrategias.get(nivel_mapeado, estrategias[3])

@@ -14,20 +14,10 @@ class ContentService(BaseService):
         id_dificultad: int,
         cantidad: int = 1
     ) -> Dict[str, Any]:
-        """
-        Obtiene textos disponibles para un usuario específico.
-        
-        Flujo:
-        1. Obtener el grado del usuario
-        2. Buscar textos que NO hayan sido asignados al usuario
-        3. Guardar la asignación en usuario_texto
-        4. Retornar los textos con sus preguntas
-        """
+
         try:
-            # Paso 1: Obtener grado del usuario
             id_grado = self._obtener_grado_usuario(id_usuario)
             
-            # Paso 2: Buscar textos disponibles (sin asignar)
             textos_disponibles = self._buscar_textos_disponibles(
                 id_usuario=id_usuario,
                 id_tipo_texto=id_tipo_texto,
@@ -49,13 +39,10 @@ class ContentService(BaseService):
                     }
                 )
             
-            # Paso 3: Procesar cada texto y guardar asignación
             textos_con_preguntas = []
             for texto in textos_disponibles:
-                # Obtener preguntas del texto
                 preguntas = self._obtener_preguntas_con_alternativas(texto.id_texto)
                                 
-                # Construir respuesta con preguntas anidadas
                 textos_con_preguntas.append({
                     "id_texto": texto.id_texto,
                     "titulo": texto.titulo,
@@ -84,7 +71,6 @@ class ContentService(BaseService):
             )
     
     def _obtener_grado_usuario(self, id_usuario: int) -> int:
-        """Obtiene el grado del usuario desde la tabla usuario"""
         usuario_model = self.get_model("usuario")
         
         if not usuario_model:
@@ -103,7 +89,6 @@ class ContentService(BaseService):
                 details={"id_usuario": id_usuario}
             )
         
-        # Obtener id_grado del usuario
         id_grado = getattr(usuario, 'id_grado', None)
         
         if id_grado is None:
@@ -123,16 +108,11 @@ class ContentService(BaseService):
         id_grado: int,
         cantidad: int
     ) -> List[Any]:
-        """
-        Busca textos que cumplan los criterios y que NO estén completados 
-        en resultado_texto.
-        
-        ✅ CAMBIO PRINCIPAL: Usa resultado_texto en lugar de usuario_texto
-        """
+
         from sqlalchemy import select, func
         
         texto_model = self.get_model("texto")
-        resultado_texto_model = self.get_model("resultado_texto")  # ✅ NUEVO
+        resultado_texto_model = self.get_model("resultado_texto")  
         
         if not texto_model:
             raise DatabaseException(
@@ -140,25 +120,22 @@ class ContentService(BaseService):
                 details={"modelo": "texto"}
             )
         
-        # ✅ NUEVO: Validar que resultado_texto exista
         if not resultado_texto_model:
             raise DatabaseException(
                 message="Modelo resultado_texto no encontrado en la base de datos",
                 details={"modelo": "resultado_texto"}
             )
         
-        # ✅ CAMBIO: Subquery para obtener textos YA COMPLETADOS por el usuario
         textos_completados_query = select(resultado_texto_model.id_texto).where(
             resultado_texto_model.id_usuario == id_usuario
         )
         
-        # Buscar textos que cumplan criterios y NO estén completados
         textos = self.db.query(texto_model).filter(
             texto_model.id_tipo_texto == id_tipo_texto,
             texto_model.id_tematica == id_tematica,
             texto_model.id_dificultad == id_dificultad,
             texto_model.id_grado == id_grado,
-            texto_model.id_texto.notin_(textos_completados_query)  # ✅ CAMBIO
+            texto_model.id_texto.notin_(textos_completados_query) 
         ).order_by(func.random()).limit(cantidad).all()
         
         return textos
@@ -167,7 +144,6 @@ class ContentService(BaseService):
         self,
         id_texto: int
     ) -> List[Dict[str, Any]]:
-        """Obtiene preguntas y alternativas de un texto"""
         pregunta_model = self.get_model("pregunta")
         
         if not pregunta_model:
@@ -197,7 +173,6 @@ class ContentService(BaseService):
         self,
         id_pregunta: int
     ) -> List[Dict[str, Any]]:
-        """Obtiene alternativas de una pregunta"""
         alternativa_model = self.get_model("alternativa")
         
         if not alternativa_model:
