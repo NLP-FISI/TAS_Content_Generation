@@ -10,6 +10,7 @@ from .combinations import CombinationBuilder
 from .catalog_service import CatalogService
 from .mapping_service import MappingService
 from .storage_service import StorageService
+from .guardar_en_bd import GuardarEnBDService
 
 __all__ = [
     "GenerationOrchestratorV2",         
@@ -22,4 +23,5 @@ __all__ = [
     "CatalogService",
     "MappingService",
     "StorageService",
+    "GuardarEnBDService"
 ]

@@ -183,6 +183,63 @@ class CatalogService(BaseService):
                 message="Error al obtener tipos de preguntas",
                 details={"error": str(e)}
             )
+    def obtener_texto_por_alternativa(self, id_alternativa: int) -> Dict[str, any]:
+        try:
+            alternativa_model = self.get_model("alternativa")
+            pregunta_model = self.get_model("pregunta")
+            texto_model = self.get_model("texto")
+            
+            if not all([alternativa_model, pregunta_model, texto_model]):
+                raise DatabaseException(
+                    message="No se pudieron cargar los modelos necesarios",
+                    details={
+                        "alternativa": alternativa_model is not None,
+                        "pregunta": pregunta_model is not None,
+                        "texto": texto_model is not None
+                    }
+                )
+            
+            alternativa = self.db.query(alternativa_model).filter(
+                alternativa_model.id_alternativa == id_alternativa
+            ).first()
+            
+            if not alternativa:
+                raise ResourceNotFoundException(
+                    message="Alternativa no encontrada",
+                    details={"id_alternativa": id_alternativa}
+                )
+            
+            pregunta = self.db.query(pregunta_model).filter(
+                pregunta_model.id_pregunta == alternativa.id_pregunta
+            ).first()
+            
+            if not pregunta:
+                raise ResourceNotFoundException(
+                    message="Pregunta no encontrada para la alternativa dada",
+                    details={"id_pregunta": alternativa.id_pregunta}
+                )
+            
+            texto = self.db.query(texto_model).filter(
+                texto_model.id_texto == pregunta.id_texto
+            ).first()
+            
+            if not texto:
+                raise ResourceNotFoundException(
+                    message="Texto no encontrado para la pregunta dada",
+                    details={"id_texto": pregunta.id_texto}
+                )
+            
+            return {
+                "id_texto": texto.id_texto
+            }
+            
+        except (ResourceNotFoundException, DatabaseException):
+            raise
+        except Exception as e:
+            raise DatabaseException(
+                message="Error al obtener texto por alternativa",
+                details={"id_alternativa": id_alternativa, "error": str(e)}
+            )
     
     def validar_ids_existen(
         self,

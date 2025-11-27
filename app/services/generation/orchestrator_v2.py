@@ -21,15 +21,12 @@ class GenerationOrchestratorV2:
     def __init__(self, db: Session):
         self.db = db
         
-        # Servicios principales
         self.catalog_service = CatalogService(db)
         self.validator = GenerationRequestValidator(self.catalog_service)
         self.combination_builder = CombinationBuilder(self.catalog_service)
         
-        # Inyectar CatalogService en PromptBuilder
         self.prompt_builder = PromptBuilder(self.catalog_service)
         
-        # Generador unificado (solo TextoGenerator, sin PreguntaGenerator)
         self.texto_generator = TextoGenerator(self.prompt_builder)
         
         # Servicios de almacenamiento
@@ -45,39 +42,24 @@ class GenerationOrchestratorV2:
         id_grados: List[int],
         textos_por_combinacion: int
     ) -> Dict[str, Any]:
-        """
-        Orquesta el proceso completo de generación de contenido.
-        
-        Flujo:
-        1. Validar IDs y límites
-        2. Crear combinaciones
-        3. Para cada combinación: Generar texto + preguntas (1 llamada IA)
-        4. Mapear y guardar en BD
-        5. Retornar resumen
-        """
 
         try:
-            # PASO 1: Validación
             self._paso_1_validar(
                 id_tipo_texto, id_tematicas, id_dificultades, 
                 id_grados, textos_por_combinacion
             )
             
-            # PASO 2: Obtener nombre del tipo de texto
             tipo_texto_nombre = self.catalog_service.obtener_nombre_tipo_texto(id_tipo_texto)
             
-            # PASO 3: Crear combinaciones
             combinaciones = self.combination_builder.crear_combinaciones(
                 id_tipo_texto, tipo_texto_nombre, id_tematicas,
                 id_dificultades, id_grados, textos_por_combinacion
             )
             
-            # PASO 4: Procesar cada combinación
             textos_generados, bundle_json = self._paso_3_procesar(
                 combinaciones, tipo_texto_nombre
             )
             
-            # PASO 5: Guardar JSON temporal (opcional)
             archivo_json = self._guardar_json_temporal(bundle_json, textos_generados)
             
             return {
@@ -115,7 +97,7 @@ class GenerationOrchestratorV2:
         tipo_texto_nombre: str
     ) -> tuple:
 
-        import time  # ✅ AGREGAR IMPORT
+        import time 
         
         textos_generados = []
         bundle_json = {
@@ -190,16 +172,14 @@ class GenerationOrchestratorV2:
             combo["id_dificultad"]
         )
         
-        # Mapear alternativas (una lista por pregunta)
         alternativas_bd = [
             self.mapping_service.mapear_alternativas_a_bd(
                 pregunta["alternativas"],
-                0  # id_pregunta será asignado tras insertar
+                0  
             )
             for pregunta in contenido["preguntas"]
         ]
         
-        # GUARDAR EN BD (devuelve id_texto)
         id_texto = self.storage_service.guardar_texto_completo(
             texto_bd, preguntas_bd, alternativas_bd
         )
@@ -233,21 +213,7 @@ class GenerationOrchestratorV2:
         }
     
     def _distribuir_tipos_preguntas(self, num_preguntas: int) -> List[int]:
-        """
-        Distribuye tipos de preguntas de forma rotativa.
-        
-        Obtiene todos los tipos de la BD y los distribuye ciclando.
-        
-        Args:
-            num_preguntas: Cantidad de preguntas (normalmente 5)
-        
-        Returns:
-            List[int]: IDs de tipos distribuidos
-            
-        Ejemplo:
-            Si hay 3 tipos (IDs: 1, 2, 3) y 5 preguntas:
-            → [1, 2, 3, 1, 2]
-        """
+
         tipos = self.catalog_service.obtener_tipos_preguntas()
         tipos_ids = [t["id_tipo_pregunta"] for t in tipos]
         
@@ -263,12 +229,7 @@ class GenerationOrchestratorV2:
         bundle_json: dict,
         textos_generados: List[dict]
     ) -> str:
-        """
-        Guarda un JSON con todos los textos generados (opcional, configurable).
-        
-        Returns:
-            str: Nombre del archivo generado, o None si no se guardó
-        """
+
         if not settings.GUARDAR_JSON_TEMPORAL or not textos_generados:
             return None
         
