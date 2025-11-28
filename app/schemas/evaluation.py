@@ -45,23 +45,18 @@ class EvaluacionRequest(BaseModel):
     
     model_config = {
         "json_schema_extra": {
-            "examples": [
-                {
-                    "respuestas": [
-                        {"id_pregunta": 1, "id_alternativa": 3}
-                    ]
-                },
-                {
-                    "respuestas": [
-                        {"id_pregunta": 1, "id_alternativa": 3},
-                        {"id_pregunta": 2, "id_alternativa": 7},
-                        {"id_pregunta": 3, "id_alternativa": 10}
-                    ]
-                }
-            ]
+            "example": {
+                "respuestas": [
+                    {
+                        "id_pregunta": 1,
+                        "id_alternativa": 3,
+                        "id_usuario": 42,
+                        "id_juego": 7
+                    }
+                ]
+            }
         }
     }
-
 
 class EvaluacionResponse(BaseModel):
     respuestas_evaluadas: int = Field(..., description="Cantidad de respuestas evaluadas")
