@@ -14,7 +14,7 @@ def generar_contenido(
     db: Session = Depends(get_db)
 ):
 
-    orchestrator = GenerationOrchestratorV2(db)
+    orchestrator = GenerationOrchestratorV2(db, api_key=datos.api_key)
     
     resultado = orchestrator.generar_textos(
         id_tipo_texto=datos.id_tipo_texto,

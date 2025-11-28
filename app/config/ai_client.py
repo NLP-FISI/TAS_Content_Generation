@@ -8,10 +8,10 @@ logger = logging.getLogger(__name__)
 
 class AIClient:
     
-    def __init__(self):
+    def __init__(self, api_key: Optional[str] = None):
         self.client = OpenAI(
             base_url="https://openrouter.ai/api/v1",
-            api_key=settings.OPENROUTER_API_KEY,
+            api_key=api_key, #or settings.OPENROUTER_API_KEY,
         )
         self.model = settings.OPENROUTER_MODEL
         self.referer = settings.REFERER

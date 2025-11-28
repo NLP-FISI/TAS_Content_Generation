@@ -1,0 +1,2768 @@
+{
+  "textos": [
+    {
+      "id_texto": 4,
+      "titulo": "La Aventura en el Cerro",
+      "contenido": "Juan y su hermana Rosa viven en un pueblo andino en Perú. Un día, salieron a explorar el cerro. \"¡Qué alto es!\", dijo Juan. \"Vamos con cuidado\", respondió Rosa. Encontraron una cueva pequeña. Adentro, había flores rojas bonitas. \"¡Son como estrellas!\", gritó Rosa. Bajaron felices y contentos.",
+      "ensenanza": "Explorar con amigos y cuidado nos hace felices y enseña a amar la naturaleza.",
+      "tipo_texto": "Narrativo",
+      "grado": "3er Grado de Primaria",
+      "tematica": "Aventuras y Exploración",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿Quiénes salieron a explorar el cerro?",
+          "alternativas": [
+            {
+              "texto": "Juan y su hermana Rosa",
+              "es_correcta": true
+            },
+            {
+              "texto": "Juan y su papá",
+              "es_correcta": false
+            },
+            {
+              "texto": "Solo Rosa",
+              "es_correcta": false
+            },
+            {
+              "texto": "Juan y un amigo",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Por qué dijo Rosa 'Vamos con cuidado'?",
+          "alternativas": [
+            {
+              "texto": "Porque el cerro era alto y peligroso",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque querían correr rápido",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque había flores adentro",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque bajaban del cerro",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Crítica",
+          "nivel_bloom": "Evaluar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Qué crees que pasaría si no fueran con cuidado al cerro?",
+          "alternativas": [
+            {
+              "texto": "Podrían caerse y lastimarse",
+              "es_correcta": true
+            },
+            {
+              "texto": "Encontrarían más flores",
+              "es_correcta": false
+            },
+            {
+              "texto": "Bajarían más rápido",
+              "es_correcta": false
+            },
+            {
+              "texto": "Gritarían más fuerte",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Qué había adentro de la cueva?",
+          "alternativas": [
+            {
+              "texto": "Flores rojas bonitas",
+              "es_correcta": true
+            },
+            {
+              "texto": "Piedras brillantes",
+              "es_correcta": false
+            },
+            {
+              "texto": "Animales grandes",
+              "es_correcta": false
+            },
+            {
+              "texto": "Agua fría",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Analizar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿Cómo se sintieron Juan y Rosa al final?",
+          "alternativas": [
+            {
+              "texto": "Felices y contentos por la aventura",
+              "es_correcta": true
+            },
+            {
+              "texto": "Cansados por caminar mucho",
+              "es_correcta": false
+            },
+            {
+              "texto": "Tristes por las flores",
+              "es_correcta": false
+            },
+            {
+              "texto": "Enojados con el cerro",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    },
+    {
+      "id_texto": 5,
+      "titulo": "La rana del río",
+      "contenido": "En el río de la Amazonía peruana, vivía una rana verde. Un día, llovió mucho. La rana gritó: '¡Ayuda! El agua es muy fuerte'. \n\nUn niño llamado Luis pasó por ahí. 'No tengas miedo. Te ayudo', dijo Luis. La sacó con cuidado. \n\nLa rana saltó feliz. '¡Gracias, amigo!' Todos sonrieron.",
+      "ensenanza": "Ayudar a los animales de la naturaleza es bueno para todos.",
+      "tipo_texto": "Narrativo",
+      "grado": "3er Grado de Primaria",
+      "tematica": "Animales y Naturaleza",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿Dónde vivía la rana?",
+          "alternativas": [
+            {
+              "texto": "En el río de la Amazonía peruana",
+              "es_correcta": true
+            },
+            {
+              "texto": "En el río, pero no en Perú",
+              "es_correcta": false
+            },
+            {
+              "texto": "En la selva cerca del río",
+              "es_correcta": false
+            },
+            {
+              "texto": "En la casa de Luis",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Por qué la rana pidió ayuda?",
+          "alternativas": [
+            {
+              "texto": "Porque el agua era muy fuerte por la lluvia",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque quería jugar con Luis",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque llovió un poco",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque no le gustaba el río",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Crítica",
+          "nivel_bloom": "Evaluar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Qué es lo mejor que hizo Luis?",
+          "alternativas": [
+            {
+              "texto": "Ayudar a la rana con cuidado",
+              "es_correcta": true
+            },
+            {
+              "texto": "Pasar por el río rápido",
+              "es_correcta": false
+            },
+            {
+              "texto": "Escuchar la lluvia",
+              "es_correcta": false
+            },
+            {
+              "texto": "Saltar como la rana",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Qué dijo Luis a la rana?",
+          "alternativas": [
+            {
+              "texto": "'No tengas miedo. Te ayudo'",
+              "es_correcta": true
+            },
+            {
+              "texto": "'¡Ayuda! El agua es fuerte'",
+              "es_correcta": false
+            },
+            {
+              "texto": "'¡Gracias, amigo!'",
+              "es_correcta": false
+            },
+            {
+              "texto": "'Todos sonrieron'",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Analizar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿Cómo se sintió la rana al final?",
+          "alternativas": [
+            {
+              "texto": "Feliz porque Luis la ayudó",
+              "es_correcta": true
+            },
+            {
+              "texto": "Triste por la lluvia",
+              "es_correcta": false
+            },
+            {
+              "texto": "Cansada de saltar",
+              "es_correcta": false
+            },
+            {
+              "texto": "Enojada con el río",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    },
+    {
+      "id_texto": 6,
+      "titulo": "La Aventura Espacial de Juan",
+      "contenido": "Juan y Pedro jugaban en los Andes peruanos. Miraban las estrellas brillantes.\n\n\"¡Quiero ir al espacio!\", dijo Juan.\n\n¡Pum! Llegó un cohete. \"¡Suban niños!\", gritó el astronauta.\n\nVolaban alto. Vieron la Tierra redonda y verde.\n\n\"¡Qué bonito es Perú desde aquí!\", exclamó Pedro.\n\nBajaron felices.",
+      "ensenanza": "Cuidar nuestro planeta Tierra es importante para todos.",
+      "tipo_texto": "Narrativo",
+      "grado": "3er Grado de Primaria",
+      "tematica": "Ciencia Ficción y Espacio",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿Dónde jugaban Juan y Pedro?",
+          "alternativas": [
+            {
+              "texto": "En los Andes peruanos",
+              "es_correcta": true
+            },
+            {
+              "texto": "En la playa",
+              "es_correcta": false
+            },
+            {
+              "texto": "En Lima",
+              "es_correcta": false
+            },
+            {
+              "texto": "En el mar",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Por qué Juan quería ir al espacio?",
+          "alternativas": [
+            {
+              "texto": "Porque miraba las estrellas",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque jugaba con Pedro",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque comía papas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque bajaban del cohete",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Crítica",
+          "nivel_bloom": "Evaluar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Qué enseña el cuento sobre la Tierra?",
+          "alternativas": [
+            {
+              "texto": "Hay que cuidarla",
+              "es_correcta": true
+            },
+            {
+              "texto": "Es solo redonda",
+              "es_correcta": false
+            },
+            {
+              "texto": "Es solo verde",
+              "es_correcta": false
+            },
+            {
+              "texto": "Los Andes son altos",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Qué gritó el astronauta?",
+          "alternativas": [
+            {
+              "texto": "\"¡Suban niños!\"",
+              "es_correcta": true
+            },
+            {
+              "texto": "\"¡Miren las estrellas!\"",
+              "es_correcta": false
+            },
+            {
+              "texto": "\"¡Bajen rápido!\"",
+              "es_correcta": false
+            },
+            {
+              "texto": "\"¡Jueguen aquí!\"",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Analizar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿Cómo se sintió Pedro al ver Perú?",
+          "alternativas": [
+            {
+              "texto": "Feliz y admirado",
+              "es_correcta": true
+            },
+            {
+              "texto": "Triste por bajar",
+              "es_correcta": false
+            },
+            {
+              "texto": "Cansado de volar",
+              "es_correcta": false
+            },
+            {
+              "texto": "Enojado con Juan",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    },
+    {
+      "id_texto": 7,
+      "titulo": "Los Pequeños Detectives",
+      "contenido": "Pedro y Ana son amigos en un barrio de Lima, Perú. Jugaban en el parque. Pedro tenía una galleta grande. ¡Pum! Desapareció. \"¿Quién la tomó?\", preguntó Pedro. \"¡Somos detectives!\", dijo Ana. Buscaron pistas. Vieron migajas y huellas de gato. \"¡Es el gato de la tía Rosa!\", exclamó Ana. Pedro rio. Compartieron otra galleta.",
+      "ensenanza": "Trabajar en equipo resuelve los misterios.",
+      "tipo_texto": "Narrativo",
+      "grado": "3er Grado de Primaria",
+      "tematica": "Misterio y Detectives",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿Dónde jugaban Pedro y Ana?",
+          "alternativas": [
+            {
+              "texto": "En el parque",
+              "es_correcta": true
+            },
+            {
+              "texto": "En casa de Pedro",
+              "es_correcta": false
+            },
+            {
+              "texto": "En el barrio solo",
+              "es_correcta": false
+            },
+            {
+              "texto": "En la escuela",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Por qué Ana dijo que eran detectives?",
+          "alternativas": [
+            {
+              "texto": "Para buscar la galleta juntos",
+              "es_correcta": true
+            },
+            {
+              "texto": "Para comer la galleta rápido",
+              "es_correcta": false
+            },
+            {
+              "texto": "Para jugar con el gato",
+              "es_correcta": false
+            },
+            {
+              "texto": "Para ir al parque solos",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Crítica",
+          "nivel_bloom": "Analizar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Qué fue buena idea de Pedro y Ana?",
+          "alternativas": [
+            {
+              "texto": "Buscar pistas en equipo",
+              "es_correcta": true
+            },
+            {
+              "texto": "Comer galletas sin buscar",
+              "es_correcta": false
+            },
+            {
+              "texto": "Culpar al vecino rápido",
+              "es_correcta": false
+            },
+            {
+              "texto": "Jugar sin la galleta",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Qué vieron Pedro y Ana como pistas?",
+          "alternativas": [
+            {
+              "texto": "Migajas y huellas de gato",
+              "es_correcta": true
+            },
+            {
+              "texto": "Huellas de perro y migajas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Una galleta grande nueva",
+              "es_correcta": false
+            },
+            {
+              "texto": "El parque vacío",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Aplicar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿Cómo se sintieron Pedro y Ana al final?",
+          "alternativas": [
+            {
+              "texto": "Felices por resolverlo juntos",
+              "es_correcta": true
+            },
+            {
+              "texto": "Tristes por la galleta perdida",
+              "es_correcta": false
+            },
+            {
+              "texto": "Enojados con el gato",
+              "es_correcta": false
+            },
+            {
+              "texto": "Cansados de buscar solos",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    },
+    {
+      "id_texto": 8,
+      "titulo": "Juanito y el Zorro del Pueblo",
+      "contenido": "Juanito vivía en un pueblo de Perú. Él tenía una gallina que ponía huevos. Un zorro malo vino y dijo: '¿Me das tu gallina, Juanito?' 'No', contestó Juanito. El zorro quiso robarla. Juanito usó su honda y el zorro corrió asustado. Juanito protegió a su gallina.",
+      "ensenanza": "Ser valiente nos ayuda a proteger lo que queremos.",
+      "tipo_texto": "Narrativo",
+      "grado": "3er Grado de Primaria",
+      "tematica": "Cuentos Clásicos",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿Dónde vivía Juanito?",
+          "alternativas": [
+            {
+              "texto": "En un pueblo de Perú",
+              "es_correcta": true
+            },
+            {
+              "texto": "En una ciudad grande",
+              "es_correcta": false
+            },
+            {
+              "texto": "En el bosque oscuro",
+              "es_correcta": false
+            },
+            {
+              "texto": "En casa de su abuela",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Por qué el zorro pidió la gallina?",
+          "alternativas": [
+            {
+              "texto": "Quería robarla",
+              "es_correcta": true
+            },
+            {
+              "texto": "Quería comer huevos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Quería jugar con Juanito",
+              "es_correcta": false
+            },
+            {
+              "texto": "Quería ser amigo",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Crítica",
+          "nivel_bloom": "Evaluar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Fue buena la decisión de Juanito de usar la honda?",
+          "alternativas": [
+            {
+              "texto": "Sí, porque protegió su gallina",
+              "es_correcta": true
+            },
+            {
+              "texto": "No, porque el zorro era bueno",
+              "es_correcta": false
+            },
+            {
+              "texto": "Sí, pero solo para huevos",
+              "es_correcta": false
+            },
+            {
+              "texto": "No, mejor dar la gallina",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Qué tenía Juanito?",
+          "alternativas": [
+            {
+              "texto": "Una gallina que ponía huevos",
+              "es_correcta": true
+            },
+            {
+              "texto": "Una honda grande",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un zorro amigo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Huevos dorados",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Analizar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿Cómo se sintió el zorro cuando Juanito usó la honda?",
+          "alternativas": [
+            {
+              "texto": "Asustado",
+              "es_correcta": true
+            },
+            {
+              "texto": "Contento",
+              "es_correcta": false
+            },
+            {
+              "texto": "Valiente",
+              "es_correcta": false
+            },
+            {
+              "texto": "Hambriento",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    },
+    {
+      "id_texto": 9,
+      "titulo": "La Aventura en el Río",
+      "contenido": "Juan y María viven en un pueblo peruano cerca de los Andes. Un día dicen: '¡Vamos a explorar el río!'\n\nCaminan felices. En el río ven una rana verde y bonita. '¡Mira qué linda!', grita María. 'Sí, pero no la toquemos para cuidarla', responde Juan.\n\nVuelven a casa riendo. Fue una gran aventura.",
+      "ensenanza": "Hay que cuidar la naturaleza y los animales para que sigan vivos.",
+      "tipo_texto": "Narrativo",
+      "grado": "4to Grado de Primaria",
+      "tematica": "Aventuras y Exploración",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿Dónde viven Juan y María?",
+          "alternativas": [
+            {
+              "texto": "En un pueblo peruano cerca de los Andes",
+              "es_correcta": true
+            },
+            {
+              "texto": "En una ciudad grande",
+              "es_correcta": false
+            },
+            {
+              "texto": "Cerca del mar",
+              "es_correcta": false
+            },
+            {
+              "texto": "En la selva",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Por qué Juan y María no tocaron la rana?",
+          "alternativas": [
+            {
+              "texto": "Para cuidarla",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque estaba lejos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque era fea",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque tenían miedo del agua",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Crítica",
+          "nivel_bloom": "Evaluar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Fue una buena idea no tocar la rana?",
+          "alternativas": [
+            {
+              "texto": "Sí, porque ayuda a cuidar la naturaleza",
+              "es_correcta": true
+            },
+            {
+              "texto": "No, porque querían jugar con ella",
+              "es_correcta": false
+            },
+            {
+              "texto": "Sí, pero solo por un rato",
+              "es_correcta": false
+            },
+            {
+              "texto": "No, porque era solo una rana",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Qué dijo María al ver la rana?",
+          "alternativas": [
+            {
+              "texto": "'¡Mira qué linda!'",
+              "es_correcta": true
+            },
+            {
+              "texto": "'¡Vamos a casa!'",
+              "es_correcta": false
+            },
+            {
+              "texto": "'¡Tengo sed!'",
+              "es_correcta": false
+            },
+            {
+              "texto": "'¡Corre rápido!'",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Analizar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿Cómo se sintieron Juan y María al volver?",
+          "alternativas": [
+            {
+              "texto": "Felices y contentos",
+              "es_correcta": true
+            },
+            {
+              "texto": "Tristes por no tocar la rana",
+              "es_correcta": false
+            },
+            {
+              "texto": "Cansados y con sueño",
+              "es_correcta": false
+            },
+            {
+              "texto": "Enojados con el río",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    },
+    {
+      "id_texto": 10,
+      "titulo": "La tortuga perdida",
+      "contenido": "En la selva peruana, Pedro jugaba cerca del río. Vio una tortuga sola. '¡Hola, tortuga! ¿Estás perdida?', dijo Pedro. La tortuga miró triste. Pedro la cargó con cuidado y la llevó al agua. Allí, su mamá la esperaba. '¡Gracias, amigo!', pareciera decir la tortuga. Pedro sonrió feliz.",
+      "ensenanza": "Hay que ayudar a los animales y cuidar nuestra naturaleza.",
+      "tipo_texto": "Narrativo",
+      "grado": "4to Grado de Primaria",
+      "tematica": "Animales y Naturaleza",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿Dónde jugaba Pedro?",
+          "alternativas": [
+            {
+              "texto": "En la selva peruana",
+              "es_correcta": true
+            },
+            {
+              "texto": "En la ciudad grande",
+              "es_correcta": false
+            },
+            {
+              "texto": "En el río solo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Cerca de su casa",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Por qué miró triste la tortuga?",
+          "alternativas": [
+            {
+              "texto": "Porque estaba perdida",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque Pedro la cargó",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque jugaba sola",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque vio el río",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Crítica",
+          "nivel_bloom": "Evaluar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Qué fue lo mejor que hizo Pedro?",
+          "alternativas": [
+            {
+              "texto": "Llevarla al agua con cuidado",
+              "es_correcta": true
+            },
+            {
+              "texto": "Jugar cerca del río",
+              "es_correcta": false
+            },
+            {
+              "texto": "Hablar con la tortuga",
+              "es_correcta": false
+            },
+            {
+              "texto": "Sonreír al final",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Quién esperaba a la tortuga en el agua?",
+          "alternativas": [
+            {
+              "texto": "Su mamá",
+              "es_correcta": true
+            },
+            {
+              "texto": "Pedro solo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Otro animal",
+              "es_correcta": false
+            },
+            {
+              "texto": "La familia de Pedro",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Analizar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿Qué sintió Pedro al final?",
+          "alternativas": [
+            {
+              "texto": "Feliz por ayudar",
+              "es_correcta": true
+            },
+            {
+              "texto": "Triste por irse",
+              "es_correcta": false
+            },
+            {
+              "texto": "Cansado de cargar",
+              "es_correcta": false
+            },
+            {
+              "texto": "Sorprendido del río",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    },
+    {
+      "id_texto": 11,
+      "titulo": "El Viaje Estelar de Juanito",
+      "contenido": "Juanito vive en Perú, en los Andes. Mira las estrellas. '¡Quiero ir al espacio!', dice a su amigo Pedro. Construyen un cohete de cartón. ¡Zas! Vuelan alto. Llegan a la Luna. Ven cráteres grandes. '¡Es increíble!', grita Pedro. Vuelven a casa felices.",
+      "ensenanza": "La amistad y los sueños nos hacen volar alto.",
+      "tipo_texto": "Narrativo",
+      "grado": "4to Grado de Primaria",
+      "tematica": "Ciencia Ficción y Espacio",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿Dónde vive Juanito?",
+          "alternativas": [
+            {
+              "texto": "En los Andes, en Perú",
+              "es_correcta": true
+            },
+            {
+              "texto": "En la Luna",
+              "es_correcta": false
+            },
+            {
+              "texto": "En el mar",
+              "es_correcta": false
+            },
+            {
+              "texto": "En el bosque",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Por qué construyen el cohete?",
+          "alternativas": [
+            {
+              "texto": "Para volar al espacio",
+              "es_correcta": true
+            },
+            {
+              "texto": "Para jugar en casa",
+              "es_correcta": false
+            },
+            {
+              "texto": "Para mirar estrellas quietos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Para comer dulces",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Crítica",
+          "nivel_bloom": "Evaluar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Qué enseña la aventura de Juanito y Pedro?",
+          "alternativas": [
+            {
+              "texto": "La amistad ayuda a soñar",
+              "es_correcta": true
+            },
+            {
+              "texto": "Mejor quedarse en casa",
+              "es_correcta": false
+            },
+            {
+              "texto": "Las estrellas son feas",
+              "es_correcta": false
+            },
+            {
+              "texto": "No jugar con cartón",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Qué ven en la Luna?",
+          "alternativas": [
+            {
+              "texto": "Cráteres grandes",
+              "es_correcta": true
+            },
+            {
+              "texto": "Casas pequeñas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Árboles altos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Ríos de agua",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Aplicar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿Cómo se sienten al volver?",
+          "alternativas": [
+            {
+              "texto": "Felices por la aventura",
+              "es_correcta": true
+            },
+            {
+              "texto": "Tristes por irse",
+              "es_correcta": false
+            },
+            {
+              "texto": "Cansados sin jugar",
+              "es_correcta": false
+            },
+            {
+              "texto": "Enojados con el cohete",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    },
+    {
+      "id_texto": 12,
+      "titulo": "El Misterio de la Pelota Perdida",
+      "contenido": "En un barrio de Lima, Juan y su amiga Rosa jugaban con una pelota roja en el parque. De repente, la pelota desapareció. \n\n—¿Dónde está la pelota? —preguntó Juan. \n\n—Busquemos pistas —dijo Rosa. \n\nVieron huellas en la tierra. Siguieron las huellas hasta el patio del vecino. Allí estaba el perro Pipo con la pelota. \n\nJuan y Rosa la recuperaron. Todos rieron felices.",
+      "ensenanza": "Ser observadores y trabajar en equipo ayuda a resolver problemas.",
+      "tipo_texto": "Narrativo",
+      "grado": "4to Grado de Primaria",
+      "tematica": "Misterio y Detectives",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿Dónde jugaban Juan y Rosa al inicio?",
+          "alternativas": [
+            {
+              "texto": "En el parque",
+              "es_correcta": true
+            },
+            {
+              "texto": "En el patio del vecino",
+              "es_correcta": false
+            },
+            {
+              "texto": "En la casa de Pipo",
+              "es_correcta": false
+            },
+            {
+              "texto": "En la tierra con huellas",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Por qué Juan y Rosa siguieron las huellas?",
+          "alternativas": [
+            {
+              "texto": "Porque eran pistas de la pelota",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque querían jugar con Pipo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque las huellas eran del parque",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque el vecino las vio primero",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Crítica",
+          "nivel_bloom": "Evaluar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Qué decisión tomaron Juan y Rosa que fue buena?",
+          "alternativas": [
+            {
+              "texto": "Buscar pistas juntos",
+              "es_correcta": true
+            },
+            {
+              "texto": "Dejar la pelota perdida",
+              "es_correcta": false
+            },
+            {
+              "texto": "Jugar sin la pelota roja",
+              "es_correcta": false
+            },
+            {
+              "texto": "Ir a casa del vecino solos",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Quién tenía la pelota al final?",
+          "alternativas": [
+            {
+              "texto": "El perro Pipo",
+              "es_correcta": true
+            },
+            {
+              "texto": "El vecino del barrio",
+              "es_correcta": false
+            },
+            {
+              "texto": "Juan en el parque",
+              "es_correcta": false
+            },
+            {
+              "texto": "Rosa en la tierra",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Analizar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿Cómo se sintieron Juan y Rosa al recuperar la pelota?",
+          "alternativas": [
+            {
+              "texto": "Felices y riendo",
+              "es_correcta": true
+            },
+            {
+              "texto": "Tristes por las huellas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Enojados con Pipo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Cansados del parque",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    },
+    {
+      "id_texto": 13,
+      "titulo": "La Llama y la Liebre",
+      "contenido": "En los Andes peruanos, vivía una liebre veloz y una llama paciente. La liebre dijo: '¡Eres muy lenta! ¡No puedes ganarme!'. '¡Hagamos una carrera!', contestó la llama. La liebre corrió mucho, pero se cansó y durmió. La llama caminó despacio y llegó primero. La liebre despertó: '¡Perdí! Tú ganas.'",
+      "ensenanza": "La perseverancia siempre triunfa sobre la prisa.",
+      "tipo_texto": "Narrativo",
+      "grado": "4to Grado de Primaria",
+      "tematica": "Cuentos Clásicos",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿Dónde vivían la liebre y la llama?",
+          "alternativas": [
+            {
+              "texto": "En los Andes peruanos",
+              "es_correcta": true
+            },
+            {
+              "texto": "En la selva peruana",
+              "es_correcta": false
+            },
+            {
+              "texto": "En la playa",
+              "es_correcta": false
+            },
+            {
+              "texto": "En un pueblo grande",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Por qué la liebre no ganó la carrera?",
+          "alternativas": [
+            {
+              "texto": "Se cansó y durmió",
+              "es_correcta": true
+            },
+            {
+              "texto": "Caminó despacio como la llama",
+              "es_correcta": false
+            },
+            {
+              "texto": "La llama corrió más rápido",
+              "es_correcta": false
+            },
+            {
+              "texto": "No quiso correr",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Crítica",
+          "nivel_bloom": "Evaluar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Qué cualidad es mejor según el cuento?",
+          "alternativas": [
+            {
+              "texto": "Ser perseverante como la llama",
+              "es_correcta": true
+            },
+            {
+              "texto": "Ser veloz como la liebre",
+              "es_correcta": false
+            },
+            {
+              "texto": "Dormir durante la carrera",
+              "es_correcta": false
+            },
+            {
+              "texto": "Burlarse de los amigos",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Qué propuso la llama?",
+          "alternativas": [
+            {
+              "texto": "Hacer una carrera",
+              "es_correcta": true
+            },
+            {
+              "texto": "Dormir un rato",
+              "es_correcta": false
+            },
+            {
+              "texto": "Correr sola",
+              "es_correcta": false
+            },
+            {
+              "texto": "Burlarse de la liebre",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Analizar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿Cómo se sintió la liebre al final?",
+          "alternativas": [
+            {
+              "texto": "Sorpresa por perder",
+              "es_correcta": true
+            },
+            {
+              "texto": "Enojada con la llama",
+              "es_correcta": false
+            },
+            {
+              "texto": "Muy cansada por caminar",
+              "es_correcta": false
+            },
+            {
+              "texto": "Orgullosa de ser rápida",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    },
+    {
+      "id_texto": 14,
+      "titulo": "La Aventura de Juan y María",
+      "contenido": "Juan y María viven en un pueblo andino de Perú. Un día, dijeron: '¡Vamos a explorar la colina!'. Caminaron juntos. Vieron flores rojas y un riachuelo. '¡Qué bonito!', gritó María. De repente, Juan encontró una piedra brillante. La guardaron y volvieron felices a casa.",
+      "ensenanza": "Las aventuras son más divertidas cuando compartimos con amigos y cuidamos la naturaleza.",
+      "tipo_texto": "Narrativo",
+      "grado": "5to Grado de Primaria",
+      "tematica": "Aventuras y Exploración",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿Dónde viven Juan y María?",
+          "alternativas": [
+            {
+              "texto": "En un pueblo andino de Perú",
+              "es_correcta": true
+            },
+            {
+              "texto": "En una colina grande",
+              "es_correcta": false
+            },
+            {
+              "texto": "Cerca de un riachuelo",
+              "es_correcta": false
+            },
+            {
+              "texto": "En la casa de sus amigos",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Por qué gritó María?",
+          "alternativas": [
+            {
+              "texto": "Porque vio flores bonitas",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque encontró una piedra",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque caminaban rápido",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque volvieron a casa",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Crítica",
+          "nivel_bloom": "Evaluar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Qué decisión tomaron Juan y María que fue buena?",
+          "alternativas": [
+            {
+              "texto": "Guardar la piedra y volver felices",
+              "es_correcta": true
+            },
+            {
+              "texto": "Caminar solos por la colina",
+              "es_correcta": false
+            },
+            {
+              "texto": "Gritar por las flores",
+              "es_correcta": false
+            },
+            {
+              "texto": "Buscar más piedras brillantes",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Qué encontraron en la colina?",
+          "alternativas": [
+            {
+              "texto": "Flores rojas y un riachuelo",
+              "es_correcta": true
+            },
+            {
+              "texto": "Un loro verde y un río grande",
+              "es_correcta": false
+            },
+            {
+              "texto": "Piedras brillantes y monos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Una casa y amigos",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Analizar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿Cómo se sintieron al final?",
+          "alternativas": [
+            {
+              "texto": "Felices por la aventura juntos",
+              "es_correcta": true
+            },
+            {
+              "texto": "Tristes por la piedra",
+              "es_correcta": false
+            },
+            {
+              "texto": "Cansados por caminar mucho",
+              "es_correcta": false
+            },
+            {
+              "texto": "Sorprendidos por las flores",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    },
+    {
+      "id_texto": 15,
+      "titulo": "El Mono y el Loro en la Selva",
+      "contenido": "En la selva peruana vivía Tito el mono. Un día vio a Pipo el loro mojado por la lluvia. \"¡Tengo frío!\", dijo Pipo. Tito le dio hojas secas para abrigo. Pipo se calentó y dijo: \"¡Gracias, amigo!\". Jugaron juntos felices.",
+      "ensenanza": "Ayudar a un amigo en un momento difícil fortalece la amistad.",
+      "tipo_texto": "Narrativo",
+      "grado": "5to Grado de Primaria",
+      "tematica": "Animales y Naturaleza",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿Dónde vivía Tito el mono?",
+          "alternativas": [
+            {
+              "texto": "En la selva peruana",
+              "es_correcta": true
+            },
+            {
+              "texto": "En las montañas altas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Cerca del río grande",
+              "es_correcta": false
+            },
+            {
+              "texto": "En una casa grande",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Por qué Tito dio hojas secas a Pipo?",
+          "alternativas": [
+            {
+              "texto": "Para que Pipo se caliente",
+              "es_correcta": true
+            },
+            {
+              "texto": "Para que Pipo coma algo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Para jugar más rápido",
+              "es_correcta": false
+            },
+            {
+              "texto": "Para volar más alto",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Crítica",
+          "nivel_bloom": "Evaluar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Qué valor muestra Tito en el cuento?",
+          "alternativas": [
+            {
+              "texto": "La ayuda a los amigos",
+              "es_correcta": true
+            },
+            {
+              "texto": "Correr muy rápido",
+              "es_correcta": false
+            },
+            {
+              "texto": "Comer muchas hojas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Hablar muy fuerte",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Qué dijo Pipo al principio?",
+          "alternativas": [
+            {
+              "texto": "\"¡Tengo frío!\"",
+              "es_correcta": true
+            },
+            {
+              "texto": "\"¡Gracias, amigo!\"",
+              "es_correcta": false
+            },
+            {
+              "texto": "\"¡Vamos a jugar!\"",
+              "es_correcta": false
+            },
+            {
+              "texto": "\"¡Estoy mojado!\"",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Analizar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿Cómo se sintió Pipo después de la ayuda?",
+          "alternativas": [
+            {
+              "texto": "Feliz y agradecido",
+              "es_correcta": true
+            },
+            {
+              "texto": "Triste por la lluvia",
+              "es_correcta": false
+            },
+            {
+              "texto": "Cansado de jugar",
+              "es_correcta": false
+            },
+            {
+              "texto": "Hambriento por las hojas",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    },
+    {
+      "id_texto": 16,
+      "titulo": "Pedro y la Estrella Amiga",
+      "contenido": "Pedro vive en Lima, Perú. Una noche mira el cielo. Una estrella baja. Es una nave espacial. Sale un alien verde.\n\n—Hola, Pedro. ¿Quieres ver el espacio? —dice el alien.\n\n—Sí, ¡vamos! —responde Pedro.\n\nVuelan alto. Ven la Tierra redonda y azul.\n\n—Cuida el planeta —dice el alien.\n\nPedro vuelve a casa feliz.",
+      "ensenanza": "Es importante cuidar nuestro planeta Tierra.",
+      "tipo_texto": "Narrativo",
+      "grado": "5to Grado de Primaria",
+      "tematica": "Ciencia Ficción y Espacio",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿Dónde vive Pedro?",
+          "alternativas": [
+            {
+              "texto": "En Lima, Perú",
+              "es_correcta": true
+            },
+            {
+              "texto": "En la nave espacial",
+              "es_correcta": false
+            },
+            {
+              "texto": "En el cielo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Con el alien verde",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Por qué Pedro dice '¡vamos!'?",
+          "alternativas": [
+            {
+              "texto": "Quiere ver el espacio",
+              "es_correcta": true
+            },
+            {
+              "texto": "Quiere mirar el cielo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Quiere volver a casa",
+              "es_correcta": false
+            },
+            {
+              "texto": "Quiere cuidar la Tierra",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Crítica",
+          "nivel_bloom": "Evaluar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Qué enseña el alien a Pedro?",
+          "alternativas": [
+            {
+              "texto": "Cuidar el planeta Tierra",
+              "es_correcta": true
+            },
+            {
+              "texto": "Mirar las estrellas cada noche",
+              "es_correcta": false
+            },
+            {
+              "texto": "Volar en una nave",
+              "es_correcta": false
+            },
+            {
+              "texto": "Saludar a los amigos",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Qué ve Pedro en el espacio?",
+          "alternativas": [
+            {
+              "texto": "La Tierra redonda y azul",
+              "es_correcta": true
+            },
+            {
+              "texto": "Una estrella grande",
+              "es_correcta": false
+            },
+            {
+              "texto": "Su casa en Lima",
+              "es_correcta": false
+            },
+            {
+              "texto": "El alien en el cielo",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Analizar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿Cómo se siente Pedro al final?",
+          "alternativas": [
+            {
+              "texto": "Feliz por la aventura",
+              "es_correcta": true
+            },
+            {
+              "texto": "Triste por irse",
+              "es_correcta": false
+            },
+            {
+              "texto": "Cansado de volar",
+              "es_correcta": false
+            },
+            {
+              "texto": "Enojado con el alien",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    },
+    {
+      "id_texto": 17,
+      "titulo": "Los Detectives del Mercado",
+      "contenido": "En el mercado de Lima, Juan y su amiga Rosa vieron un mango perdido en el suelo. '¡Un misterio!', dijo Juan. 'Busquemos al dueño', respondió Rosa. Preguntaron a la señora María. 'Es mío, lo busqué mucho', dijo ella triste. Los niños se lo dieron. Todos sonrieron. Los detectives salvaron el día.",
+      "ensenanza": "Ser honesto y ayudar a los demás nos hace felices a todos.",
+      "tipo_texto": "Narrativo",
+      "grado": "5to Grado de Primaria",
+      "tematica": "Misterio y Detectives",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿Dónde vieron Juan y Rosa el mango perdido?",
+          "alternativas": [
+            {
+              "texto": "En el mercado de Lima",
+              "es_correcta": true
+            },
+            {
+              "texto": "En el parque del barrio",
+              "es_correcta": false
+            },
+            {
+              "texto": "En la casa de Juan",
+              "es_correcta": false
+            },
+            {
+              "texto": "En la escuela",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Por qué la señora María estaba triste?",
+          "alternativas": [
+            {
+              "texto": "Porque perdió su mango",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque no tenía amigos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque llovía en el mercado",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque los niños jugaban",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Crítica",
+          "nivel_bloom": "Evaluar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Qué decisión tomaron Juan y Rosa que fue buena?",
+          "alternativas": [
+            {
+              "texto": "Buscar al dueño del mango",
+              "es_correcta": true
+            },
+            {
+              "texto": "Quedarse con el mango",
+              "es_correcta": false
+            },
+            {
+              "texto": "Ignorar el mango perdido",
+              "es_correcta": false
+            },
+            {
+              "texto": "Comer el mango rápido",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Qué dijo Juan al ver el mango?",
+          "alternativas": [
+            {
+              "texto": "'¡Un misterio!'",
+              "es_correcta": true
+            },
+            {
+              "texto": "'¡Vamos a casa!'",
+              "es_correcta": false
+            },
+            {
+              "texto": "'¡Estoy cansado!'",
+              "es_correcta": false
+            },
+            {
+              "texto": "'¡Tengo hambre!'",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Analizar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿Cómo se sintieron todos al final?",
+          "alternativas": [
+            {
+              "texto": "Felices y sonriendo",
+              "es_correcta": true
+            },
+            {
+              "texto": "Tristes por el mango",
+              "es_correcta": false
+            },
+            {
+              "texto": "Cansados de buscar",
+              "es_correcta": false
+            },
+            {
+              "texto": "Enojados con la señora",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    },
+    {
+      "id_texto": 18,
+      "titulo": "La Liebre y la Tortuga Andina",
+      "contenido": "Érase una vez una liebre y una tortuga en los Andes peruanos. La liebre era muy rápida. '¡Hagamos una carrera!', dijo la liebre. '¡De acuerdo!', contestó la tortuga. Empezaron a correr. La liebre se adelantó mucho y se durmió. La tortuga siguió despacio. Al final, la tortuga llegó primera. '¡Ganaste!', gritaron los animales.",
+      "ensenanza": "La perseverancia y el esfuerzo siempre triunfan.",
+      "tipo_texto": "Narrativo",
+      "grado": "5to Grado de Primaria",
+      "tematica": "Cuentos Clásicos",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿Dónde vivían la liebre y la tortuga?",
+          "alternativas": [
+            {
+              "texto": "En los Andes peruanos",
+              "es_correcta": true
+            },
+            {
+              "texto": "En un cerro solo",
+              "es_correcta": false
+            },
+            {
+              "texto": "En la selva peruana",
+              "es_correcta": false
+            },
+            {
+              "texto": "En el mar andino",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Por qué la liebre se durmió durante la carrera?",
+          "alternativas": [
+            {
+              "texto": "Porque se sintió muy segura de ganar",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque estaba cansada al empezar",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque la tortuga la alcanzó rápido",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque quería ayudar a la tortuga",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Crítica",
+          "nivel_bloom": "Analizar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Qué decisión de la tortuga fue la mejor en la carrera?",
+          "alternativas": [
+            {
+              "texto": "Seguir corriendo sin parar",
+              "es_correcta": true
+            },
+            {
+              "texto": "Correr más rápido al inicio",
+              "es_correcta": false
+            },
+            {
+              "texto": "Pedir ayuda a los animales",
+              "es_correcta": false
+            },
+            {
+              "texto": "Descansar como la liebre",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Qué dijo la liebre al principio?",
+          "alternativas": [
+            {
+              "texto": "'¡Hagamos una carrera!'",
+              "es_correcta": true
+            },
+            {
+              "texto": "'¡Yo soy la más lenta!'",
+              "es_correcta": false
+            },
+            {
+              "texto": "'¡Gané la carrera!'",
+              "es_correcta": false
+            },
+            {
+              "texto": "'¡Descansemos ahora!'",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Evaluar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿Cómo se sintieron los animales al final?",
+          "alternativas": [
+            {
+              "texto": "Felices por la victoria de la tortuga",
+              "es_correcta": true
+            },
+            {
+              "texto": "Tristes por la liebre dormida",
+              "es_correcta": false
+            },
+            {
+              "texto": "Enojados con la tortuga lenta",
+              "es_correcta": false
+            },
+            {
+              "texto": "Sorprendidos por el inicio",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    },
+    {
+      "id_texto": 19,
+      "titulo": "La Aventura en el Río",
+      "contenido": "Juan y Rosa viven en un pueblo andino de Perú. Un día, exploran el río. \"¡Mira el agua clara!\", dice Juan. Ven peces plateados y flores rojas. Juegan con cuidado. Al final, vuelven a casa felices. La naturaleza es un gran amigo.",
+      "ensenanza": "Respetar la naturaleza nos hace felices y cuida nuestro Perú.",
+      "tipo_texto": "Narrativo",
+      "grado": "6to Grado de Primaria",
+      "tematica": "Aventuras y Exploración",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿Dónde viven Juan y Rosa?",
+          "alternativas": [
+            {
+              "texto": "En un pueblo andino de Perú",
+              "es_correcta": true
+            },
+            {
+              "texto": "En un pueblo cerca del mar",
+              "es_correcta": false
+            },
+            {
+              "texto": "En la ciudad grande",
+              "es_correcta": false
+            },
+            {
+              "texto": "En la selva amazónica",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Por qué Juan dice '¡Mira el agua clara!'?",
+          "alternativas": [
+            {
+              "texto": "Porque está sorprendido por lo bonita que es",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque quiere pescar peces",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque el agua está sucia",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque ve flores en el agua",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Crítica",
+          "nivel_bloom": "Analizar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Qué decisión buena toman Juan y Rosa en la aventura?",
+          "alternativas": [
+            {
+              "texto": "Juegan con cuidado para no dañar nada",
+              "es_correcta": true
+            },
+            {
+              "texto": "Corren rápido sin mirar",
+              "es_correcta": false
+            },
+            {
+              "texto": "Recogen todas las flores",
+              "es_correcta": false
+            },
+            {
+              "texto": "Se quedan toda la noche",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Qué ven Juan y Rosa en el río?",
+          "alternativas": [
+            {
+              "texto": "Peces plateados y flores rojas",
+              "es_correcta": true
+            },
+            {
+              "texto": "Peces y monos juguetones",
+              "es_correcta": false
+            },
+            {
+              "texto": "Flores y un cóndor volando",
+              "es_correcta": false
+            },
+            {
+              "texto": "Árboles grandes y rana",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Evaluar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿Cómo se sienten al final los niños?",
+          "alternativas": [
+            {
+              "texto": "Felices porque respetaron la naturaleza",
+              "es_correcta": true
+            },
+            {
+              "texto": "Tristes porque no encontraron más",
+              "es_correcta": false
+            },
+            {
+              "texto": "Cansados y enojados",
+              "es_correcta": false
+            },
+            {
+              "texto": "Sorprendidos por los peces",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    },
+    {
+      "id_texto": 20,
+      "titulo": "Juan y el colibrí",
+      "contenido": "Juan vivía en un pueblo de la selva peruana. Un día vio un colibrí herido en el suelo. '¡Ay, pobrecito pajarito!', dijo Juan. Lo llevó a su casa. Le dio agua y frutas. Al día siguiente, el colibrí estaba bien. Voló alto y dijo: '¡Gracias, amigo!'. Juan sonrió feliz.",
+      "ensenanza": "Cuidar a los animales nos hace buenos amigos de la naturaleza.",
+      "tipo_texto": "Narrativo",
+      "grado": "6to Grado de Primaria",
+      "tematica": "Animales y Naturaleza",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿Dónde vivía Juan?",
+          "alternativas": [
+            {
+              "texto": "En un pueblo de la selva peruana",
+              "es_correcta": true
+            },
+            {
+              "texto": "En un pueblo de la montaña",
+              "es_correcta": false
+            },
+            {
+              "texto": "En la ciudad grande",
+              "es_correcta": false
+            },
+            {
+              "texto": "En la playa del mar",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Por qué Juan llevó el colibrí a su casa?",
+          "alternativas": [
+            {
+              "texto": "Porque estaba herido y necesitaba ayuda",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque quería jugar con él todo el día",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque el colibrí volaba muy alto",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque Juan tenía muchas frutas extras",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Crítica",
+          "nivel_bloom": "Evaluar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Qué muestra que Juan hizo lo correcto al final?",
+          "alternativas": [
+            {
+              "texto": "El colibrí voló feliz y dio las gracias",
+              "es_correcta": true
+            },
+            {
+              "texto": "Juan sonrió pero el colibrí se quedó herido",
+              "es_correcta": false
+            },
+            {
+              "texto": "Juan dio agua pero no frutas",
+              "es_correcta": false
+            },
+            {
+              "texto": "El colibrí voló pero no dijo nada",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Qué le dio Juan al colibrí?",
+          "alternativas": [
+            {
+              "texto": "Agua y frutas",
+              "es_correcta": true
+            },
+            {
+              "texto": "Solo agua",
+              "es_correcta": false
+            },
+            {
+              "texto": "Frutas y pan",
+              "es_correcta": false
+            },
+            {
+              "texto": "Solo arroz",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Analizar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿Cómo se sintió Juan al final de la historia?",
+          "alternativas": [
+            {
+              "texto": "Feliz porque ayudó al colibrí",
+              "es_correcta": true
+            },
+            {
+              "texto": "Triste porque el colibrí se fue",
+              "es_correcta": false
+            },
+            {
+              "texto": "Enojado porque tardó un día",
+              "es_correcta": false
+            },
+            {
+              "texto": "Cansado por buscar frutas",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    },
+    {
+      "id_texto": 21,
+      "titulo": "Amigos del Espacio en los Andes",
+      "contenido": "Pedro y Ana viven en un pueblo de los Andes peruanos. Jugaban con una pelota. De pronto, un ovni baja del cielo. '¡Hola! Soy Zorp de Marte', dice el alien. '¡Vengan a mi planeta!'. Suben al ovni. Ven estrellas y ríos rojos en Marte. Juegan juntos. Vuelven a casa felices.",
+      "ensenanza": "La amistad une a todos, cerca o lejos en el espacio.",
+      "tipo_texto": "Narrativo",
+      "grado": "6to Grado de Primaria",
+      "tematica": "Ciencia Ficción y Espacio",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿Dónde viven Pedro y Ana?",
+          "alternativas": [
+            {
+              "texto": "En un pueblo de los Andes peruanos",
+              "es_correcta": true
+            },
+            {
+              "texto": "En Marte con Zorp",
+              "es_correcta": false
+            },
+            {
+              "texto": "En la ciudad de Lima",
+              "es_correcta": false
+            },
+            {
+              "texto": "Bajo el mar",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Por qué Zorp invita a Pedro y Ana?",
+          "alternativas": [
+            {
+              "texto": "Para jugar juntos como amigos",
+              "es_correcta": true
+            },
+            {
+              "texto": "Para comer quinoa",
+              "es_correcta": false
+            },
+            {
+              "texto": "Para estudiar en la escuela",
+              "es_correcta": false
+            },
+            {
+              "texto": "Para dormir en el ovni",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Crítica",
+          "nivel_bloom": "Evaluar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Qué valor muestra el cuento al final?",
+          "alternativas": [
+            {
+              "texto": "La amistad une a todos",
+              "es_correcta": true
+            },
+            {
+              "texto": "Hay que jugar con pelotas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Los Andes son altos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Los ovnis son rápidos",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Qué ven Pedro y Ana en Marte?",
+          "alternativas": [
+            {
+              "texto": "Estrellas y ríos rojos",
+              "es_correcta": true
+            },
+            {
+              "texto": "Pelotas y casas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Nieve y montañas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Ovnis y aliens solos",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Analizar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿Cómo se sienten Pedro y Ana al volver?",
+          "alternativas": [
+            {
+              "texto": "Felices por la aventura",
+              "es_correcta": true
+            },
+            {
+              "texto": "Tristes por dejar Marte",
+              "es_correcta": false
+            },
+            {
+              "texto": "Cansados de jugar",
+              "es_correcta": false
+            },
+            {
+              "texto": "Enojados con Zorp",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    },
+    {
+      "id_texto": 22,
+      "titulo": "El Misterio del Paquete en el Mercado",
+      "contenido": "En el mercado de Lima, Pedro y Rosa jugaban cerca de los puestos de frutas. De repente, vieron un paquete en el suelo. \n\n'¡Mira, Rosa! ¿Qué es esto?', dijo Pedro. \n\n'Es un misterio. Busquemos al dueño', respondió Rosa. \n\nCorrieron y preguntaron a una señora que vendía mangos. '¡Es mío! Lo perdí. Gracias, pequeños detectives', dijo feliz. \n\nPedro y Rosa sonrieron.",
+      "ensenanza": "Ayudar a los demás y ser honestos siempre hace felices a todos.",
+      "tipo_texto": "Narrativo",
+      "grado": "6to Grado de Primaria",
+      "tematica": "Misterio y Detectives",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿Dónde jugaban Pedro y Rosa?",
+          "alternativas": [
+            {
+              "texto": "En el mercado de Lima",
+              "es_correcta": true
+            },
+            {
+              "texto": "En la escuela",
+              "es_correcta": false
+            },
+            {
+              "texto": "En el parque",
+              "es_correcta": false
+            },
+            {
+              "texto": "En su casa",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Por qué Pedro y Rosa buscaron al dueño del paquete?",
+          "alternativas": [
+            {
+              "texto": "Porque querían ayudar",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque querían jugar más",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque tenían hambre",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque era su paquete",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Crítica",
+          "nivel_bloom": "Evaluar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Qué enseña la historia sobre ser detective?",
+          "alternativas": [
+            {
+              "texto": "Ser curioso y ayudar resuelve misterios",
+              "es_correcta": true
+            },
+            {
+              "texto": "Jugar en el mercado es peligroso",
+              "es_correcta": false
+            },
+            {
+              "texto": "Guardar paquetes es divertido",
+              "es_correcta": false
+            },
+            {
+              "texto": "Los mangos son el misterio",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Qué vendía la señora?",
+          "alternativas": [
+            {
+              "texto": "Mangos",
+              "es_correcta": true
+            },
+            {
+              "texto": "Juguetes",
+              "es_correcta": false
+            },
+            {
+              "texto": "Ropa",
+              "es_correcta": false
+            },
+            {
+              "texto": "Libros",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Analizar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿Cómo se sintió la señora al final?",
+          "alternativas": [
+            {
+              "texto": "Feliz porque recuperó su paquete",
+              "es_correcta": true
+            },
+            {
+              "texto": "Triste por perder mangos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Enojada con los niños",
+              "es_correcta": false
+            },
+            {
+              "texto": "Cansada de vender",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    },
+    {
+      "id_texto": 23,
+      "titulo": "La Carrera en los Andes",
+      "contenido": "En los Andes peruanos, la liebre dijo a la tortuga: '¡Hagamos una carrera! Yo soy más rápida'. La tortuga dijo: 'Está bien'. La liebre corrió veloz, pero se durmió. La tortuga caminó lento y llegó primero. Todos aplaudieron a la tortuga.",
+      "ensenanza": "La perseverancia es más importante que la velocidad.",
+      "tipo_texto": "Narrativo",
+      "grado": "6to Grado de Primaria",
+      "tematica": "Cuentos Clásicos",
+      "dificultad": "Muy Fácil",
+      "dificultad_escala": 1,
+      "preguntas": [
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 1,
+          "enunciado": "¿Qué dijo la liebre a la tortuga al inicio?",
+          "alternativas": [
+            {
+              "texto": "Hagamos una carrera",
+              "es_correcta": true
+            },
+            {
+              "texto": "Yo soy más lenta",
+              "es_correcta": false
+            },
+            {
+              "texto": "Vamos a dormir",
+              "es_correcta": false
+            },
+            {
+              "texto": "Aplaudamos juntos",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Comprender",
+          "dificultad_pregunta": 2,
+          "enunciado": "¿Por qué la liebre no ganó la carrera?",
+          "alternativas": [
+            {
+              "texto": "Se durmió durante la carrera",
+              "es_correcta": true
+            },
+            {
+              "texto": "Caminó muy lento",
+              "es_correcta": false
+            },
+            {
+              "texto": "Llegó primero al final",
+              "es_correcta": false
+            },
+            {
+              "texto": "Aplaudió a la tortuga",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        },
+        {
+          "tipo": "Comprensión Crítica",
+          "nivel_bloom": "Evaluar",
+          "dificultad_pregunta": 3,
+          "enunciado": "¿Qué valor enseña mejor el cuento?",
+          "alternativas": [
+            {
+              "texto": "Perseverar aunque seas lento",
+              "es_correcta": true
+            },
+            {
+              "texto": "Correr siempre muy rápido",
+              "es_correcta": false
+            },
+            {
+              "texto": "Dormir en las carreras",
+              "es_correcta": false
+            },
+            {
+              "texto": "Aplaudir al final",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 3
+        },
+        {
+          "tipo": "Comprensión Literal",
+          "nivel_bloom": "Recordar",
+          "dificultad_pregunta": 4,
+          "enunciado": "¿Dónde ocurre la historia?",
+          "alternativas": [
+            {
+              "texto": "En los Andes peruanos",
+              "es_correcta": true
+            },
+            {
+              "texto": "En el mar peruano",
+              "es_correcta": false
+            },
+            {
+              "texto": "En la selva peruana",
+              "es_correcta": false
+            },
+            {
+              "texto": "En Lima ciudad",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 1
+        },
+        {
+          "tipo": "Comprensión Inferencial",
+          "nivel_bloom": "Analizar",
+          "dificultad_pregunta": 5,
+          "enunciado": "¿Cómo se sintió la tortuga al ganar?",
+          "alternativas": [
+            {
+              "texto": "Orgullosa por su esfuerzo",
+              "es_correcta": true
+            },
+            {
+              "texto": "Cansada por correr rápido",
+              "es_correcta": false
+            },
+            {
+              "texto": "Triste por la liebre",
+              "es_correcta": false
+            },
+            {
+              "texto": "Dormida como la liebre",
+              "es_correcta": false
+            }
+          ],
+          "id_tipo_pregunta": 2
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tipo_texto": "Narrativo",
+    "total_generados": 20
+  }
+}

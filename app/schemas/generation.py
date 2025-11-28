@@ -36,6 +36,7 @@ class GeneracionRequest(BaseModel):
     id_dificultades: List[int] = Field(..., min_length=1, description="Lista de IDs de dificultades")
     id_grados: List[int] = Field(..., min_length=1, description="Lista de IDs de grados")
     textos_por_combinacion: int = Field(default=1, ge=1, le=10, description="Textos a generar por cada combinación")
+    api_key: Optional[str] = Field(None, description="Clave API para el servicio de generación de texto")
     
     model_config = {
         "json_schema_extra": {
@@ -44,7 +45,8 @@ class GeneracionRequest(BaseModel):
                 "id_tematicas": [1, 2, 3],
                 "id_dificultades": [1, 2],
                 "id_grados": [3, 4, 5],
-                "textos_por_combinacion": 2
+                "textos_por_combinacion": 2,
+                "api_key": "sk-or-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
             }
         }
     }

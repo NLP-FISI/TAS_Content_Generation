@@ -22,8 +22,8 @@ class PreguntaSimpleResponse(BaseModel):
     """Esquema simple de pregunta con sus alternativas"""
     id_pregunta: int
     contenido: str
-    id_dificultad: Optional[int] = None  # ✅ NUEVO
-    id_tipo_pregunta: Optional[int] = None  # ✅ NUEVO
+    id_dificultad: Optional[int] = None 
+    id_tipo_pregunta: Optional[int] = None  
     alternativas: List[AlternativaSimpleResponse]
     
     model_config = {

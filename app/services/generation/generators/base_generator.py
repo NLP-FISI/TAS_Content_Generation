@@ -2,13 +2,14 @@
 import re
 import json
 from abc import ABC, abstractmethod
+from typing import Optional
 from app.config.ai_client import AIClient
 from app.exceptions import ValidationException
 
 class BaseGenerator(ABC):
     
-    def __init__(self):
-        self.ai_client = AIClient()
+    def __init__(self, api_key):
+        self.ai_client = AIClient(api_key=api_key)
     
     @abstractmethod
     def generar(self, **kwargs) -> dict:
@@ -29,6 +30,7 @@ class BaseGenerator(ABC):
                 message="Error al parsear JSON de la respuesta del modelo",
                 details={"error": str(e), "json_extraido": m.group(0)[:200]}
             )
-    
-    def call_ai(self, prompt: str) -> str:
+    def call_ai(self, prompt: str, api_key: Optional[str] = None) -> str:
+        if api_key:
+            self.ai_client.client.api_key = api_key
         return self.ai_client.call(prompt)

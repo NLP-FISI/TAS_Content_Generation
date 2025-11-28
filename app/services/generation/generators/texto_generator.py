@@ -9,9 +9,10 @@ from app.exceptions import ValidationException
 
 class TextoGenerator(BaseGenerator):
     
-    def __init__(self, prompt_builder: PromptBuilder):
-        super().__init__()
+    def __init__(self, prompt_builder: PromptBuilder, api_key=str):
         self.prompt_builder = prompt_builder
+        super().__init__(api_key=api_key)
+
     
     def generar(
         self,
@@ -20,7 +21,8 @@ class TextoGenerator(BaseGenerator):
         id_tipo_texto: int,
         id_dificultad: int,
         dificultad_escala: int,
-        tipos_preguntas: List[str]
+        tipos_preguntas: List[str],
+        api_key: str = None
     ) -> dict:
 
         
@@ -33,7 +35,7 @@ class TextoGenerator(BaseGenerator):
             tipos_preguntas=tipos_preguntas
         )
         
-        raw_response = self.call_ai(prompt)
+        raw_response = self.call_ai(prompt, api_key=api_key)
         parsed = self.parse_json(raw_response)
         
         if not all(k in parsed for k in ["titulo", "cuento"]):

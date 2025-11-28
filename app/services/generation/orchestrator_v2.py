@@ -18,8 +18,9 @@ logger = logging.getLogger(__name__)
 
 class GenerationOrchestratorV2:
     
-    def __init__(self, db: Session):
+    def __init__(self, db: Session, api_key: str):
         self.db = db
+        self.api_key = api_key
         
         self.catalog_service = CatalogService(db)
         self.validator = GenerationRequestValidator(self.catalog_service)
@@ -27,7 +28,7 @@ class GenerationOrchestratorV2:
         
         self.prompt_builder = PromptBuilder(self.catalog_service)
         
-        self.texto_generator = TextoGenerator(self.prompt_builder)
+        self.texto_generator = TextoGenerator(self.prompt_builder, api_key=self.api_key)
         
         # Servicios de almacenamiento
         self.mapping_service = MappingService()
@@ -40,7 +41,8 @@ class GenerationOrchestratorV2:
         id_tematicas: List[int],
         id_dificultades: List[int],
         id_grados: List[int],
-        textos_por_combinacion: int
+        textos_por_combinacion: int,
+        api_key: str = None
     ) -> Dict[str, Any]:
 
         try:
@@ -57,7 +59,7 @@ class GenerationOrchestratorV2:
             )
             
             textos_generados, bundle_json = self._paso_3_procesar(
-                combinaciones, tipo_texto_nombre
+                combinaciones, tipo_texto_nombre, api_key=api_key
             )
             
             archivo_json = self._guardar_json_temporal(bundle_json, textos_generados)
@@ -94,7 +96,8 @@ class GenerationOrchestratorV2:
     def _paso_3_procesar(
         self,
         combinaciones: List[Dict[str, Any]],
-        tipo_texto_nombre: str
+        tipo_texto_nombre: str,
+        api_key: str = None
     ) -> tuple:
 
         import time 
@@ -119,7 +122,7 @@ class GenerationOrchestratorV2:
             )
             
             try:
-                resultado = self._generar_uno(combo)
+                resultado = self._generar_uno(combo, api_key=api_key)
                 textos_generados.append(resultado["info"])
                 bundle_json["textos"].append(resultado["json_data"])
                 logger.info(f"  ✓ {resultado['info']['titulo']}")
@@ -137,7 +140,8 @@ class GenerationOrchestratorV2:
         bundle_json["metadata"]["total_generados"] = len(textos_generados)
         return textos_generados, bundle_json
         
-    def _generar_uno(self, combo: Dict[str, Any]) -> Dict[str, Any]:
+    def _generar_uno(self, combo: Dict[str, Any], api_key: str = None
+                      ) -> Dict[str, Any]:
         
         tipos_preguntas_ids = self._distribuir_tipos_preguntas(
             settings.PREGUNTAS_POR_TEXTO
@@ -154,7 +158,8 @@ class GenerationOrchestratorV2:
             id_tipo_texto=combo["id_tipo_texto"],
             id_dificultad=combo["id_dificultad"],
             dificultad_escala=combo["dificultad_escala"],
-            tipos_preguntas=tipos_preguntas_nombres
+            tipos_preguntas=tipos_preguntas_nombres,
+            api_key=api_key
         )
         
         texto_bd = self.mapping_service.mapear_texto_a_bd(
