@@ -47,7 +47,7 @@ class GuardarEnBDService(BaseService):
             self.db.commit()
             self.db.refresh(nuevo_resultado)
 
-            logger.info(f"Resultado de auditoría guardado correctamente (ID: {nuevo_resultado.id_resultado})")
+            logger.info(f"Resultado de auditoría guardado correctamente (ID: {nuevo_resultado.id_resultado_texto})")
             return True
 
         except SQLAlchemyError as e:

@@ -67,7 +67,7 @@ class EvaluationService(BaseService):
             es_correcta = bool(alternativa.correcto)
 
             obtener_id_texto = CatalogService(self.db)
-            id_texto = obtener_id_texto.obtener_texto_por_alternativa(id_alternativa=id_alternativa)
+            id_texto :int = obtener_id_texto.obtener_texto_por_alternativa(id_alternativa=id_alternativa)
             
             logger.info(f"Verificando respuesta: usuario={id_usuario}, juego={id_juego}, texto={id_texto}, pregunta={id_pregunta}, alternativa={id_alternativa}, correcta={es_correcta}")
 

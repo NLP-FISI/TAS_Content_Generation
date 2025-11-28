@@ -229,9 +229,8 @@ class CatalogService(BaseService):
                     details={"id_texto": pregunta.id_texto}
                 )
             
-            return {
-                "id_texto": texto.id_texto
-            }
+            return texto.id_texto
+
             
         except (ResourceNotFoundException, DatabaseException):
             raise
