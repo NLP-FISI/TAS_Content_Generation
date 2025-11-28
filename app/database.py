@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DATABASE_URL = "postgresql://generacion01:d2$$4Gen@shortline.proxy.rlwy.net:31885/railway"
+DATABASE_URL = "postgresql://postgres:YwYQiHoQkwgfhpIJBUVmvqrUKOUMiRBo@crossover.proxy.rlwy.net:57963/railway"
 
 engine = create_engine(DATABASE_URL, echo=False)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)

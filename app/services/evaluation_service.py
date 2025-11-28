@@ -75,9 +75,7 @@ class EvaluationService(BaseService):
             guardar_auditoria.guardar_usuario_auditoria(
                 id_usuario=id_usuario,
                 id_juego=id_juego,
-                id_pregunta=id_pregunta,
-                id_texto=id_texto,
-                correcto=es_correcta
+                id_texto=id_texto
             )
             if not guardar_auditoria:
                 logger.error("No se pudo guardar la auditoría de la respuesta")

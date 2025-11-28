@@ -5,12 +5,16 @@ from typing import List
 class RespuestaUsuario(BaseModel):
     id_pregunta: int = Field(..., gt=0, description="ID de la pregunta")
     id_alternativa: int = Field(..., gt=0, description="ID de la alternativa seleccionada")
+    id_usuario: int = Field(..., gt=0, description="ID del usuario que responde")
+    id_juego: int = Field(..., gt=0, description="ID del juego o sesión de evaluación")
     
     model_config = {
         "json_schema_extra": {
             "example": {
                 "id_pregunta": 1,
-                "id_alternativa": 3
+                "id_alternativa": 3,
+                "id_usuario": 42,
+                "id_juego": 7
             }
         }
     }

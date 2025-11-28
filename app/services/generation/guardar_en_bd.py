@@ -12,15 +12,12 @@ class GuardarEnBDService(BaseService):
         self,
         id_usuario: int,
         id_juego: int,
-        id_pregunta: int,
         id_texto: int,
-        correcto: bool
     ) -> bool:
         try:
             logger.info(
                 "Iniciando guardado de auditoría: "
                 f"id_usuario={id_usuario}, id_juego={id_juego}, "
-                f"id_texto={id_texto}, id_pregunta={id_pregunta}, correcto={correcto}"
             )
 
             resultado_texto = self.get_model("resultado_texto")
@@ -43,9 +40,7 @@ class GuardarEnBDService(BaseService):
             nuevo_resultado = resultado_texto(
                 id_usuario=id_usuario,
                 id_juego=id_juego,
-                id_texto=id_texto,
-                id_pregunta=id_pregunta,
-                correcto=correcto
+                id_texto=id_texto
             )
 
             self.db.add(nuevo_resultado)
