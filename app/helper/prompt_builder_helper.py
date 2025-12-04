@@ -50,6 +50,12 @@ Ciclo: {ciclo_info['ciclo']} ({ciclo_info['rango_grados']})
 Temática: {tematica_nombre}
 Tipo de texto: {tipo_texto_nombre}
 
+Genera el texto usando solo caracteres ASCII.
+No incluyas comillas curvas (“ ” ‘ ’), guiones largos (— –) ni espacios especiales.
+Usa únicamente comillas rectas (") y apóstrofes simples (').
+Usa solo el guion estándar (-).
+No incluyas caracteres Unicode no ASCII.
+
 Características del tipo de texto:
 {caracteristicas_tipo}
 
